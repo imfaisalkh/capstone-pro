@@ -30,7 +30,7 @@
 <div class="module-wrapper posts-grid <?php echo $wrapper_class; ?>" data-layout="<?php echo $settings->style; ?>">
   <?php
     if ( $blog_query->have_posts() ) :
-      $counter = 1;
+      $counter = 1; $excerpt_length = 'medium';
       while( $blog_query->have_posts() ) : $blog_query->the_post();
         include( locate_template( 'content-post.php' ) ); 
         $counter++;
