@@ -12,7 +12,7 @@ function capstone_load_module_examples() {
       require_once CAPSTONE_PAGE_BUILDER_MODULES_DIR .'jobs/jobs.php';
       require_once CAPSTONE_PAGE_BUILDER_MODULES_DIR .'pricing/pricing.php';
       require_once CAPSTONE_PAGE_BUILDER_MODULES_DIR .'faqs/faqs.php';
-      require_once CAPSTONE_PAGE_BUILDER_MODULES_DIR .'cta-box/cta-box.php';
+      require_once CAPSTONE_PAGE_BUILDER_MODULES_DIR .'testimonials/testimonials.php';
       require_once CAPSTONE_PAGE_BUILDER_MODULES_DIR .'cta-banner/cta-banner.php';
     }
 }
