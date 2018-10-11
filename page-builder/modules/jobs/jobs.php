@@ -14,7 +14,7 @@ class JobListingClass extends FLBuilderModule {
             'icon'            => 'playlist.svg',
             'editor_export'   => true, // Defaults to true and can be omitted.
             'enabled'         => true, // Defaults to true and can be omitted.
-            'partial_refresh' => false, // Defaults to false and can be omitted.
+            'partial_refresh' => true, // Defaults to false and can be omitted.
         ));
     }
 }
