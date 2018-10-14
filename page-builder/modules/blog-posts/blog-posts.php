@@ -83,6 +83,15 @@ FLBuilder::register_module( 'BlogPostsClass', array(
                         'description'   => 'How many posts to skip.',
                         'default'       => '0',
                     ),
+                    'load_more' => array(
+                        'type'          => 'select',
+                        'label'         => __( 'Load More', 'fl-builder' ),
+                        'default'       => '0',
+                        'options'       => array(
+                            '0'      => __( 'Disable', 'fl-builder' ),
+                            '1'      => __( 'Enable', 'fl-builder' )
+                        )
+                    ),
 
                 )
             )            
