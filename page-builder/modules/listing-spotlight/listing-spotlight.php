@@ -14,7 +14,7 @@ class ListingSpotlightClass extends FLBuilderModule {
             'icon'            => 'playlist.svg',
             'editor_export'   => true, // Defaults to true and can be omitted.
             'enabled'         => true, // Defaults to true and can be omitted.
-            'partial_refresh' => true, // Defaults to false and can be omitted.
+            'partial_refresh' => false, // Defaults to false and can be omitted.
         ));
     }
 }
@@ -27,7 +27,7 @@ FLBuilder::register_module( 'ListingSpotlightClass', array(
             'query'  => array(
                 'title'         => __( 'Query', 'fl-builder' ),
                 'fields'        => array(
-                    'type' => array(
+                    'query_type' => array(
                         'type'          => 'select',
                         'label'         => __( 'Type', 'fl-builder' ),
                         'default'       => 'job_listing',

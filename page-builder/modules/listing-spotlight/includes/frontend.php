@@ -38,5 +38,5 @@
       <?php endwhile; ?>
     <?php } ?>
     <?php wp_reset_postdata(); ?>
-    </div>
+  </div>
 </main>

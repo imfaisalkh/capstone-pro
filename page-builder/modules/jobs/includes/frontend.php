@@ -4,5 +4,5 @@
 // var_dump('[jobs '. $count .']');
 ?>
 <main class="module-wrapper jobs-list">
-  <?php echo do_shortcode('[jobs per_page="'. $settings->count .'"]'); ?>
+  <?php echo '[jobs per_page="'. $settings->count .'"]'; ?>
 </main>
