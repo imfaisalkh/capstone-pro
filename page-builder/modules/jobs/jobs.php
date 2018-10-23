@@ -71,7 +71,7 @@ FLBuilder::register_module( 'JobListingClass', array(
                     ),
                     'keywords'     => array(
                         'type'          => 'text',
-                        'label'         => __( 'Keywrod', 'fl-builder' ),
+                        'label'         => __( 'Keyword', 'fl-builder' ),
                         'description'   => 'Enter a keyword to search by default.',
                     ),
                     'post_status' => array(
