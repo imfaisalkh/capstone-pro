@@ -24,11 +24,9 @@
 
     $blog_query = new WP_Query($blog_args);
 
-    $wrapper_class = ($settings->style == 'carousel') ? ' is-full-width' : '';
-
 ?>
 
-<div class="module-wrapper posts-grid <?php echo $wrapper_class; ?>" data-layout="<?php echo $settings->style; ?>">
+<div class="module-wrapper posts-grid" data-layout="grid">
   <?php
     if ( $blog_query->have_posts() ) :
       $counter = 1; $excerpt_length = 'medium';
