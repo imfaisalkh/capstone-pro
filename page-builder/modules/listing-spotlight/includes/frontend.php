@@ -1,15 +1,21 @@
 <?php
 // Helper Variable(s)
   $args = array(
-    // 'posts_per_page'    => !empty($settings->count) ? $settings->count : 3,
+    'posts_per_page'    => 750, // arbitrary value to differentiate it from main [jobs] query
   );
 
+  // append listings IDs filter
   add_filter('get_job_listings_query_args', function($query_args) use($settings){
-    $query_args['post__in'] = array_map('intval', explode(',', $settings->ids));
     // var_dump($query_args);
-    return $query_args;
+    if ($query_args['posts_per_page'] == 750) {
+      $query_args['post__in'] = array_map('intval', explode(',', $settings->ids));
+      return $query_args;
+    } else {
+      return $query_args;
+    }
   });
 
+  // custom query variable
   $listing_query = get_job_listings($args);
 
 ?>
