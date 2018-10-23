@@ -4,6 +4,7 @@
     $blog_args = array(
       'post_type'       => 'post',
       'posts_per_page'  => $settings->count,
+      'offset'          => $settings->offset,
       'tax_query'       => array(),
       'paged'           => get_query_var('page') ? get_query_var('page') : 1, // https://wordpress.stackexchange.com/questions/180784/what-is-the-difference-between-paged-and-page
     );

@@ -38,31 +38,14 @@ FLBuilder::register_module( 'BlogPostsClass', array(
     'general'      => array(
         'title'         => __( 'General', 'fl-builder' ),
         'sections'      => array(
-            'appearance'  => array(
-                'title'         => __( 'Appearance', 'fl-builder' ),
-                'fields'        => array(
-                    'style' => array(
-                        'type'          => 'select',
-                        'label'         => __( 'Style', 'fl-builder' ),
-                        'default'       => 'grid',
-                        'options'       => array(
-                            'grid'      => __( 'Posts Grid', 'fl-builder' ),
-                            'carousel'      => __( 'Posts Carousel', 'fl-builder' )
-                        )
-                    ),
-                )
-            ),
             'query'  => array(
                 'title'         => __( 'Query', 'fl-builder' ),
                 'fields'        => array(
-                    'style' => array(
-                        'type'          => 'select',
-                        'label'         => __( 'Style', 'fl-builder' ),
-                        'default'       => 'grid',
-                        'options'       => array(
-                            'grid'      => __( 'Posts Grid', 'fl-builder' ),
-                            'carousel'      => __( 'Posts Carousel', 'fl-builder' )
-                        )
+                    'count'     => array(
+                        'type'          => 'unit',
+                        'label'         => __( 'Count', 'fl-builder' ),
+                        'description'   => 'How many posts to display.',
+                        'default'       => '-1',
                     ),
                     'category' => array(
                         'type'          => 'select',
@@ -70,12 +53,6 @@ FLBuilder::register_module( 'BlogPostsClass', array(
                         // 'default'       => '-1',
                         'options'       => get_category_terms(),
                         'multi-select'  => true
-                    ),
-                    'count'     => array(
-                        'type'          => 'unit',
-                        'label'         => __( 'Count', 'fl-builder' ),
-                        'description'   => 'How many posts to display.',
-                        'default'       => '-1',
                     ),
                     'offset'     => array(
                         'type'          => 'unit',
