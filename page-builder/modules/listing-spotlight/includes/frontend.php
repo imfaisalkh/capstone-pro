@@ -1,12 +1,17 @@
 <?php
 // Helper Variable(s)
   $args = array(
-    'posts_per_page'    => !empty($settings->count) ? $settings->count : 3,
+    // 'posts_per_page'    => !empty($settings->count) ? $settings->count : 3,
   );
+
+  add_filter('get_job_listings_query_args', function($query_args) use($settings){
+    $query_args['post__in'] = array_map('intval', explode(',', $settings->ids));
+    // var_dump($query_args);
+    return $query_args;
+  });
+
   $listing_query = get_job_listings($args);
 
-// $count = $settings->count ? $settings->count : '';
-// var_dump('[jobs '. $count .']');
 ?>
 <main class="module-wrapper listing-spotlight">
   <h3 class="module-title"><?php echo esc_html__('Listing Spotlight', 'capstone'); ?></h3>
@@ -32,11 +37,17 @@
             <span class="location"><?php the_job_location(); ?></span>
           </div>
           <div class="action">
-            <a href="#">Apply for this job</a>
+            <a href="#add-bookmark-<?php the_ID(); ?>" class="add-bookmark">Save for later &xrarr;</a>
           </div>
+          <div id="add-bookmark-<?php the_ID(); ?>" class="mfp-hide white-popup-block">
+						<h2 class="title"><?php esc_html_e('Bookmark Job', 'capstone'); ?></h2>
+						<?php do_action('capstone_bookmark_popup'); ?>
+				  </div>
         </article>
       <?php endwhile; ?>
-    <?php } ?>
+      <?php } else { ?>
+        <p>There is no job found with mentioned criteria.</p>
+      <?php } ?>
     <?php wp_reset_postdata(); ?>
   </div>
 </main>

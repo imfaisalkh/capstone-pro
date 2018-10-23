@@ -27,21 +27,15 @@ FLBuilder::register_module( 'ListingSpotlightClass', array(
             'query'  => array(
                 'title'         => __( 'Query', 'fl-builder' ),
                 'fields'        => array(
-                    'query_type' => array(
-                        'type'          => 'select',
-                        'label'         => __( 'Type', 'fl-builder' ),
-                        'default'       => 'job_listing',
-                        'options'       => array(
-                            'job_listing'      => __( 'Jobs', 'fl-builder' ),
-                            'resume'      => __( 'Resumes', 'fl-builder' )
-                        )
-                    ),
-                    'count'     => array(
-                        'type'          => 'unit',
-                        'label'         => __( 'Count', 'fl-builder' ),
-                        'description'   => 'How many listings to display in the slider.',
-                        'default'       => '3',
-                    ),
+                    // 'query_type' => array(
+                    //     'type'          => 'select',
+                    //     'label'         => __( 'Type', 'fl-builder' ),
+                    //     'default'       => 'job_listing',
+                    //     'options'       => array(
+                    //         'job_listing'      => __( 'Jobs', 'fl-builder' ),
+                    //         'resume'      => __( 'Resumes', 'fl-builder' )
+                    //     )
+                    // ),
                     'ids'     => array(
                         'type'          => 'text',
                         'label'         => __( 'IDs', 'fl-builder' ),
