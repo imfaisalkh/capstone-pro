@@ -45,10 +45,7 @@
           <div class="action">
             <a href="#add-bookmark-<?php the_ID(); ?>" class="add-bookmark">Save for later &xrarr;</a>
           </div>
-          <div id="add-bookmark-<?php the_ID(); ?>" class="mfp-hide white-popup-block">
-						<h2 class="title"><?php esc_html_e('Bookmark Job', 'capstone'); ?></h2>
-						<?php do_action('capstone_bookmark_popup'); ?>
-				  </div>
+          <?php get_template_part('includes/popup-add-bookmark.inc' ); ?>
         </article>
       <?php endwhile; ?>
       <?php } else { ?>
