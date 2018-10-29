@@ -27,19 +27,17 @@
 ?>
 
 <div class="module-wrapper posts-grid" data-layout="grid">
-  <div class="section-content">
-    <?php
-      if ( $blog_query->have_posts() ) :
-        $counter = 1; $excerpt_length = 'medium';
-        while( $blog_query->have_posts() ) : $blog_query->the_post();
-          include( locate_template( 'content-post.php' ) ); 
-          $counter++;
-        endwhile;
-      else:
-        get_template_part( 'content', 'none' );
-      endif;
-    ?>	
-  </div>
+  <?php
+    if ( $blog_query->have_posts() ) :
+      $counter = 1; $excerpt_length = 'medium';
+      while( $blog_query->have_posts() ) : $blog_query->the_post();
+        include( locate_template( 'content-post.php' ) ); 
+        $counter++;
+      endwhile;
+    else:
+      get_template_part( 'content', 'none' );
+    endif;
+  ?>	
 </div>
 
 <?php if ( !(get_query_var('page') >= $blog_query->max_num_pages) && $settings->load_more ) { ?> 
