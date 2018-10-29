@@ -17,7 +17,7 @@ class Capstone_Widgets extends WP_Widget {
      *
      * @var      string
      */
-    protected $widget_slug = 'featured-post';
+    protected $widget_slug = 'listing-spotlight';
 
 	/*--------------------------------------------------*/
 	/* Constructor
@@ -35,10 +35,10 @@ class Capstone_Widgets extends WP_Widget {
 		// TODO: update description
 		parent::__construct(
 			$this->get_widget_slug(),
-			__( 'Featured Post', $this->get_widget_slug() ),
+			__( 'Listing Spotlight', $this->get_widget_slug() ),
 			array(
 				'classname'  => 'widget-'.$this->get_widget_slug(),
-				'description' => __( 'This widget shows a hand-picked post as featured.', $this->get_widget_slug() )
+				'description' => __( 'This widget shows a hand-picked listings as featured.', $this->get_widget_slug() )
 			)
 		);
 
@@ -108,7 +108,7 @@ class Capstone_Widgets extends WP_Widget {
 		$widget_string .= $after_widget;
 
 
-		$cache[ $args['widget_id'] ] = $widget_string;
+		// $cache[ $args['widget_id'] ] = $widget_string;
 
 		wp_cache_set( $this->get_widget_slug(), $cache, 'widget' );
 
@@ -132,6 +132,7 @@ class Capstone_Widgets extends WP_Widget {
 		$instance = $old_instance;
 
 		// TODO: Here is where you update your widget's old values with the new, incoming values
+		$instance['ids'] = ( ! empty( $new_instance['ids'] ) ) ? sanitize_text_field( $new_instance['ids'] ) : '';
 
 		return $instance;
 

@@ -22,10 +22,10 @@ define( 'CAPSTONE_PAGE_BUILDER_URL', plugins_url( '/', __FILE__ ) . 'page-builde
 define( 'CAPSTONE_SHORTCODE_DIR', plugin_dir_path( __FILE__ ) . 'shortcodes/' );
 define( 'CAPSTONE_SHORTCODE_URL', plugins_url( '/', __FILE__ ) . 'shortcodes/' );
 
-// define( 'CAPSTONE_WIDGETS_DIR', plugin_dir_path( __FILE__ ) . 'widgets/' );
-// define( 'CAPSTONE_WIDGETS_URL', plugins_url( '/', __FILE__ ) . 'widgets/' );
+define( 'CAPSTONE_WIDGETS_DIR', plugin_dir_path( __FILE__ ) . 'widgets/' );
+define( 'CAPSTONE_WIDGETS_URL', plugins_url( '/', __FILE__ ) . 'widgets/' );
 
 // Require Files
 require CAPSTONE_PAGE_BUILDER_DIR . 'capstone-modules.php';
 require CAPSTONE_SHORTCODE_DIR . 'functions.php';
-// require CAPSTONE_WIDGETS_DIR . 'featured-post/plugin.php';
+require CAPSTONE_WIDGETS_DIR . 'listing-spotlight/plugin.php';
