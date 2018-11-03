@@ -1,0 +1,124 @@
+{
+    "key": "group_5b06b7b278a4b",
+    "title": "Page Configuration",
+    "fields": [
+        {
+            "key": "field_5b06bca5578f2",
+            "label": "Page Style",
+            "name": "page_style",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-image-select",
+                "id": ""
+            },
+            "choices": {
+                "is_standard": "<img src=\"..\/..\/wp-content\/plugins\/capstone-pro\/metaboxes\/images\/page-standard.png\"><p>Standard Page<\/p>",
+                "is_sidebar": "<img src=\"..\/..\/wp-content\/plugins\/capstone-pro\/metaboxes\/images\/page-sidebar.png\"><p>Page with Sidebar<\/p>",
+                "is_full_width": "<img src=\"..\/..\/wp-content\/plugins\/capstone-pro\/metaboxes\/images\/page-full-width.png\"><p>Full-Width Page<\/p>"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "is_standard",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5b06b7b917c1b",
+            "label": "Header Text",
+            "name": "header_text",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "ID": 71,
+                    "key": "field_5b06b7ca17c1c",
+                    "label": "Title",
+                    "name": "title",
+                    "prefix": "acf",
+                    "type": "text",
+                    "value": null,
+                    "menu_order": 0,
+                    "instructions": "It'll override the original page title.",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": 70,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "title",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "ID": 72,
+                    "key": "field_5b06b7dd17c1d",
+                    "label": "Subtitle",
+                    "name": "subtitle",
+                    "prefix": "acf",
+                    "type": "text",
+                    "value": null,
+                    "menu_order": 1,
+                    "instructions": "It'll complement the primary title.",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": 70,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "subtitle",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "default"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1541269217
+}

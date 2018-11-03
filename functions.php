@@ -16,6 +16,12 @@ if ( ! defined ( 'ABSPATH' ) ) {
 }
 
 // Define Constants
+define( 'CAPSTONE_META_BOXES_DIR', plugin_dir_path( __FILE__ ) . 'metaboxes/' );
+define( 'CAPSTONE_META_BOXES_URL', plugins_url( '/', __FILE__ ) . 'metaboxes/' );
+
+define( 'CAPSTONE_CUSTOMIZER_DIR', plugin_dir_path( __FILE__ ) . 'customizer/' );
+define( 'CAPSTONE_CUSTOMIZER_URL', plugins_url( '/', __FILE__ ) . 'customizer/' );
+
 define( 'CAPSTONE_PAGE_BUILDER_DIR', plugin_dir_path( __FILE__ ) . 'page-builder/' );
 define( 'CAPSTONE_PAGE_BUILDER_URL', plugins_url( '/', __FILE__ ) . 'page-builder/' );
 
@@ -26,6 +32,8 @@ define( 'CAPSTONE_WIDGETS_DIR', plugin_dir_path( __FILE__ ) . 'widgets/' );
 define( 'CAPSTONE_WIDGETS_URL', plugins_url( '/', __FILE__ ) . 'widgets/' );
 
 // Require Files
+require CAPSTONE_META_BOXES_DIR . 'functions.php';
+require CAPSTONE_CUSTOMIZER_DIR . 'functions.php';
 require CAPSTONE_PAGE_BUILDER_DIR . 'capstone-modules.php';
 require CAPSTONE_SHORTCODE_DIR . 'functions.php';
 require CAPSTONE_WIDGETS_DIR . 'listing-spotlight/plugin.php';

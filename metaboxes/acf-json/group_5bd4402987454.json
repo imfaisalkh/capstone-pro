@@ -1,0 +1,56 @@
+{
+    "key": "group_5bd4402987454",
+    "title": "Dashboard Page Type",
+    "fields": [
+        {
+            "key": "field_5bd440379d3bb",
+            "label": "Page Type",
+            "name": "dashboard_page_type",
+            "type": "radio",
+            "instructions": "Choose a page type below to which this page belongs to.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "dashboard_main": "Dashboard Main",
+                "manage_jobs": "Manage Jobs",
+                "submit_job": "Submit Job",
+                "manage_resumes": "Manage Resumes",
+                "submit_resume": "Submit Resume",
+                "manage_applications": "Manage Applications",
+                "manage_bookmarks": "Manage Bookmarks",
+                "manage_alerts": "Manage Alerts",
+                "manage_profile": "Manage Profile",
+                "manage_orders": "Manage Orders"
+            },
+            "allow_null": 1,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template-dashboard.php"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1540669520
+}
