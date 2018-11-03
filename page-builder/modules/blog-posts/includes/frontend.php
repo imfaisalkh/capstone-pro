@@ -26,7 +26,7 @@
 
 ?>
 
-<div class="module-wrapper posts-grid" data-layout="grid">
+<section class="module-wrapper posts-grid" data-layout="grid">
   <?php
     if ( $blog_query->have_posts() ) :
       $counter = 1; $excerpt_length = 'medium';
@@ -38,7 +38,7 @@
       get_template_part( 'content', 'none' );
     endif;
   ?>	
-</div>
+</section>
 
 <?php if ( !(get_query_var('page') >= $blog_query->max_num_pages) && $settings->load_more ) { ?> 
   <div class="load-more"><?php echo get_next_posts_link( esc_html__('Load More', 'capstone'), $blog_query->max_num_pages ); ?></div>

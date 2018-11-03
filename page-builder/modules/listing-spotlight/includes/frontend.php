@@ -19,7 +19,7 @@
   $listing_query = get_job_listings($args);
 
 ?>
-<main class="module-wrapper listing-spotlight">
+<section class="module-wrapper listing-spotlight">
   <h3 class="module-title"><?php echo esc_html__('Listing Spotlight', 'capstone'); ?></h3>
   <div class="main-carousel">
     <?php if ($listing_query->have_posts()) { ?>
@@ -32,7 +32,7 @@
         <article class="listing-entry carousel-cell">
           <div class="image">
             <a href="<?php the_permalink(); ?>">
-              <img src="<?php echo $spotlight_image; ?>">
+              <img src="<?php echo $spotlight_image; ?>" alt="<?php printf(esc_html__('Open Position at %s', 'capstone'), get_the_company_name()); ?>">
             </a>
           </div>
           <div class="desc">
@@ -53,4 +53,4 @@
       <?php } ?>
     <?php wp_reset_postdata(); ?>
   </div>
-</main>
+</section>
