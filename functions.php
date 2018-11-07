@@ -40,5 +40,5 @@ require CAPSTONE_META_BOXES_DIR . 'functions.php';
 require CAPSTONE_CUSTOMIZER_DIR . 'functions.php';
 require CAPSTONE_PAGE_BUILDER_DIR . 'capstone-modules.php';
 require CAPSTONE_SHORTCODE_DIR . 'functions.php';
-// require CAPSTONE_WIDGETS_DIR . 'functions.php';
+require CAPSTONE_WIDGETS_DIR . 'listing-spotlight/plugin.php';
 require CAPSTONE_HOOKS_DIR . 'functions.php';
