@@ -29,7 +29,7 @@
 <section class="module-wrapper posts-grid" data-layout="grid">
   <?php
     if ( $blog_query->have_posts() ) :
-      $counter = 1; $excerpt_length = 'medium';
+      $counter = 1; $excerpt_length = 'medium'; $module_posts = true;
       while( $blog_query->have_posts() ) : $blog_query->the_post();
         include( locate_template( 'content-post.php' ) ); 
         $counter++;
