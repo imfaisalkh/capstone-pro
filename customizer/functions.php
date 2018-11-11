@@ -33,13 +33,13 @@ function capstone_customize_register($wp_customize) {
 	);
 
 	// Add: Text Field
-    $wp_customize->add_setting( 'capstone_ipstack_api_key', array (
+    $wp_customize->add_setting( 'capstone_geolocation_api_key', array (
 		'sanitize_callback' => 'custom_sanitize_textarea',
     ) );	
 
-    $wp_customize->add_control('capstone_ipstack_api_key', array(
-		'description' => esc_html__('Enter ipstack API key here for  auto-location to work.', 'capstone'),
-	    'label'    => esc_html__('IP Stack API Key', 'capstone'),
+    $wp_customize->add_control('capstone_geolocation_api_key', array(
+		'description' => esc_html__('Enter "ipdata.co" API key here for ip to auto-location to work.', 'capstone'),
+	    'label'    => esc_html__('IPData.co API Key', 'capstone'),
 	    'section'  => 'title_tagline',
 	    'type'     => 'text',
 	) );
