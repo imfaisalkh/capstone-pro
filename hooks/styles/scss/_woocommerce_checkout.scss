@@ -1,0 +1,314 @@
+/*========================================================
+  0.  WOOCOMMERCE - CHECKOUT
+========================================================== */
+
+
+/** == PACKAGE LISTING == */
+/** ================================================== */
+
+
+    .woocommerce-checkout {
+
+        /** Form Styling */
+		.personal-info-fields, .payment-info-fields {
+			position: relative;
+
+			.title {
+				position: absolute;
+				left: 25px;
+				top: -25px;
+				font-family: $primary-font-stack;
+				font-weight: 400;
+				font-size: 16px;
+				color: #95989A;
+				background: #FFF;
+				padding: 0 15px;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+
+				@include breakpoint($mobile) { left: 0; padding: 0; }
+
+				span {
+					display: inline-block;
+					width: 27px;
+					height: 27px;
+					line-height: 27px;
+					text-align: center;
+					background: #434343;
+					color: #FFF;
+					margin-right: 10px;
+					border-radius: 100%;
+				}
+            }
+
+			.form-fields {
+				display: flex;
+				flex-wrap: wrap;
+				border: 1px solid #D9D9D9;
+				padding: 60px 45px 30px 45px;
+
+                @include breakpoint($mobile) { padding: 45px 0; border: 0; }
+                
+                .form-row {
+                    margin-bottom: 30px;
+
+                    label {
+						width: 100%;
+						margin-bottom: 10px;
+						small {
+							opacity: 0.35;
+							font-size: 0.63em;
+						}
+					}
+                }
+			}
+		}
+
+
+        #customer_details {
+            .col-2 { display: none; }
+            .col-1 {
+                float: none; width: 100%;
+                h3 { display: none; }
+            }
+        }
+        
+        // Order Summary
+        #order_review_heading { display: none; }
+        #order_review {
+            .order-summary {
+                margin: 60px 0 25px 0 !important;
+                padding: 30px 45px;
+                background: #F6F6F6;
+                border: 1px solid #E6E6E6;
+                border-radius: 5px;
+
+                .title {
+                    font-family: $primary-font-stack;
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    color: #9A94E8;
+                }
+
+                // Review Summary - Table
+                table.woocommerce-checkout-review-order-table {
+                    margin: 0;
+                    border: 0 !important;
+                    border-bottom: 1px solid #ededed;
+    
+                    thead {
+                        tr {
+                            th {
+                                text-transform: uppercase;
+                                font-size: 16px;
+                                font-weight: 400;
+                                color: #636363;
+                                padding: .5em 1em .5em 0;
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            transition: all linear 300ms;
+    
+                            td {
+                                font-size: 16px;
+                                padding: 16px 16px 16px 0;
+                                transition: all linear 300ms;
+    
+                                &:first-child {
+                                    font-size: 18px;
+                                    font-weight: 600;
+                                }
+                                .product-quantity { font-weight: 400; }
+                                .variation { display: none; }
+                            }
+                        }
+                    }
+                    tfoot {
+                        tr {
+                            th {
+                                text-transform: uppercase;
+                                font-size: 16px;
+                                font-weight: 400;
+                                color: #636363;
+                                padding: .5em 1em .5em 0;
+                            }
+                            td {
+                                font-weight: 600;
+                                font-size: 16px;
+                                padding-left: 0;
+
+                                .woocommerce-remove-coupon {
+                                    display: inline;
+                                    font-size: 12px;
+                                    font-style: normal;
+                                    background: #000;
+                                    color: #FFF;
+                                    text-transform: uppercase;
+                                    letter-spacing: .4px;
+                                    border-radius: 3px;
+                                    padding: 0 3px;
+                                    margin-left: 5px;
+                                }
+                            }
+                            &.cart-subtotal { display: none; }
+                            &.order-total {
+                                .amount {
+                                    font-weight: 600;
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Review Summary - Payment
+            .woocommerce-checkout-payment {
+                width: 100%;
+                background: transparent;
+                border-radius: 0;
+
+                ul.wc_payment_methods {
+                    padding: 0;
+                    border: 0 !important;
+                    margin-top: -10px;
+
+                    li.wc_payment_method {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        &:last-child {
+                            label {
+                                border-bottom: 0 !important;
+                                padding-bottom: 0 !important;
+                            }
+                        }
+
+                        input[type="radio"] { display: none; }
+                        label {
+                            display: flex;
+                            align-items: center;
+                            flex: 100%;
+                            padding: 17px 0 17px 0;
+                            border-bottom: 1px solid #d9d9d9;
+                            cursor: pointer;
+
+                            font-size: 17px;
+                            text-transform: capitalize;
+
+                            // faux radio button
+                            span {
+                                background: #FFF;
+                                width: 20px;
+                                height: 20px;
+                                border: 1px solid #d9d9d9;
+                                border-radius: 2px;
+                                display: inline-block;
+                                margin: 0 20px 0 0;
+                            }
+                        }
+
+                        // faux radio button:checked
+						input[type=radio]:checked + label {
+                            span {
+                                position: relative;
+                                &:after {
+                                    content: '';
+                                    position: absolute;
+                                    left: 3px; top: 3px; right: 3px; bottom: 3px;
+                                    border-radius: 2px;
+                                    background: #7DC146;
+                                }
+                            }
+						}
+
+                        .payment_box {
+                            flex: 100%;
+                            background: #F6F6F6;
+
+                            &:before { display: none; }
+                        }
+
+                        &.payment_method_paypal {
+                            .about_paypal { display: none; }
+                            label {
+                                img { margin-left: auto; }
+                            }
+                        }
+                    }
+                }
+
+                .place-order { display: none; }
+            }
+
+            .place-order { margin-top: 30px; }
+        }
+
+        // WooCommerce Coupon
+        .woocommerce-form-coupon-toggle { display: none; }
+        .woocommerce-form-coupon {
+            position: relative;
+            display: block !important;
+            margin: 0 0 80px 0 !important;
+            padding: 0 !important;
+            border: 0 !important;
+            p:not(.form-row) { display: none; }
+            .form-row-first { width: 100%; }
+            input#coupon_code { height: 60px; }
+            button[type="submit"] {
+                position: absolute !important;
+                background: transparent !important;
+                color: #000 !important;
+                border: 0 !important;
+                font-size: 14px !important;
+                font-weight: 600 !important;
+                letter-spacing: 0 !important;
+                padding: 0 !important;
+                height: auto !important;
+                line-height: 1 !important;
+                top: 26px !important;
+                right: 35px !important;
+
+                &:hover { background-color: transparent !important; }
+            }
+        }
+
+        // WoCommerce Alerts + Messages
+        .woocommerce-error {
+            @extend .flash-notification;
+            background: #FBEAEA;
+            color: #D32828;
+            margin-bottom: 60px;
+
+            li {
+                margin-bottom: 0;
+
+                strong {
+                    color: inherit;
+                    font-weight: 600;
+                }
+            }
+        }
+        .woocommerce-info,
+        .woocommerce-message
+        {
+            @extend .flash-notification;
+            margin-bottom: 60px;
+
+            .button {
+                border: 0 !important;
+                background: #7dc146 !important;
+                border-radius: 2px !important;
+                font-size: 13px !important;
+                font-weight: 600;
+                text-transform: uppercase !important;
+                color: #FFF !important;
+                padding: 1px 9px !important;
+                height: auto !important;
+                line-height: 1.7 !important;
+            }
+        }
+    }

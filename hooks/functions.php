@@ -1,11 +1,15 @@
 <?php
 
-#-------------------------------------------------------------------------------#
-#  Add Envato CTA button
-#-------------------------------------------------------------------------------#
+#-----------------------------------------------------------------#
+#
+#	Here we have all the HELPER functions for the theme
+#	Please be extremely cautious editing this file,
+#	When things go wrong, they intend to go wrong in a big way.
+#	You have been warned!
+#
+#-----------------------------------------------------------------#
 
-    function capstone_envato_cta_button() {
-        echo '<a href="#" class="page-control envato-cta">Buy Capstone on <img src="'. esc_url( get_template_directory_uri() ) .'/images/envato-logo.png" /></a>';
+    foreach ( glob( CAPSTONE_HOOKS_DIR . "/*.inc.php" ) as $filename) {
+        include $filename;
     }
 
-    // add_action('capstone_page_controls', 'capstone_envato_cta_button');
