@@ -7,7 +7,7 @@
             "label": "Page Style",
             "name": "page_style",
             "type": "radio",
-            "instructions": "",
+            "instructions": "Only applicable for 'Default' Template'.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -110,6 +110,13 @@
                 "operator": "==",
                 "value": "default"
             }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template-compact.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -120,5 +127,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1541269217
+    "modified": 1542142513
 }
