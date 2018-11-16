@@ -56,6 +56,23 @@ function capstone_customize_register($wp_customize) {
 	) );
 
 	// Add: Select Field
+	$wp_customize->add_setting( 'capstone_blog_layout', array (
+		'default' => 'traditional',
+		'sanitize_callback' => 'sanitize_text_field',
+	) );
+
+	$wp_customize->add_control('capstone_blog_layout', array(
+		'label'    => esc_html__('Blog Layout', 'capstone'),
+		'section'  => 'capstone_blog_settings',
+		'type'     => 'select',
+		'choices'  => array(
+			'traditional'  => 'Traditional',
+			'magazine'  => 'Magazine',
+		),
+
+	) );
+	
+	// Add: Select Field
 	$wp_customize->add_setting( 'capstone_blog_pagination', array (
 		'default' => 'infinite-scroll',
 		'sanitize_callback' => 'sanitize_text_field',
@@ -70,7 +87,7 @@ function capstone_customize_register($wp_customize) {
 			'infinite-scroll'  => 'Infinite Scroll',
 		),
 
-	) );
+	) );	
 
 
 	/*-----------------------------------------------------------------------------------*/
