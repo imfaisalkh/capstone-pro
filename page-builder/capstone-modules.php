@@ -14,7 +14,9 @@ function capstone_load_module_examples() {
       require_once CAPSTONE_PAGE_BUILDER_MODULES_DIR .'faqs/faqs.php';
       require_once CAPSTONE_PAGE_BUILDER_MODULES_DIR .'testimonials/testimonials.php';
       require_once CAPSTONE_PAGE_BUILDER_MODULES_DIR .'cta-banner/cta-banner.php';
-      require_once CAPSTONE_PAGE_BUILDER_MODULES_DIR .'listing-spotlight/listing-spotlight.php';
+      if ( class_exists( 'WP_Job_Manager' ) ) {
+        require_once CAPSTONE_PAGE_BUILDER_MODULES_DIR .'listing-spotlight/listing-spotlight.php';
+      }
     }
 }
 add_action( 'init', 'capstone_load_module_examples' );
