@@ -3,31 +3,6 @@
     "title": "Page Configuration",
     "fields": [
         {
-            "key": "field_5b06bca5578f2",
-            "label": "Page Style",
-            "name": "page_style",
-            "type": "radio",
-            "instructions": "Only applicable for 'Default' Template'.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "acf-image-select",
-                "id": ""
-            },
-            "choices": {
-                "is_standard": "<img src=\"..\/..\/wp-content\/plugins\/capstone-pro\/metaboxes\/images\/page-standard.png\"><p>Standard Page<\/p>",
-                "is_sidebar": "<img src=\"..\/..\/wp-content\/plugins\/capstone-pro\/metaboxes\/images\/page-sidebar.png\"><p>Page with Sidebar<\/p>",
-                "is_full_width": "<img src=\"..\/..\/wp-content\/plugins\/capstone-pro\/metaboxes\/images\/page-full-width.png\"><p>Full-Width Page<\/p>"
-            },
-            "allow_null": 0,
-            "other_choice": 0,
-            "save_other_choice": 0,
-            "default_value": "is_standard",
-            "layout": "horizontal",
-            "return_format": "value"
-        },
-        {
             "key": "field_5b06b7b917c1b",
             "label": "Header Text",
             "name": "header_text",
@@ -101,21 +76,75 @@
                     "maxlength": ""
                 }
             ]
+        },
+        {
+            "key": "field_5b06bca5578f2",
+            "label": "Page Style",
+            "name": "page_style",
+            "type": "radio",
+            "instructions": "Only applicable to the 'Default' Template'.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-image-select",
+                "id": ""
+            },
+            "choices": {
+                "is_standard": "<img src=\"..\/..\/wp-content\/plugins\/capstone-pro\/metaboxes\/images\/page-standard.png\"><p>Standard Page<\/p>",
+                "is_sidebar": "<img src=\"..\/..\/wp-content\/plugins\/capstone-pro\/metaboxes\/images\/page-sidebar.png\"><p>Page with Sidebar<\/p>",
+                "is_full_width": "<img src=\"..\/..\/wp-content\/plugins\/capstone-pro\/metaboxes\/images\/page-full-width.png\"><p>Full-Width Page<\/p>"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "is_standard",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5c155413070b2",
+            "label": "Page Enhancements",
+            "name": "page_enhancements",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5b06bca5578f2",
+                        "operator": "==",
+                        "value": "is_sidebar"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "remove_border": "Remove border between Sidebar and Main Content"
+            },
+            "allow_custom": 0,
+            "save_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value"
         }
     ],
     "location": [
         [
             {
-                "param": "post_template",
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            },
+            {
+                "param": "page_template",
                 "operator": "==",
                 "value": "default"
-            }
-        ],
-        [
-            {
-                "param": "post_template",
-                "operator": "==",
-                "value": "template-compact.php"
             }
         ]
     ],
@@ -127,5 +156,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1542142513
+    "modified": 1544994950
 }

@@ -8,13 +8,11 @@ add_action( 'customize_register', 'capstone_customize_register' );
 
 function capstone_customize_register($wp_customize) {
 
-	$wp_customize->remove_section('colors');
-
 	/*-----------------------------------------------------------------------------------*/
 	/*	General Settings
 	/*-----------------------------------------------------------------------------------*/
 
-	// Add: Text Area
+	// Add: Image Upload Field
 	$wp_customize->add_setting( 'capstone_dashboard_logo', array (
 		'sanitize_callback' => 'custom_sanitize_textarea',
 		'priority'   => 10,
@@ -363,6 +361,204 @@ function capstone_customize_register($wp_customize) {
 	    'type'     => 'url',
 	) );
 
+
+	/*-----------------------------------------------------------------------------------*/
+	/*	Color Settings
+	/*-----------------------------------------------------------------------------------*/
+
+	// Add: Section
+    $wp_customize->add_section( 'capstone_accent_colors', array(
+	    'title'          => esc_html__( 'Colors', 'capstone' ),
+	    'priority'       => 90,
+	) );
+
+	// Add: Color Field
+	$wp_customize->add_setting( 'capstone_primary_accent_color', array(
+		'sanitize_callback' => 'sanitize_hex_color',
+		'default' => '#FA6800',
+	) );
+	  
+	$wp_customize->add_control(
+	new WP_Customize_Color_Control( $wp_customize, 'capstone_primary_accent_color',
+	array(
+		'label' => __( 'Main Site - Primary Accent Color' ),
+		'description' => esc_html__( 'Select a color for something', 'capstone' ),
+		'section' => 'capstone_accent_colors', // Add a default or your own section
+	) ) );
+	  
+	// Add: Color Field
+	$wp_customize->add_setting( 'capstone_secondary_accent_color', array(
+		'sanitize_callback' => 'sanitize_hex_color',
+		'default' => '#5786EC',
+	) );
+	  
+	$wp_customize->add_control(
+	new WP_Customize_Color_Control( $wp_customize, 'capstone_secondary_accent_color',
+	array(
+		'label' => __( 'Main Site - Secondary Accent Color' ),
+		'description' => esc_html__( 'Select a color for something', 'capstone' ),
+		'section' => 'capstone_accent_colors', // Add a default or your own section
+	) ) );
+
+	// Add: Color Field
+	$wp_customize->add_setting( 'capstone_tertiary_accent_color', array(
+		'sanitize_callback' => 'sanitize_hex_color',
+		'default' => '#7BC44F',
+	) );
+	  
+	$wp_customize->add_control(
+	new WP_Customize_Color_Control( $wp_customize, 'capstone_tertiary_accent_color',
+	array(
+		'label' => __( 'Main Site - Tertiary Accent Color' ),
+		'description' => esc_html__( 'Select a color for something', 'capstone' ),
+		'section' => 'capstone_accent_colors', // Add a default or your own section
+	) ) );
+
+	// Add: Color Field
+	$wp_customize->add_setting( 'capstone_dashboard_primary_accent_color', array(
+		'sanitize_callback' => 'sanitize_hex_color',
+		'default' => '#FA6800',
+	) );
+	  
+	$wp_customize->add_control(
+	new WP_Customize_Color_Control( $wp_customize, 'capstone_dashboard_primary_accent_color',
+	array(
+		'label' => __( 'Dashboard - Primary Accent Color' ),
+		'description' => esc_html__( 'Select a color for something', 'capstone' ),
+		'section' => 'capstone_accent_colors', // Add a default or your own section
+	) ) );
+	  
+	// Add: Color Field
+	$wp_customize->add_setting( 'capstone_dashboard_secondary_accent_color', array(
+		'sanitize_callback' => 'sanitize_hex_color',
+		'default' => '#5786EC',
+	) );
+	  
+	$wp_customize->add_control(
+	new WP_Customize_Color_Control( $wp_customize, 'capstone_dashboard_secondary_accent_color',
+	array(
+		'label' => __( 'Dashboard - Secondary Accent Color' ),
+		'description' => esc_html__( 'Select a color for something', 'capstone' ),
+		'section' => 'capstone_accent_colors', // Add a default or your own section
+	) ) );
+
+	// Add: Color Field
+	$wp_customize->add_setting( 'capstone_dashboard_tertiary_accent_color', array(
+		'sanitize_callback' => 'sanitize_hex_color',
+		'default' => '#7BC44F',
+	) );
+	  
+	$wp_customize->add_control(
+	new WP_Customize_Color_Control( $wp_customize, 'capstone_dashboard_tertiary_accent_color',
+	array(
+		'label' => __( 'Dashboard - Tertiary Accent Color' ),
+		'description' => esc_html__( 'Select a color for something', 'capstone' ),
+		'section' => 'capstone_accent_colors', // Add a default or your own section
+	) ) );
+
+	/*-----------------------------------------------------------------------------------*/
+	/*	Background Settings
+	/*-----------------------------------------------------------------------------------*/
+
+	// Add: Section
+    $wp_customize->add_section( 'capstone_site_bgs', array(
+	    'title'          => esc_html__( 'Backgrounds', 'capstone' ),
+	    'priority'       => 90,
+	) );
+
+	// Add: Image Upload Field
+	$wp_customize->add_setting( 'capstone_site_bg_top_left', array (
+		'sanitize_callback' => 'custom_sanitize_textarea',
+		'priority'   => 10,
+		'default' 	 => get_template_directory_uri() .'/images/site-top-left-bg.png',
+	) );
+
+	$wp_customize->add_control(
+		new WP_Customize_Image_Control(
+			$wp_customize,
+			'capstone_site_bg_top_left',
+			array(
+				'label'      => __( 'Top Left - Background Image', 'capstone' ),
+				'description' => esc_html__('It will appear on top left corner of your front-end site.', 'capstone'),
+				'section'    => 'capstone_site_bgs',
+			)
+		)
+	);
+
+	// Add: Image Upload Field
+	$wp_customize->add_setting( 'capstone_site_bg_top_right', array (
+		'sanitize_callback' => 'custom_sanitize_textarea',
+		'priority'   => 10,
+		'default' 	 => get_template_directory_uri() .'/images/site-top-right-bg.png',
+	) );
+
+	$wp_customize->add_control(
+		new WP_Customize_Image_Control(
+			$wp_customize,
+			'capstone_site_bg_top_right',
+			array(
+				'label'      => __( 'Top Right - Background Image', 'capstone' ),
+				'description' => esc_html__('It will appear on top right corner of your front-end site.', 'capstone'),
+				'section'    => 'capstone_site_bgs',
+			)
+		)
+	);
+
+	// Add: Image Upload Field
+	$wp_customize->add_setting( 'capstone_site_bg_bottom_left', array (
+		'sanitize_callback' => 'custom_sanitize_textarea',
+		'priority'   => 10,
+	) );
+
+	$wp_customize->add_control(
+		new WP_Customize_Image_Control(
+			$wp_customize,
+			'capstone_site_bg_bottom_left',
+			array(
+				'label'      => __( 'Bottom Left - Background Image', 'capstone' ),
+				'description' => esc_html__('It will appear on bottom left corner of your front-end site.', 'capstone'),
+				'section'    => 'capstone_site_bgs',
+			)
+		)
+	);
+
+	// Add: Image Upload Field
+	$wp_customize->add_setting( 'capstone_site_bg_bottom_right', array (
+		'sanitize_callback' => 'custom_sanitize_textarea',
+		'priority'   => 10,
+		'default' 	 => get_template_directory_uri() .'/images/site-bottom-right-bg.png',
+	) );
+
+	$wp_customize->add_control(
+		new WP_Customize_Image_Control(
+			$wp_customize,
+			'capstone_site_bg_bottom_right',
+			array(
+				'label'      => __( 'Bottom Right - Background Image', 'capstone' ),
+				'description' => esc_html__('It will appear on bottom right corner of your front-end site.', 'capstone'),
+				'section'    => 'capstone_site_bgs',
+			)
+		)
+	);
+
+	// Add: Image Upload Field
+	$wp_customize->add_setting( 'capstone_off_canvas_sidebar_bg', array (
+		'sanitize_callback' => 'custom_sanitize_textarea',
+		'priority'   => 10,
+		'default' 	 => get_template_directory_uri() .'/images/site-top-left-bg.png',
+	) );
+
+	$wp_customize->add_control(
+		new WP_Customize_Image_Control(
+			$wp_customize,
+			'capstone_off_canvas_sidebar_bg',
+			array(
+				'label'      => __( 'Off-Canvas Sidebar - Background Image', 'capstone' ),
+				'description' => esc_html__('It will appear as background image of off-canvas sidebar.', 'capstone'),
+				'section'    => 'capstone_site_bgs',
+			)
+		)
+	);
 
 } 
 

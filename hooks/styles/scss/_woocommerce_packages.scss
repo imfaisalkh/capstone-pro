@@ -9,6 +9,7 @@
     #job_package_selection {
         display: flex;
         flex-direction: column;
+        max-width: 900px;
 
         // Job Packages Action
         .job_listing_packages_title {
@@ -70,17 +71,17 @@
 
                     
                     &.active {
-                        border: 1px solid #49C3F0;
-                        box-shadow: 0 0 0 1px #49C3F0;
+                        border: 1px solid #FA6800; border: 1px solid var(--primary-accent-color);
+                        box-shadow: 0 0 0 1px #FA6800; box-shadow: 0 0 0 1px var(--primary-accent-color);
 
                         .entry-button {
-                            border-color: #49C3F0;
+                            border-color: #FA6800; border-color: var(--primary-accent-color);
                             &:after {
                                 content: '';
                                 position: absolute;
                                 top: 5px; left: 5px;
                                 width: 15px; height: 15px;
-                                background: #49C3F0;
+                                background: #FA6800; background: var(--primary-accent-color);
                                 border-radius: 100%;
                                 @include breakpoint($mobile) { width: 13px; height: 13px; }
                             }
@@ -93,7 +94,7 @@
                             right: 0%;
                             width: 0;
                             height: 0;
-                            border-top: 60px solid #49C3F0; 
+                            border-top: 60px solid #FA6800; border-top: 60px solid var(--primary-accent-color);
                             border-left: 60px solid transparent;
                         }
                         &:after {
@@ -108,10 +109,10 @@
 
                     &:hover {
                         cursor: pointer;
-                        border: 1px solid #49C3F0;
+                        border: 1px solid #FA6800; border: 1px solid var(--primary-accent-color);
 
                         &.active { 
-                            box-shadow: 0 0 0 1px #49C3F0
+                            box-shadow: 0 0 0 1px #FA6800; box-shadow: 0 0 0 1px var(--primary-accent-color);
                         }
                     }
 
@@ -156,7 +157,7 @@
                             }
                             font-size: 48px;
                             font-weight: 600;
-                            color: #3ABEEF;
+                            color: #FA6800; color: var(--primary-accent-color);
                             letter-spacing: -0.2px;
                             margin-top: -8px;
                             // line-height: 1px;
@@ -183,24 +184,24 @@
                     li.user-resume-package, li.resume-package
                     {
                         &.active {
-                            border-color: #FA6800 !important;
-                            box-shadow: 0 0 0 1px #FA6800 !important;
-                            &:before { border-top-color: #FA6800 !important; }
+                            border-color: #FA6800 !important; border-color: var(--primary-accent-color) !important;
+                            box-shadow: 0 0 0 1px #FA6800 !important; box-shadow: 0 0 0 1px var(--primary-accent-color) !important;
+                            &:before { border-top-color: #FA6800 !important; border-top-color: var(--primary-accent-color) !important; }
         
                             .entry-button {
-                                border-color: #FA6800 !important;
-                                &:after { background: #FA6800 !important; }
+                                border-color: #FA6800 !important; border-color: var(--primary-accent-color) !important;
+                                &:after { background: #FA6800 !important; background: var(--primary-accent-color) !important; }
                             }
                         }
                         &:hover {
                             border-color: #FA6800 !important;
                             &.active {
-                                box-shadow: 0 0 0 1px #FA6800 !important;
+                                box-shadow: 0 0 0 1px #FA6800 !important; box-shadow: 0 0 0 1px var(--primary-accent-color) !important;
                             }
                         }
                     }
                 }
-                .price { color: #FA6800 !important; }
+                .price { color: #FA6800 !important; color: var(--primary-accent-color) !important; }
             }
         }
     }
