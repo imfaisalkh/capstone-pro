@@ -7,7 +7,7 @@
 /** ================================================== */
 
 .woocommerce-notices-wrapper {
-    .woocommerce-message {
+    .woocommerce-message, .woocommerce-error {
         display: flex;
         @extend .flash-notification;
 
