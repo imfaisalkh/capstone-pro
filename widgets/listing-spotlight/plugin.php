@@ -228,7 +228,11 @@ class Capstone_Widgets extends WP_Widget {
 } // end class
 
 // TODO: Remember to change 'Capstone_Widgets' to match the class name definition
-add_action( 'widgets_init', create_function( '', 'register_widget("Capstone_Widgets");' ) );
+function capstone_pro_init_widget () {
+    return register_widget('Capstone_Widgets');
+}
+add_action ('widgets_init', 'capstone_pro_init_widget');
+
 
 // Hooks fired when the Widget is activated and deactivated
 // TODO: Remember to change 'Capstone_Widgets' to match the class name definition
