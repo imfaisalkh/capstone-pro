@@ -42,31 +42,21 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "block",
+            "layout": "row",
             "sub_fields": [
                 {
-                    "ID": 516,
-                    "key": "field_5bbf1645b5b67",
+                    "key": "field_5c23e91fe3277",
                     "label": "Title",
                     "name": "title",
-                    "prefix": "acf",
                     "type": "text",
-                    "value": null,
-                    "menu_order": 0,
                     "instructions": "",
                     "required": 0,
-                    "id": "",
-                    "class": "",
                     "conditional_logic": 0,
-                    "parent": 515,
                     "wrapper": {
-                        "width": "50",
+                        "width": "",
                         "class": "",
                         "id": ""
                     },
-                    "_name": "title",
-                    "_prepare": 0,
-                    "_valid": 1,
                     "default_value": "",
                     "placeholder": "",
                     "prepend": "",
@@ -74,28 +64,18 @@
                     "maxlength": ""
                 },
                 {
-                    "ID": 517,
-                    "key": "field_5bbf164bb5b68",
+                    "key": "field_5c23e94be3278",
                     "label": "Subtitle",
                     "name": "subtitle",
-                    "prefix": "acf",
                     "type": "text",
-                    "value": null,
-                    "menu_order": 1,
                     "instructions": "",
                     "required": 0,
-                    "id": "",
-                    "class": "",
                     "conditional_logic": 0,
-                    "parent": 515,
                     "wrapper": {
-                        "width": "50",
+                        "width": "",
                         "class": "",
                         "id": ""
                     },
-                    "_name": "subtitle",
-                    "_prepare": 0,
-                    "_valid": 1,
                     "default_value": "",
                     "placeholder": "",
                     "prepend": "",
@@ -125,31 +105,21 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "block",
+            "layout": "row",
             "sub_fields": [
                 {
-                    "ID": 519,
-                    "key": "field_5bbf1677b5b6a",
+                    "key": "field_5c23e963e3279",
                     "label": "Button Text",
                     "name": "text",
-                    "prefix": "acf",
                     "type": "text",
-                    "value": null,
-                    "menu_order": 0,
                     "instructions": "",
                     "required": 0,
-                    "id": "",
-                    "class": "",
                     "conditional_logic": 0,
-                    "parent": 518,
                     "wrapper": {
-                        "width": "50",
+                        "width": "",
                         "class": "",
                         "id": ""
                     },
-                    "_name": "text",
-                    "_prepare": 0,
-                    "_valid": 1,
                     "default_value": "",
                     "placeholder": "",
                     "prepend": "",
@@ -157,30 +127,23 @@
                     "maxlength": ""
                 },
                 {
-                    "ID": 520,
-                    "key": "field_5bbf167db5b6b",
+                    "key": "field_5c23e96ee327a",
                     "label": "Button Link",
                     "name": "link",
-                    "prefix": "acf",
-                    "type": "url",
-                    "value": null,
-                    "menu_order": 1,
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
-                    "id": "",
-                    "class": "",
                     "conditional_logic": 0,
-                    "parent": 518,
                     "wrapper": {
-                        "width": "50",
+                        "width": "",
                         "class": "",
                         "id": ""
                     },
-                    "_name": "link",
-                    "_prepare": 0,
-                    "_valid": 1,
                     "default_value": "",
-                    "placeholder": ""
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 }
             ]
         },
@@ -273,63 +236,43 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "block",
+            "layout": "row",
             "sub_fields": [
                 {
-                    "ID": 524,
-                    "key": "field_5bbf1773b5b6f",
+                    "key": "field_5c23e9c4e327b",
                     "label": "Overlay Color",
                     "name": "color",
-                    "prefix": "acf",
                     "type": "color_picker",
-                    "value": null,
-                    "menu_order": 0,
                     "instructions": "",
                     "required": 0,
-                    "id": "",
-                    "class": "",
                     "conditional_logic": 0,
-                    "parent": 523,
                     "wrapper": {
-                        "width": "50",
+                        "width": "",
                         "class": "",
                         "id": ""
                     },
-                    "_name": "color",
-                    "_prepare": 0,
-                    "_valid": 1,
                     "default_value": ""
                 },
                 {
-                    "ID": 525,
-                    "key": "field_5bbf1784b5b70",
+                    "key": "field_5c23e9d6e327c",
                     "label": "Overlay Opacity",
                     "name": "opacity",
-                    "prefix": "acf",
                     "type": "number",
-                    "value": null,
-                    "menu_order": 1,
                     "instructions": "",
                     "required": 0,
-                    "id": "",
-                    "class": "",
                     "conditional_logic": 0,
-                    "parent": 523,
                     "wrapper": {
-                        "width": "50",
+                        "width": "",
                         "class": "",
                         "id": ""
                     },
-                    "_name": "opacity",
-                    "_prepare": 0,
-                    "_valid": 1,
                     "default_value": "",
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "min": "",
-                    "max": "",
-                    "step": ""
+                    "min": 0,
+                    "max": 1,
+                    "step": "0.01"
                 }
             ]
         },
@@ -416,5 +359,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1540670805
+    "modified": 1545857762
 }

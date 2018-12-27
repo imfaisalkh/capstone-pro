@@ -1,6 +1,6 @@
 {
     "key": "group_5b06f597c37a5",
-    "title": "Job Categories",
+    "title": "Term Options",
     "fields": [
         {
             "key": "field_5b06f5b5ccae0",
@@ -26,7 +26,27 @@
             "max_size": "",
             "mime_types": ""
         },
-        false
+        {
+            "key": "field_5c2190f94085a",
+            "label": "Icon Size",
+            "name": "term_icon_size",
+            "type": "number",
+            "instructions": "By default, this icon size will displayed at original scale of 1x.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": "x",
+            "min": "0.1",
+            "max": 5,
+            "step": "0.1"
+        }
     ],
     "location": [
         [
@@ -45,5 +65,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1544994626
+    "modified": 1545858035
 }
