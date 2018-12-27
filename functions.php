@@ -4,7 +4,7 @@
  * Plugin Name: Capstone Pro
  * Plugin URI: https://wpscouts.net
  * Description: This plugins extends functionality of core `capstone` theme.
- * Version: 1.0
+ * Version: 1.1
  * Author: Faisal Khurshid
  * Author URI: https://wpscouts.net
  */
@@ -37,9 +37,7 @@ define( 'CAPSTONE_HOOKS_URL', plugins_url( '/', __FILE__ ) . 'hooks/' );
 
 // Require Files
 require CAPSTONE_META_BOXES_DIR . 'functions.php';
-// if (class_exists( 'Kirki' )) {
-  require CAPSTONE_CUSTOMIZER_DIR . 'functions.php';
-// }
+require CAPSTONE_CUSTOMIZER_DIR . 'functions.php';
 require CAPSTONE_PAGE_BUILDER_DIR . 'capstone-modules.php';
 require CAPSTONE_SHORTCODE_DIR . 'functions.php';
 require CAPSTONE_WIDGETS_DIR . 'listing-spotlight/plugin.php';

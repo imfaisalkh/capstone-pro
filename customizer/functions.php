@@ -9,7 +9,8 @@
 #
 #-----------------------------------------------------------------#
 
-
-foreach ( glob( CAPSTONE_CUSTOMIZER_DIR . "/*.inc.php" ) as $filename) {
-    include $filename;
+if (class_exists( 'Kirki' )) {
+    foreach ( glob( CAPSTONE_CUSTOMIZER_DIR . "/*.inc.php" ) as $filename) {
+        include $filename;
+    }
 }
