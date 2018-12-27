@@ -23,23 +23,15 @@
 			'priority'       => 10,
 		) );
 
-		// SECTION: Job Detail
-		Kirki::add_section( 'capstone_jobs_detail_page', array(
-			'title'          => esc_html__( 'Detail Page', 'capstone' ),
-			'description'    => esc_html__( 'This section configures job detail page.', 'capstone' ),
-			'panel'          => 'capstone_jobs_settings',
-			'priority'       => 20,
-		) );
-
 		// OPTION: Jobs Master --> Google Maps
-		Kirki::add_field( 'capstone_jobs_enable_gmap', array(
-			'type'        => 'checkbox',
-			'settings'    => 'capstone_jobs_enable_gmap',
-			'label'       => esc_html__( 'Enable Google Maps', 'capstone' ),
-			'description' => esc_html__( 'Check this to enable google maps on jobs archive page.', 'capstone' ),
-			'section'     => 'capstone_jobs_master_page',
-			'default'     => false,
-		) );
+		// Kirki::add_field( 'capstone_jobs_enable_gmap', array(
+		// 	'type'        => 'checkbox',
+		// 	'settings'    => 'capstone_jobs_enable_gmap',
+		// 	'label'       => esc_html__( 'Enable Google Maps', 'capstone' ),
+		// 	'description' => esc_html__( 'Check this to enable google maps on jobs archive page. (work in progress)', 'capstone' ),
+		// 	'section'     => 'capstone_jobs_master_page',
+		// 	'default'     => false,
+		// ) );
 
 		// OPTION: Jobs Detail --> Sidebar Order
 		Kirki::add_field( 'capstone_jobs_sidebar_order', array(
@@ -111,6 +103,14 @@
 			),
 		) );
 
+		// SECTION: Job Detail
+		Kirki::add_section( 'capstone_jobs_detail_page', array(
+			'title'          => esc_html__( 'Detail Page', 'capstone' ),
+			'description'    => esc_html__( 'This section configures job detail page.', 'capstone' ),
+			'panel'          => 'capstone_jobs_settings',
+			'priority'       => 20,
+		) );
+
 		// OPTION: Jobs Detail --> Content Order
 		Kirki::add_field( 'capstone_jobs_single_content_order', array(
 			'type'        => 'sortable',
@@ -164,6 +164,34 @@
 			'section'     => 'capstone_jobs_detail_page',
 			'default'     => '3',
 			'priority'    => 3,
+		) );
+
+		// SECTION: Job Detail
+		Kirki::add_section( 'capstone_job_tags', array(
+			'title'          => esc_html__( 'Job Tags', 'capstone' ),
+			'description'    => esc_html__( 'This section is only applicable if you have activated "WP Job Manager - Tags" add-on.', 'capstone' ),
+			'panel'          => 'capstone_jobs_settings',
+			'priority'       => 30,
+		) );
+
+		// OPTION: Text Field
+        Kirki::add_field( 'capstone_jobs_tags_title', array(
+            'type'     => 'text',
+            'settings' => 'capstone_jobs_tags_title',
+            'label'    => __( 'Tags Title', 'capstone' ),
+			'section'  => 'capstone_job_tags',
+			'default'   => esc_html__('Perks & Privilges', 'capstone'),
+            'description' => esc_html__('Job Tags would be represented with this title on the fron-end.', 'capstone'),
+		) );
+
+		// OPTION: Textarea Field
+        Kirki::add_field( 'capstone_jobs_tags_desc', array(
+            'type'          => 'textarea',
+            'settings'      => 'capstone_jobs_tags_desc',
+            'label'         => __( 'Tags Descripion', 'capstone' ),
+			'section'       => 'capstone_job_tags',
+			'default'   	=> esc_html__('This job listing offers following perks and privileges.', 'capstone'),
+            'description'   => esc_html__('This text would be displayed in detail job listing page as a small description.', 'capstone'),
 		) );
 
 	}

@@ -62,9 +62,9 @@
         ) );
 
 		// SECTION: Site Body
-		Kirki::add_section( 'capstone_background_settings_off_canvas_menu', array(
-            'title'          => esc_html__( 'Off-Canvas Menu', 'capstone' ),
-            'description'    => esc_html__( 'This section configure background for the off-canvas menu.', 'capstone' ),
+		Kirki::add_section( 'capstone_background_settings_others', array(
+            'title'          => esc_html__( 'Others', 'capstone' ),
+            'description'    => esc_html__( 'This section configure background for misc. site elements.', 'capstone' ),
             'panel'          => 'capstone_background_settings',
         ) );
 
@@ -72,10 +72,20 @@
         Kirki::add_field( 'capstone_off_canvas_sidebar_bg', array(
             'type'        => 'image',
             'settings'    => 'capstone_off_canvas_sidebar_bg',
-            'label'       => esc_html__( 'Off-Canvas Sidebar - Background Image', 'capstone' ),
+            'label'       => esc_html__( 'Off-Canvas Sidebar Background', 'capstone' ),
             'description' => esc_html__('It will appear as background image of off-canvas sidebar.', 'capstone'),
-            'section'     => 'capstone_background_settings_off_canvas_menu',
+            'section'     => 'capstone_background_settings_others',
             'default' 	 => get_template_directory_uri() .'/images/site-top-left-bg.png',
+        ) );
+
+        // OPTION: Image Field
+        Kirki::add_field( 'capstone_compact_sidebar_bg', array(
+            'type'        => 'image',
+            'settings'    => 'capstone_compact_sidebar_bg',
+            'label'       => esc_html__( 'Compact Page Sidebar Background', 'capstone' ),
+            'description' => esc_html__( 'Here you can define background image for compact template sidebar.', 'textdomain' ),
+            'section'     => 'capstone_background_settings_others',
+            'default' 	 => get_template_directory_uri() .'/images/job-bg-pattern.png',
         ) );
 
 	}
