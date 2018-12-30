@@ -24,14 +24,14 @@
 		) );
 
 		// OPTION: Jobs Master --> Google Maps
-		// Kirki::add_field( 'capstone_jobs_enable_gmap', array(
-		// 	'type'        => 'checkbox',
-		// 	'settings'    => 'capstone_jobs_enable_gmap',
-		// 	'label'       => esc_html__( 'Enable Google Maps', 'capstone' ),
-		// 	'description' => esc_html__( 'Check this to enable google maps on jobs archive page. (work in progress)', 'capstone' ),
-		// 	'section'     => 'capstone_jobs_master_page',
-		// 	'default'     => false,
-		// ) );
+		Kirki::add_field( 'capstone_jobs_enable_map', array(
+			'type'        => 'checkbox',
+			'settings'    => 'capstone_jobs_enable_map',
+			'label'       => esc_html__( 'Enable Maps', 'capstone' ),
+			'description' => esc_html__( 'Check this to enable maps on jobs archive page. Also make sure that map is configured properly.', 'capstone' ),
+			'section'     => 'capstone_jobs_master_page',
+			'default'     => false,
+		) );
 
 		// OPTION: Jobs Detail --> Sidebar Order
 		Kirki::add_field( 'capstone_jobs_sidebar_order', array(
