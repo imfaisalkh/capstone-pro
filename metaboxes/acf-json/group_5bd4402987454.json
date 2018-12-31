@@ -25,6 +25,7 @@
                 "manage_bookmarks": "Manage Bookmarks",
                 "manage_alerts": "Manage Alerts",
                 "manage_profile": "Manage Profile",
+                "manage_messages": "Manage Messages",
                 "manage_plans": "Manage Plans",
                 "manage_orders": "Manage Orders"
             },
@@ -53,5 +54,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1545858087
+    "modified": 1546291059
 }
