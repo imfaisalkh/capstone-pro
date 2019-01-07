@@ -50,13 +50,13 @@
               <span class="location"><?php the_job_location(); ?></span>
             </div>
             <div class="action">
-              <a href="#add-bookmark-<?php the_ID(); ?>" class="add-bookmark">Save for later &xrarr;</a>
+              <a href="#add-bookmark-<?php the_ID(); ?>" class="add-bookmark"><?php echo esc_html__('Save for later', 'capstone'); ?> &xrarr;</a>
             </div>
             <?php get_template_part('includes/popup-add-bookmark.inc' ); ?>
           </article>
         <?php endwhile; ?>
         <?php } else { ?>
-          <p>There is no job found with mentioned criteria.</p>
+          <p><?php echo esc_html__('There is no job found with mentioned criteria.', 'capstone'); ?></p>
         <?php } ?>
       <?php wp_reset_postdata(); ?>
     </div>
