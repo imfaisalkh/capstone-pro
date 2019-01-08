@@ -26,7 +26,7 @@ FLBuilder::register_module('PricingTableClass', array(
             'title' => __('General', 'fl-builder'),
             'sections' => array(
 
-                'form_section' => array(
+                'panels_section' => array(
                     'title' => __('Pricing Plans', 'fl-builder'), // Section Title
                     'fields' =>
                         array(
@@ -36,6 +36,30 @@ FLBuilder::register_module('PricingTableClass', array(
                                 'form' => 'pricing_plans_form',
                                 'preview_text' => 'pricing_title',
                                 'multiple' => true
+                            ),
+                        )
+                ),
+
+                'others_section' => array(
+                    'title' => __('Others', 'fl-builder'), // Section Title
+                    'fields' =>
+                        array(
+                            'currency_symbol' => array(
+                                'type' => 'text',
+                                'label' => __('Currency Symbol', 'fl-builder'),
+                                'description' => __('Define the currency symbol for your pricing', 'fl-builder'),
+                                'default'       => '$',
+                                'connections' => array('string'),
+                            ),
+                            'currency_symbol_align' => array(
+                                'type'          => 'select',
+                                'label'         => __( 'Currency Symbol Alignment', 'fl-builder' ),
+                                'description' => __('Specify if the currency symbol should be alignd left or right to the price.', 'fl-builder'),
+                                'default'       => 'left',
+                                'options'       => array(
+                                    'left'      => __( 'Left', 'fl-builder' ),
+                                    'right'     => __( 'Right', 'fl-builder' )
+                                )
                             ),
                         )
                 )
@@ -48,10 +72,9 @@ FLBuilder::register_module('PricingTableClass', array(
                 'options_section' => array(
                     'fields' =>
                         array(
-
                             'per_line' => array(
                                 'type' => 'unit',
-                                'label' => __('Columns per row', 'fl-builder'),
+                                'label' => __('Panels per row', 'fl-builder'),
                                 'min' => 1,
                                 'max' => 6,
                                 'default' => 3,
