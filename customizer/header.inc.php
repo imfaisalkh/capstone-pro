@@ -45,4 +45,14 @@
 			'default'     => '20',
 		) );
 
+    	// OPTION: Number Field
+		Kirki::add_field( 'capstone_header_explore_menu_limit', array(
+			'type'        => 'number',
+			'settings'    => 'capstone_header_explore_menu_limit',
+			'label'       => __( 'Explore Menu Limit', 'capstone' ),
+			'description'    => esc_html__( 'Explore menu can only show handful of terms before going off the screen. Define how many terms (for each taxonomy) it should show at max.', 'capstone' ),
+			'section'     => 'capstone_header_settings',
+			'default'     => '8',
+		) );
+
 	}
