@@ -10,8 +10,8 @@
 
 		// SECTION: Notification
 		Kirki::add_section( 'capston_notification_settings', array(
-            'title'          => esc_html__( 'Notification Settings', 'capstone' ),
-            'description'    => esc_html__( 'This section configure settings for site notification.', 'capstone' ),
+            'title'          => esc_html__( 'Notification Settings', 'capstone-pro' ),
+            'description'    => esc_html__( 'This section configure settings for site notification.', 'capstone-pro' ),
             'priority'       => 75,
         ) );
 
@@ -19,7 +19,7 @@
 		Kirki::add_field( 'capstone_notification_disable', array(
 			'type'        => 'checkbox',
 			'settings'    => 'capstone_notification_disable',
-			'label'       => esc_html__( 'Disable Site Notification', 'capstone' ),
+			'label'       => esc_html__( 'Disable Site Notification', 'capstone-pro' ),
 			'section'     => 'capston_notification_settings',
 			'default'     => false,
 		) );
@@ -28,7 +28,7 @@
         Kirki::add_field( 'capstone_notification_title', array(
             'type'     => 'text',
             'settings' => 'capstone_notification_title',
-            'label'    => __( 'Title', 'capstone' ),
+            'label'    => __( 'Title', 'capstone-pro' ),
             'section'  => 'capston_notification_settings',
         ) );
 
@@ -36,18 +36,18 @@
         Kirki::add_field( 'capstone_notification_content', array(
             'type'          => 'textarea',
             'settings'      => 'capstone_notification_content',
-            'label'         => __( 'Content', 'capstone' ),
+            'label'         => __( 'Content', 'capstone-pro' ),
             'section'       => 'capston_notification_settings',
-            'description'   => esc_html__('You can use <br> tag or other HTML tags here.', 'capstone'),
+            'description'   => esc_html__('You can use <br> tag or other HTML tags here.', 'capstone-pro'),
         ) );
 
 		// OPTION: Notification --> Title
         Kirki::add_field( 'capstone_notification_tooltip', array(
             'type'          => 'text',
             'settings'      => 'capstone_notification_tooltip',
-            'label'         => __( 'Tooltip Text', 'capstone' ),
+            'label'         => __( 'Tooltip Text', 'capstone-pro' ),
             'section'       => 'capston_notification_settings',
-            'description'   => esc_html__('Displayed when you hover the notification icon.', 'capstone'),
+            'description'   => esc_html__('Displayed when you hover the notification icon.', 'capstone-pro'),
 
         ) );
 

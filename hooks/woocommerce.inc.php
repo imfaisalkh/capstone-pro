@@ -55,7 +55,7 @@
     // Personal Information - Fields
     function capstone_woocommerce_checkout_before_customer_details() {
         echo '<div class="personal-info-fields">';
-            echo '<h3 class="title">'. esc_html__('Personal Information', 'capstone') .'</h3>';
+            echo '<h3 class="title">'. esc_html__('Personal Information', 'capstone-pro') .'</h3>';
             echo '<div class="form-fields">';
     }
     add_action( 'woocommerce_checkout_before_customer_details', 'capstone_woocommerce_checkout_before_customer_details' );
@@ -70,7 +70,7 @@
     // Payment Information - Fields
     function capstone_woocommerce_review_order_before_payment() {
         echo '<div class="payment-info-fields">';
-            echo '<h3 class="title">'. esc_html__('Payment Methods', 'capstone') .'</h3>';
+            echo '<h3 class="title">'. esc_html__('Payment Methods', 'capstone-pro') .'</h3>';
             echo '<div class="form-fields">';
     }
     add_action( 'woocommerce_review_order_before_payment', 'capstone_woocommerce_review_order_before_payment' );
