@@ -1,5 +1,11 @@
 <section class="module-wrapper pricing-plans" data-col="<?php echo $settings->per_line; ?>">
 
+  <?php
+    // Helper Variable(s)
+    $currency_symbol = esc_html($settings->currency_symbol);
+    $currency_symbol_align = esc_html($settings->currency_symbol_align);
+  ?>
+
   <?php foreach ($settings->pricing_plans as $pricing_plan) : ?>
 
     <?php
@@ -27,7 +33,7 @@
         <?php } ?>
         <div class="pricing">
           <?php if ($price_tag) { ?>
-            <div class="price"><span>$</span><?php echo wp_kses_post($price_tag); ?></div>
+            <div class="price" data-symbol-align="<?php echo esc_attr($currency_symbol_align); ?>"><span class="symbol"><?php echo esc_html($currency_symbol); ?></span><?php echo wp_kses_post($price_tag); ?></div>
           <?php } ?>
           <?php if ($tagline) { ?>
             <span class="caption"><?php echo $tagline; ?></span>
