@@ -32,7 +32,7 @@
 			'label'       => __( 'Dashboard Logo Width', 'capstone-pro' ),
 			'description'    => esc_html__( 'This option only applies to dashboard image logo.', 'capstone-pro' ),
 			'section'     => 'capstone_header_settings',
-			'default'     => '52',
+			'default'     => '34',
 		) );
 
     	// OPTION: Number Field
