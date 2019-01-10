@@ -5,10 +5,10 @@ class BlogPostsClass extends FLBuilderModule {
     public function __construct()
     {
         parent::__construct(array(
-            'name'            => __( 'Blog', 'fl-builder' ),
-            'description'     => __( 'It displays blog posts based on defined criteria.', 'fl-builder' ),
-            'group'           => __( 'Capstone Modules', 'fl-builder' ),
-            'category'        => __( 'Basic', 'fl-builder' ),
+            'name'            => __( 'Blog', 'capstone-pro' ),
+            'description'     => __( 'It displays blog posts based on defined criteria.', 'capstone-pro' ),
+            'group'           => __( 'Capstone Modules', 'capstone-pro' ),
+            'category'        => __( 'Basic', 'capstone-pro' ),
             'dir'             => CAPSTONE_PAGE_BUILDER_MODULES_DIR . 'blog-posts/',
             'url'             => CAPSTONE_PAGE_BUILDER_MODULES_URL . 'blog-posts/',
             'icon'            => 'playlist.svg',
@@ -36,37 +36,37 @@ function get_category_terms() {
 // Define Module Interface (admin)
 FLBuilder::register_module( 'BlogPostsClass', array(
     'general'      => array(
-        'title'         => __( 'General', 'fl-builder' ),
+        'title'         => __( 'General', 'capstone-pro' ),
         'sections'      => array(
             'query'  => array(
-                'title'         => __( 'Query', 'fl-builder' ),
+                'title'         => __( 'Query', 'capstone-pro' ),
                 'fields'        => array(
                     'count'     => array(
                         'type'          => 'unit',
-                        'label'         => __( 'Count', 'fl-builder' ),
+                        'label'         => __( 'Count', 'capstone-pro' ),
                         'description'   => 'How many posts to display.',
                         'default'       => '-1',
                     ),
                     'category' => array(
                         'type'          => 'select',
-                        'label'         => __( 'Category', 'fl-builder' ),
+                        'label'         => __( 'Category', 'capstone-pro' ),
                         // 'default'       => '-1',
                         'options'       => get_category_terms(),
                         'multi-select'  => true
                     ),
                     'offset'     => array(
                         'type'          => 'unit',
-                        'label'         => __( 'Offset', 'fl-builder' ),
+                        'label'         => __( 'Offset', 'capstone-pro' ),
                         'description'   => 'How many posts to skip.',
                         'default'       => '0',
                     ),
                     'load_more' => array(
                         'type'          => 'select',
-                        'label'         => __( 'Load More', 'fl-builder' ),
+                        'label'         => __( 'Load More', 'capstone-pro' ),
                         'default'       => '0',
                         'options'       => array(
-                            '0'      => __( 'Disable', 'fl-builder' ),
-                            '1'      => __( 'Enable', 'fl-builder' )
+                            '0'      => __( 'Disable', 'capstone-pro' ),
+                            '1'      => __( 'Enable', 'capstone-pro' )
                         )
                     ),
 

@@ -83,7 +83,7 @@
             'type'        => 'image',
             'settings'    => 'capstone_compact_sidebar_bg',
             'label'       => esc_html__( 'Compact Page Sidebar Background', 'capstone-pro' ),
-            'description' => esc_html__( 'Here you can define background image for compact template sidebar.', 'textdomain' ),
+            'description' => esc_html__( 'Here you can define background image for compact template sidebar.', 'capstone-pro' ),
             'section'     => 'capstone_background_settings_others',
             'default' 	 => get_template_directory_uri() .'/images/job-bg-pattern.png',
         ) );

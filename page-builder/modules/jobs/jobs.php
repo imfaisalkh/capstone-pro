@@ -5,10 +5,10 @@ class JobListingClass extends FLBuilderModule {
     public function __construct()
     {
         parent::__construct(array(
-            'name'            => __( 'Job Listing', 'fl-builder' ),
-            'description'     => __( 'It displays a list of jobs based on defined criteria.', 'fl-builder' ),
-            'group'           => __( 'Capstone Modules', 'fl-builder' ),
-            'category'        => __( 'Job Board', 'fl-builder' ),
+            'name'            => __( 'Job Listing', 'capstone-pro' ),
+            'description'     => __( 'It displays a list of jobs based on defined criteria.', 'capstone-pro' ),
+            'group'           => __( 'Capstone Modules', 'capstone-pro' ),
+            'category'        => __( 'Job Board', 'capstone-pro' ),
             'dir'             => CAPSTONE_PAGE_BUILDER_MODULES_DIR . 'jobs/',
             'url'             => CAPSTONE_PAGE_BUILDER_MODULES_URL . 'jobs/',
             'icon'            => 'playlist.svg',
@@ -20,86 +20,86 @@ class JobListingClass extends FLBuilderModule {
 // Define Module Interface (admin)
 FLBuilder::register_module( 'JobListingClass', array(
     'general'      => array(
-        'title'         => __( 'General', 'fl-builder' ),
+        'title'         => __( 'General', 'capstone-pro' ),
         'sections'      => array(
             'query'  => array(
-                'title'         => __( 'Query', 'fl-builder' ),
+                'title'         => __( 'Query', 'capstone-pro' ),
                 'fields'        => array(
                     'count'     => array(
                         'type'          => 'unit',
-                        'label'         => __( 'Count', 'fl-builder' ),
+                        'label'         => __( 'Count', 'capstone-pro' ),
                         'description'   => 'How many jobs to list.',
                         'default'       => '-1',
                     ),
                     'order_by' => array(
                         'type'          => 'select',
-                        'label'         => __( 'Order By', 'fl-builder' ),
+                        'label'         => __( 'Order By', 'capstone-pro' ),
                         'default'       => 'featured',
                         'options'       => array(
-                            'featured'      => __( 'Featured', 'fl-builder' ),
-                            'title'      => __( 'Title', 'fl-builder' ),
-                            'ID'      => __( 'ID', 'fl-builder' ),
-                            'name'      => __( 'Name', 'fl-builder' ),
-                            'date'      => __( 'Date', 'fl-builder' ),
-                            'modified'      => __( 'Date Modified', 'fl-builder' ),
-                            'rand'      => __( 'Random', 'fl-builder' )
+                            'featured'      => __( 'Featured', 'capstone-pro' ),
+                            'title'      => __( 'Title', 'capstone-pro' ),
+                            'ID'      => __( 'ID', 'capstone-pro' ),
+                            'name'      => __( 'Name', 'capstone-pro' ),
+                            'date'      => __( 'Date', 'capstone-pro' ),
+                            'modified'      => __( 'Date Modified', 'capstone-pro' ),
+                            'rand'      => __( 'Random', 'capstone-pro' )
                         )
                     ),
                     'order' => array(
                         'type'          => 'select',
-                        'label'         => __( 'Order', 'fl-builder' ),
+                        'label'         => __( 'Order', 'capstone-pro' ),
                         'default'       => 'desc',
                         'options'       => array(
-                            'desc'      => __( 'Descending', 'fl-builder' ),
-                            'asc'      => __( 'Ascending', 'fl-builder' )
+                            'desc'      => __( 'Descending', 'capstone-pro' ),
+                            'asc'      => __( 'Ascending', 'capstone-pro' )
                         )
                     ),
                     'categories'     => array(
                         'type'          => 'text',
-                        'label'         => __( 'Categories', 'fl-builder' ),
+                        'label'         => __( 'Categories', 'capstone-pro' ),
                         'description'   => 'A comma separate slugs to limit the jobs to certain categories.',
                     ),
                     'job_types'     => array(
                         'type'          => 'text',
-                        'label'         => __( 'Job Types', 'fl-builder' ),
+                        'label'         => __( 'Job Types', 'capstone-pro' ),
                         'description'   => 'A comma separate slugs to limit the jobs to certain job types.',
                     ),
                     'location'     => array(
                         'type'          => 'text',
-                        'label'         => __( 'Location', 'fl-builder' ),
+                        'label'         => __( 'Location', 'capstone-pro' ),
                         'description'   => 'Enter a location keyword to search by default.',
                     ),
                     'keywords'     => array(
                         'type'          => 'text',
-                        'label'         => __( 'Keyword', 'fl-builder' ),
+                        'label'         => __( 'Keyword', 'capstone-pro' ),
                         'description'   => 'Enter a keyword to search by default.',
                     ),
                     'post_status' => array(
                         'type'          => 'select',
-                        'label'         => __( 'Status', 'fl-builder' ),
+                        'label'         => __( 'Status', 'capstone-pro' ),
                         'default'       => 'publish',
                         'options'       => array(
-                            'publish'      => __( 'Active Jobs', 'fl-builder' ),
-                            'expired'      => __( 'Expired Jobs', 'fl-builder' )
+                            'publish'      => __( 'Active Jobs', 'capstone-pro' ),
+                            'expired'      => __( 'Expired Jobs', 'capstone-pro' )
                         )
                     ),
                     'featured' => array(
                         'type'          => 'select',
-                        'label'         => __( 'Featured Jobs', 'fl-builder' ),
+                        'label'         => __( 'Featured Jobs', 'capstone-pro' ),
                         'default'       => '',
                         'options'       => array(
-                            ''      => __( 'Show BOTH Featured + Non-Featured Jobs', 'fl-builder' ),
-                            'true'      => __( 'Show Featured Jobs ONLY', 'fl-builder' ),
-                            'false'      => __( 'Show Non-Featured Jobs ONLY', 'fl-builder' )
+                            ''      => __( 'Show BOTH Featured + Non-Featured Jobs', 'capstone-pro' ),
+                            'true'      => __( 'Show Featured Jobs ONLY', 'capstone-pro' ),
+                            'false'      => __( 'Show Non-Featured Jobs ONLY', 'capstone-pro' )
                         )
                     ),
                     'show_pagination' => array(
                         'type'          => 'select',
-                        'label'         => __( 'Pagination', 'fl-builder' ),
+                        'label'         => __( 'Pagination', 'capstone-pro' ),
                         'default'       => 'false',
                         'options'       => array(
-                            'true'      => __( 'Show Numbered Pagination', 'fl-builder' ),
-                            'false'      => __( 'Show Load More Button', 'fl-builder' )
+                            'true'      => __( 'Show Numbered Pagination', 'capstone-pro' ),
+                            'false'      => __( 'Show Load More Button', 'capstone-pro' )
                         )
                     ),
                 )

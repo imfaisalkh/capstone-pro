@@ -42,7 +42,7 @@
             </div>
             <div class="desc">
               <?php if (has_term('', 'job_listing_category')) { ?>
-                <span class="category"><?php echo $job_categories[0]->name; ?></span>
+                <span class="category"><?php echo esc_html($job_categories[0]->name); ?></span>
               <?php } ?>
               <a href="<?php the_permalink(); ?>">
                 <h4 class="title"><?php the_title(); ?></h4>

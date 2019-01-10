@@ -4,7 +4,7 @@
  * Plugin Name: Capstone Pro
  * Plugin URI: https://wpscouts.net
  * Description: This plugins extends functionality of core `capstone` theme.
- * Version: 1.1
+ * Version: 1.2
  * Author: Faisal Khurshid
  * Author URI: https://wpscouts.net
  */

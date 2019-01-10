@@ -29,7 +29,7 @@
     ?>
         <div class="message-box">
             <h4><?php esc_html_e('Hello', 'capstone-pro'); ?> <span><?php echo esc_html($user->display_name); ?></span>,</h4>
-            <p><?php echo $msgs_group[$msg_key]['welcome_msg']; ?></p>
+            <p><?php echo esc_html($msgs_group[$msg_key]['welcome_msg']); ?></p>
         </div>
     <?php
     }
