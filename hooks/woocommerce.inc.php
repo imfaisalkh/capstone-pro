@@ -1,27 +1,6 @@
 <?php
 
 #-------------------------------------------------------------------------------#
-#  Load Scripts and Styles
-#-------------------------------------------------------------------------------#
-
-    add_action('wp_enqueue_scripts', 'capstone_woocommerce_styles');
-
-    function capstone_woocommerce_styles() {
-        if ( !is_admin() ) {
-            wp_enqueue_style('capstone-pro-woocommerce-styles', CAPSTONE_HOOKS_URL . 'styles/css/woocommerce.css');
-        }
-    }
-
-    add_action('wp_enqueue_scripts', 'capstone_woocommerce_scripts', 20);
-
-    function capstone_woocommerce_scripts() {
-        if ( !is_admin() ) {
-			wp_enqueue_script('capstone-pro-woocommerce-scripts', CAPSTONE_HOOKS_URL .'scripts/woocommerce.js', array('jquery'), null, true);
-        }
-    }
-
-
-#-------------------------------------------------------------------------------#
 #  Disable WooCommerce Checkout Fields
 #-------------------------------------------------------------------------------#
 
