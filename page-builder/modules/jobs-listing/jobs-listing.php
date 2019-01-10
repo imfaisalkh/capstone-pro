@@ -9,8 +9,8 @@ class JobListingClass extends FLBuilderModule {
             'description'     => __( 'It displays a list of jobs based on defined criteria.', 'capstone-pro' ),
             'group'           => __( 'Capstone Modules', 'capstone-pro' ),
             'category'        => __( 'Job Board', 'capstone-pro' ),
-            'dir'             => CAPSTONE_PAGE_BUILDER_MODULES_DIR . 'jobs/',
-            'url'             => CAPSTONE_PAGE_BUILDER_MODULES_URL . 'jobs/',
+            'dir'             => CAPSTONE_PAGE_BUILDER_MODULES_DIR . 'jobs-listing/',
+            'url'             => CAPSTONE_PAGE_BUILDER_MODULES_URL . 'jobs-listing/',
             'icon'            => 'playlist.svg',
             'partial_refresh' => true, // Defaults to false and can be omitted.
         ));

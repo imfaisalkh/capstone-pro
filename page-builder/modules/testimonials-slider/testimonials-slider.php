@@ -8,12 +8,11 @@ class TestimonialsClass extends FLBuilderModule {
             'name'            => __( 'Testimonials', 'capstone-pro' ),
             'description'     => __('Display custom defined testimonials.', 'capstone-pro'),
             'group'           => __( 'Capstone Modules', 'capstone-pro' ),
-            'category'        => __( 'Capstone Modules', 'capstone-pro' ),
-            'dir'             => CAPSTONE_PAGE_BUILDER_MODULES_DIR . 'testimonials/',
-            'url'             => CAPSTONE_PAGE_BUILDER_MODULES_URL . 'testimonials/',
-            'icon'            => 'playlist.svg',
-            'editor_export'   => true, // Defaults to true and can be omitted.
-            'enabled'         => true, // Defaults to true and can be omitted.
+            'category'        => __( 'Marketing', 'capstone-pro' ),
+            'dir'             => CAPSTONE_PAGE_BUILDER_MODULES_DIR . 'testimonials-slider/',
+            'url'             => CAPSTONE_PAGE_BUILDER_MODULES_URL . 'testimonials-slider/',
+            // 'icon'            => 'playlist.svg',
+            'icon' 			  => 'format-quote.svg',
             'partial_refresh' => true, // Defaults to false and can be omitted.
         ));
     }
@@ -24,7 +23,7 @@ FLBuilder::register_module('TestimonialsClass', array(
         'general' => array(
             'title' => __('General', 'capstone-pro'),
             'sections' => array(
-                'form_section' => array(
+                'general' => array(
                     'title' => __('Testimonials', 'capstone-pro'), // Section Title
                     'fields' =>
                         array(

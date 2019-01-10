@@ -11,7 +11,7 @@ class HeaderClass extends FLBuilderModule {
             'category'        => __( 'Basic', 'capstone-pro' ),
             'dir'             => CAPSTONE_PAGE_BUILDER_MODULES_DIR . 'header/',
             'url'             => CAPSTONE_PAGE_BUILDER_MODULES_URL . 'header/',
-            'icon'            => 'playlist.svg',
+            'icon'            => 'text.svg',
             'editor_export'   => true, // Defaults to true and can be omitted.
             'enabled'         => true, // Defaults to true and can be omitted.
             'partial_refresh' => false, // Defaults to false and can be omitted.

@@ -8,7 +8,7 @@ class FAQsClass extends FLBuilderModule {
             'name'            => __( 'FAQs', 'capstone-pro' ),
             'description'     => __('Display FAQs in multi-column grid.', 'capstone-pro'),
             'group'           => __( 'Capstone Modules', 'capstone-pro' ),
-            'category'        => __( 'Capstone Modules', 'capstone-pro' ),
+            'category'        => __( 'Marketing', 'capstone-pro' ),
             'dir'             => CAPSTONE_PAGE_BUILDER_MODULES_DIR . 'faqs/',
             'url'             => CAPSTONE_PAGE_BUILDER_MODULES_URL . 'faqs/',
             'icon'            => 'playlist.svg',

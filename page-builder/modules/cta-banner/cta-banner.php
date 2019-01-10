@@ -8,7 +8,7 @@ class CTABannerClass extends FLBuilderModule {
             'name'            => __( 'CTA Banner', 'capstone-pro' ),
             'description'     => __( 'It displays a call to action banner.', 'capstone-pro' ),
             'group'           => __( 'Capstone Modules', 'capstone-pro' ),
-            'category'        => __( 'Basic', 'capstone-pro' ),
+            'category'        => __( 'Marketing', 'capstone-pro' ),
             'dir'             => CAPSTONE_PAGE_BUILDER_MODULES_DIR . 'cta-banner/',
             'url'             => CAPSTONE_PAGE_BUILDER_MODULES_URL . 'cta-banner/',
             'icon'            => 'playlist.svg',

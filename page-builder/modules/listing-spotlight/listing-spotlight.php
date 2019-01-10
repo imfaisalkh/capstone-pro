@@ -11,7 +11,7 @@ class ListingSpotlightClass extends FLBuilderModule {
             'category'        => __( 'Job Board', 'capstone-pro' ),
             'dir'             => CAPSTONE_PAGE_BUILDER_MODULES_DIR . 'listing-spotlight/',
             'url'             => CAPSTONE_PAGE_BUILDER_MODULES_URL . 'listing-spotlight/',
-            'icon'            => 'playlist.svg',
+            'icon'            => 'slides.svg',
             'editor_export'   => true, // Defaults to true and can be omitted.
             'enabled'         => true, // Defaults to true and can be omitted.
             'partial_refresh' => false, // Defaults to false and can be omitted.

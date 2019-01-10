@@ -11,7 +11,7 @@ class DividerClass extends FLBuilderModule {
             'category'        => __( 'Basic', 'capstone-pro' ),
             'dir'             => CAPSTONE_PAGE_BUILDER_MODULES_DIR . 'divider/',
             'url'             => CAPSTONE_PAGE_BUILDER_MODULES_URL . 'divider/',
-            'icon'            => 'playlist.svg',
+            'icon'            => 'minus.svg',
             'editor_export'   => true, // Defaults to true and can be omitted.
             'enabled'         => true, // Defaults to true and can be omitted.
             'partial_refresh' => false, // Defaults to false and can be omitted.

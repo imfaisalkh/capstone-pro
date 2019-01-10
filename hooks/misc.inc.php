@@ -17,13 +17,21 @@
 
     function capstone_social_sharing_links() { ?>
 
-        <?php if ( get_theme_mod('capstone_enable_social_sharing', false) ) { ?>
-            <div id="social-share">
-                <span class="label"><?php esc_html_e( 'Share:', 'capstone-pro' ); ?></span>
-                <span class="share-link"><a class="twitter" target="_blank" href="<?php echo esc_url('https://twitter.com/home?status='. the_title_attribute(array( 'before' => '', 'after' => '', 'echo' => false )) .' '. get_permalink() .''); ?>"><?php esc_html_e('Tw', 'capstone-pro'); ?><small>.</small></a></span>
-                <span class="share-link"><a class="facebook" target="_blank" href="<?php echo esc_url('https://www.facebook.com/share.php?u='. get_permalink() .'&title='. the_title_attribute(array( 'before' => '', 'after' => '', 'echo' => false ))); ?>"><?php esc_html_e('Fb', 'capstone-pro'); ?><small>.</small></a></span>
-                <span class="share-link"><a class="linkedin" target="_blank" href="<?php echo esc_url('https://www.linkedin.com/shareArticle?mini=true&url='. get_permalink() .'&title='. the_title_attribute(array( 'before' => '', 'after' => '', 'echo' => false )) .'&summary=&source='); ?>"><?php esc_html_e('Lin', 'capstone-pro'); ?><small>.</small></a></span>
-            </div>
+        <?php var_dump(get_theme_mod('capstone_enable_social_sharing')); ?>
+
+        <?php if ( get_theme_mod('capstone_enable_social_sharing', 'disable') != 'disable' ) { ?>
+            <?php
+                // Helper Variable(s)
+                $is_visible = get_theme_mod('capstone_enable_social_sharing') == 'global' ? true : is_singular( array( 'post', 'job_listing', 'resume' ) );
+            ?>
+            <?php if ($is_visible) { ?>
+                <div id="social-share">
+                    <span class="label"><?php esc_html_e( 'Share:', 'capstone-pro' ); ?></span>
+                    <span class="share-link"><a class="twitter" target="_blank" href="<?php echo esc_url('https://twitter.com/home?status='. the_title_attribute(array( 'before' => '', 'after' => '', 'echo' => false )) .' '. get_permalink() .''); ?>"><?php esc_html_e('Tw', 'capstone-pro'); ?><small>.</small></a></span>
+                    <span class="share-link"><a class="facebook" target="_blank" href="<?php echo esc_url('https://www.facebook.com/share.php?u='. get_permalink() .'&title='. the_title_attribute(array( 'before' => '', 'after' => '', 'echo' => false ))); ?>"><?php esc_html_e('Fb', 'capstone-pro'); ?><small>.</small></a></span>
+                    <span class="share-link"><a class="linkedin" target="_blank" href="<?php echo esc_url('https://www.linkedin.com/shareArticle?mini=true&url='. get_permalink() .'&title='. the_title_attribute(array( 'before' => '', 'after' => '', 'echo' => false )) .'&summary=&source='); ?>"><?php esc_html_e('Lin', 'capstone-pro'); ?><small>.</small></a></span>
+                </div>
+            <?php } ?>
         <?php } ?>
 
     <?php

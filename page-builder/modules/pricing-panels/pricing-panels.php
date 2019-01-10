@@ -11,7 +11,7 @@ class PricingTableClass extends FLBuilderModule {
             'category'        => __( 'Job Board', 'capstone-pro' ),
             'dir'             => CAPSTONE_PAGE_BUILDER_MODULES_DIR . 'pricing/',
             'url'             => CAPSTONE_PAGE_BUILDER_MODULES_URL . 'pricing/',
-            'icon'            => 'playlist.svg',
+            'icon'            => 'editor-table.svg',
             'editor_export'   => true, // Defaults to true and can be omitted.
             'enabled'         => true, // Defaults to true and can be omitted.
             'partial_refresh' => true, // Defaults to false and can be omitted.

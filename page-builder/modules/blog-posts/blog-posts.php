@@ -11,7 +11,7 @@ class BlogPostsClass extends FLBuilderModule {
             'category'        => __( 'Basic', 'capstone-pro' ),
             'dir'             => CAPSTONE_PAGE_BUILDER_MODULES_DIR . 'blog-posts/',
             'url'             => CAPSTONE_PAGE_BUILDER_MODULES_URL . 'blog-posts/',
-            'icon'            => 'playlist.svg',
+            'icon'            => 'schedule.svg',
             'editor_export'   => true, // Defaults to true and can be omitted.
             'enabled'         => true, // Defaults to true and can be omitted.
             'partial_refresh' => false, // Defaults to false and can be omitted.

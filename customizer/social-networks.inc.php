@@ -29,6 +29,21 @@
             'description' => esc_html__( 'Do you want to enable social sharing links at the left hand side of the site?', 'capstone-pro' ),
             'section'     => 'capstone_social_sharing',
         ) );
+
+        // OPTION: Select Field
+        Kirki::add_field( 'capstone_enable_social_sharing', array(
+            'type'        => 'select',
+            'settings'    => 'capstone_enable_social_sharing',
+            'label'       => __( 'Enable Social Sharing', 'capstone-pro' ),
+            'description' => esc_html__( 'Please define if you want to enable social sharing links globally (i.e. through out site) or only to singular pages (i.e. single blog posts, single job listing etc).', 'capstone-pro' ),
+            'section'     => 'capstone_social_sharing',
+            'default'     => 'disable',
+            'choices'     => array(
+                'disable' => esc_html__( 'Disable', 'capstone-pro' ),
+                'global' => esc_html__( 'Enable Globally', 'capstone-pro' ),
+                'singular' => esc_html__( 'Enable on Singular Pages', 'capstone-pro' ),
+            ),
+        ) );
         
         // SECTION: Social Networks
 		Kirki::add_section( 'capstone_social_profiles', array(
