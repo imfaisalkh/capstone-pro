@@ -17,8 +17,6 @@
 
     function capstone_social_sharing_links() { ?>
 
-        <?php var_dump(get_theme_mod('capstone_enable_social_sharing')); ?>
-
         <?php if ( get_theme_mod('capstone_enable_social_sharing', 'disable') != 'disable' ) { ?>
             <?php
                 // Helper Variable(s)
