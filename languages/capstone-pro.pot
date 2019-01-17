@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2019-01-10T04:45:18+00:00\n"
+"POT-Creation-Date: 2019-01-17T03:36:30+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.1.0\n"
 "X-Domain: capstone-pro\n"
@@ -44,36 +44,33 @@ msgid "It displays a simple header for custom modules."
 msgstr ""
 
 #: page-builder/modules/header/header.php:10
+#: page-builder/modules/testimonials-slider/testimonials-slider.php:10
 #: page-builder/modules/cta-banner/cta-banner.php:10
 #: page-builder/modules/blog-posts/blog-posts.php:10
-#: page-builder/modules/pricing/pricing.php:10
-#: page-builder/modules/jobs/jobs.php:10
+#: page-builder/modules/pricing-panels/pricing-panels.php:10
+#: page-builder/modules/jobs-listing/jobs-listing.php:10
 #: page-builder/modules/taxonomies-grid/taxonomies-grid.php:10
-#: page-builder/modules/testimonials/testimonials.php:10
-#: page-builder/modules/testimonials/testimonials.php:11
 #: page-builder/modules/listing-spotlight/listing-spotlight.php:10
 #: page-builder/modules/divider/divider.php:10
 #: page-builder/modules/faqs/faqs.php:10
-#: page-builder/modules/faqs/faqs.php:11
 msgid "Capstone Modules"
 msgstr ""
 
 #: page-builder/modules/header/header.php:11
-#: page-builder/modules/cta-banner/cta-banner.php:11
 #: page-builder/modules/blog-posts/blog-posts.php:11
 #: page-builder/modules/divider/divider.php:11
 msgid "Basic"
 msgstr ""
 
 #: page-builder/modules/header/header.php:25
+#: page-builder/modules/testimonials-slider/testimonials-slider.php:24
+#: page-builder/modules/testimonials-slider/testimonials-slider.php:52
 #: page-builder/modules/cta-banner/cta-banner.php:25
 #: page-builder/modules/blog-posts/blog-posts.php:39
-#: page-builder/modules/pricing/pricing.php:26
-#: page-builder/modules/pricing/pricing.php:99
-#: page-builder/modules/jobs/jobs.php:23
+#: page-builder/modules/pricing-panels/pricing-panels.php:26
+#: page-builder/modules/pricing-panels/pricing-panels.php:99
+#: page-builder/modules/jobs-listing/jobs-listing.php:23
 #: page-builder/modules/taxonomies-grid/taxonomies-grid.php:23
-#: page-builder/modules/testimonials/testimonials.php:25
-#: page-builder/modules/testimonials/testimonials.php:53
 #: page-builder/modules/listing-spotlight/listing-spotlight.php:25
 #: page-builder/modules/divider/divider.php:25
 #: page-builder/modules/faqs/faqs.php:25
@@ -89,9 +86,9 @@ msgid "Text"
 msgstr ""
 
 #: page-builder/modules/header/header.php:32
+#: page-builder/modules/testimonials-slider/testimonials-slider.php:66
 #: page-builder/modules/cta-banner/cta-banner.php:32
-#: page-builder/modules/jobs/jobs.php:40
-#: page-builder/modules/testimonials/testimonials.php:67
+#: page-builder/modules/jobs-listing/jobs-listing.php:40
 #: page-builder/modules/faqs/faqs.php:34
 #: customizer/footer.inc.php:29
 #: customizer/footer.inc.php:54
@@ -100,8 +97,8 @@ msgid "Title"
 msgstr ""
 
 #: page-builder/modules/header/header.php:36
+#: page-builder/modules/testimonials-slider/testimonials-slider.php:72
 #: page-builder/modules/cta-banner/cta-banner.php:36
-#: page-builder/modules/testimonials/testimonials.php:73
 msgid "Subtitle"
 msgstr ""
 
@@ -123,6 +120,42 @@ msgstr ""
 #: page-builder/modules/header/header.php:51
 #: page-builder/modules/cta-banner/cta-banner.php:51
 msgid "http://example.com"
+msgstr ""
+
+#: page-builder/modules/testimonials-slider/testimonials-slider.php:8
+#: page-builder/modules/testimonials-slider/testimonials-slider.php:27
+msgid "Testimonials"
+msgstr ""
+
+#: page-builder/modules/testimonials-slider/testimonials-slider.php:9
+msgid "Display custom defined testimonials."
+msgstr ""
+
+#: page-builder/modules/testimonials-slider/testimonials-slider.php:11
+#: page-builder/modules/cta-banner/cta-banner.php:11
+#: page-builder/modules/faqs/faqs.php:11
+msgid "Marketing"
+msgstr ""
+
+#: page-builder/modules/testimonials-slider/testimonials-slider.php:32
+#: page-builder/modules/testimonials-slider/testimonials-slider.php:49
+msgid "Testmonial"
+msgstr ""
+
+#: page-builder/modules/testimonials-slider/testimonials-slider.php:59
+msgid "Description"
+msgstr ""
+
+#: page-builder/modules/testimonials-slider/testimonials-slider.php:60
+msgid "Enter the description for the testimonial."
+msgstr ""
+
+#: page-builder/modules/testimonials-slider/testimonials-slider.php:67
+msgid "Type name of the testimonial author."
+msgstr ""
+
+#: page-builder/modules/testimonials-slider/testimonials-slider.php:73
+msgid "This could be the place or position of the author."
 msgstr ""
 
 #: page-builder/modules/cta-banner/cta-banner.php:8
@@ -155,14 +188,14 @@ msgid "It displays blog posts based on defined criteria."
 msgstr ""
 
 #: page-builder/modules/blog-posts/blog-posts.php:42
-#: page-builder/modules/jobs/jobs.php:26
+#: page-builder/modules/jobs-listing/jobs-listing.php:26
 #: page-builder/modules/taxonomies-grid/taxonomies-grid.php:26
 #: page-builder/modules/listing-spotlight/listing-spotlight.php:28
 msgid "Query"
 msgstr ""
 
 #: page-builder/modules/blog-posts/blog-posts.php:46
-#: page-builder/modules/jobs/jobs.php:30
+#: page-builder/modules/jobs-listing/jobs-listing.php:30
 msgid "Count"
 msgstr ""
 
@@ -175,6 +208,7 @@ msgid "Offset"
 msgstr ""
 
 #: page-builder/modules/blog-posts/blog-posts.php:68
+#: customizer/social-networks.inc.php:42
 msgid "Disable"
 msgstr ""
 
@@ -182,243 +216,243 @@ msgstr ""
 msgid "Enable"
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:8
+#: page-builder/modules/pricing-panels/pricing-panels.php:8
 msgid "Pricing"
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:9
+#: page-builder/modules/pricing-panels/pricing-panels.php:9
 msgid "Display pricing plans in a multi-column grid."
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:11
-#: page-builder/modules/jobs/jobs.php:11
+#: page-builder/modules/pricing-panels/pricing-panels.php:11
+#: page-builder/modules/jobs-listing/jobs-listing.php:11
 #: page-builder/modules/taxonomies-grid/taxonomies-grid.php:11
 #: page-builder/modules/listing-spotlight/listing-spotlight.php:11
 msgid "Job Board"
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:30
+#: page-builder/modules/pricing-panels/pricing-panels.php:30
 msgid "Pricing Plans"
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:35
-#: page-builder/modules/pricing/pricing.php:96
+#: page-builder/modules/pricing-panels/pricing-panels.php:35
+#: page-builder/modules/pricing-panels/pricing-panels.php:96
 msgid "Pricing Plan"
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:44
+#: page-builder/modules/pricing-panels/pricing-panels.php:44
 #: customizer/backgrounds.inc.php:66
 msgid "Others"
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:49
+#: page-builder/modules/pricing-panels/pricing-panels.php:49
 msgid "Currency Symbol"
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:50
+#: page-builder/modules/pricing-panels/pricing-panels.php:50
 msgid "Define the currency symbol for your pricing"
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:56
+#: page-builder/modules/pricing-panels/pricing-panels.php:56
 msgid "Currency Symbol Alignment"
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:57
+#: page-builder/modules/pricing-panels/pricing-panels.php:57
 msgid "Specify if the currency symbol should be alignd left or right to the price."
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:60
+#: page-builder/modules/pricing-panels/pricing-panels.php:60
 msgid "Left"
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:61
+#: page-builder/modules/pricing-panels/pricing-panels.php:61
 msgid "Right"
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:70
+#: page-builder/modules/pricing-panels/pricing-panels.php:70
 msgid "Options"
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:77
+#: page-builder/modules/pricing-panels/pricing-panels.php:77
 msgid "Panels per row"
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:107
+#: page-builder/modules/pricing-panels/pricing-panels.php:107
 msgid "Pricing Plan Title"
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:108
+#: page-builder/modules/pricing-panels/pricing-panels.php:108
 msgid "The title for the pricing plan"
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:114
+#: page-builder/modules/pricing-panels/pricing-panels.php:114
 msgid "Tagline Text"
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:115
+#: page-builder/modules/pricing-panels/pricing-panels.php:115
 msgid "Provide any subtitle or taglines like \"One-Off Payment\", \"Monthly Payment\" etc. This will appear below price figure."
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:121
+#: page-builder/modules/pricing-panels/pricing-panels.php:121
 msgid "Price Tag"
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:122
+#: page-builder/modules/pricing-panels/pricing-panels.php:122
 msgid "Enter the price tag for the pricing plan."
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:128
+#: page-builder/modules/pricing-panels/pricing-panels.php:128
 msgid "Highlight Pricing Plan"
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:129
+#: page-builder/modules/pricing-panels/pricing-panels.php:129
 msgid "Specify if you want to highlight the pricing plan."
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:132
-#: page-builder/modules/pricing/pricing.php:174
+#: page-builder/modules/pricing-panels/pricing-panels.php:132
+#: page-builder/modules/pricing-panels/pricing-panels.php:174
 msgid "No"
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:133
-#: page-builder/modules/pricing/pricing.php:175
+#: page-builder/modules/pricing-panels/pricing-panels.php:133
+#: page-builder/modules/pricing-panels/pricing-panels.php:175
 msgid "Yes"
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:139
+#: page-builder/modules/pricing-panels/pricing-panels.php:139
 msgid "Pricing Plan Details"
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:140
+#: page-builder/modules/pricing-panels/pricing-panels.php:140
 msgid "Type each feature in a new line. Use `span` tag to hightlight the keyword(s).</span>"
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:150
+#: page-builder/modules/pricing-panels/pricing-panels.php:150
 msgid "Button"
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:157
+#: page-builder/modules/pricing-panels/pricing-panels.php:157
 msgid "Text for Pricing Link/Button"
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:158
+#: page-builder/modules/pricing-panels/pricing-panels.php:158
 msgid "Provide the text for the link or the button shown for this pricing plan."
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:164
+#: page-builder/modules/pricing-panels/pricing-panels.php:164
 msgid "URL for the Pricing link/button"
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:165
+#: page-builder/modules/pricing-panels/pricing-panels.php:165
 msgid "Provide the target URL for the link or the button shown for this pricing plan."
 msgstr ""
 
-#: page-builder/modules/pricing/pricing.php:171
+#: page-builder/modules/pricing-panels/pricing-panels.php:171
 msgid "Open Button URL in a new window"
 msgstr ""
 
-#: page-builder/modules/jobs/jobs.php:8
+#: page-builder/modules/jobs-listing/jobs-listing.php:8
 msgid "Job Listing"
 msgstr ""
 
-#: page-builder/modules/jobs/jobs.php:9
+#: page-builder/modules/jobs-listing/jobs-listing.php:9
 msgid "It displays a list of jobs based on defined criteria."
 msgstr ""
 
-#: page-builder/modules/jobs/jobs.php:36
+#: page-builder/modules/jobs-listing/jobs-listing.php:36
 msgid "Order By"
 msgstr ""
 
-#: page-builder/modules/jobs/jobs.php:39
+#: page-builder/modules/jobs-listing/jobs-listing.php:39
 msgid "Featured"
 msgstr ""
 
-#: page-builder/modules/jobs/jobs.php:41
+#: page-builder/modules/jobs-listing/jobs-listing.php:41
 msgid "ID"
 msgstr ""
 
-#: page-builder/modules/jobs/jobs.php:42
+#: page-builder/modules/jobs-listing/jobs-listing.php:42
 msgid "Name"
 msgstr ""
 
-#: page-builder/modules/jobs/jobs.php:43
+#: page-builder/modules/jobs-listing/jobs-listing.php:43
 msgid "Date"
 msgstr ""
 
-#: page-builder/modules/jobs/jobs.php:44
+#: page-builder/modules/jobs-listing/jobs-listing.php:44
 msgid "Date Modified"
 msgstr ""
 
-#: page-builder/modules/jobs/jobs.php:45
+#: page-builder/modules/jobs-listing/jobs-listing.php:45
 msgid "Random"
 msgstr ""
 
-#: page-builder/modules/jobs/jobs.php:50
+#: page-builder/modules/jobs-listing/jobs-listing.php:50
 msgid "Order"
 msgstr ""
 
-#: page-builder/modules/jobs/jobs.php:53
+#: page-builder/modules/jobs-listing/jobs-listing.php:53
 msgid "Descending"
 msgstr ""
 
-#: page-builder/modules/jobs/jobs.php:54
+#: page-builder/modules/jobs-listing/jobs-listing.php:54
 msgid "Ascending"
 msgstr ""
 
-#: page-builder/modules/jobs/jobs.php:59
+#: page-builder/modules/jobs-listing/jobs-listing.php:59
 msgid "Categories"
 msgstr ""
 
-#: page-builder/modules/jobs/jobs.php:64
+#: page-builder/modules/jobs-listing/jobs-listing.php:64
 #: customizer/jobs.inc.php:85
 msgid "Job Types"
 msgstr ""
 
-#: page-builder/modules/jobs/jobs.php:69
+#: page-builder/modules/jobs-listing/jobs-listing.php:69
 msgid "Location"
 msgstr ""
 
-#: page-builder/modules/jobs/jobs.php:74
+#: page-builder/modules/jobs-listing/jobs-listing.php:74
 msgid "Keyword"
 msgstr ""
 
-#: page-builder/modules/jobs/jobs.php:79
+#: page-builder/modules/jobs-listing/jobs-listing.php:79
 msgid "Status"
 msgstr ""
 
-#: page-builder/modules/jobs/jobs.php:82
+#: page-builder/modules/jobs-listing/jobs-listing.php:82
 msgid "Active Jobs"
 msgstr ""
 
-#: page-builder/modules/jobs/jobs.php:83
+#: page-builder/modules/jobs-listing/jobs-listing.php:83
 msgid "Expired Jobs"
 msgstr ""
 
-#: page-builder/modules/jobs/jobs.php:88
+#: page-builder/modules/jobs-listing/jobs-listing.php:88
 msgid "Featured Jobs"
 msgstr ""
 
-#: page-builder/modules/jobs/jobs.php:91
+#: page-builder/modules/jobs-listing/jobs-listing.php:91
 msgid "Show BOTH Featured + Non-Featured Jobs"
 msgstr ""
 
-#: page-builder/modules/jobs/jobs.php:92
+#: page-builder/modules/jobs-listing/jobs-listing.php:92
 msgid "Show Featured Jobs ONLY"
 msgstr ""
 
-#: page-builder/modules/jobs/jobs.php:93
+#: page-builder/modules/jobs-listing/jobs-listing.php:93
 msgid "Show Non-Featured Jobs ONLY"
 msgstr ""
 
-#: page-builder/modules/jobs/jobs.php:98
+#: page-builder/modules/jobs-listing/jobs-listing.php:98
 msgid "Pagination"
 msgstr ""
 
-#: page-builder/modules/jobs/jobs.php:101
+#: page-builder/modules/jobs-listing/jobs-listing.php:101
 msgid "Show Numbered Pagination"
 msgstr ""
 
-#: page-builder/modules/jobs/jobs.php:102
+#: page-builder/modules/jobs-listing/jobs-listing.php:102
 msgid "Show Load More Button"
 msgstr ""
 
@@ -436,36 +470,6 @@ msgstr ""
 
 #: page-builder/modules/taxonomies-grid/taxonomies-grid.php:36
 msgid "Terms"
-msgstr ""
-
-#: page-builder/modules/testimonials/testimonials.php:8
-#: page-builder/modules/testimonials/testimonials.php:28
-msgid "Testimonials"
-msgstr ""
-
-#: page-builder/modules/testimonials/testimonials.php:9
-msgid "Display custom defined testimonials."
-msgstr ""
-
-#: page-builder/modules/testimonials/testimonials.php:33
-#: page-builder/modules/testimonials/testimonials.php:50
-msgid "Testmonial"
-msgstr ""
-
-#: page-builder/modules/testimonials/testimonials.php:60
-msgid "Description"
-msgstr ""
-
-#: page-builder/modules/testimonials/testimonials.php:61
-msgid "Enter the description for the testimonial."
-msgstr ""
-
-#: page-builder/modules/testimonials/testimonials.php:68
-msgid "Type name of the testimonial author."
-msgstr ""
-
-#: page-builder/modules/testimonials/testimonials.php:74
-msgid "This could be the place or position of the author."
 msgstr ""
 
 #: page-builder/modules/listing-spotlight/includes/frontend.php:26
@@ -574,23 +578,23 @@ msgstr ""
 msgid "Listing IDs:"
 msgstr ""
 
-#: hooks/misc.inc.php:22
+#: hooks/misc.inc.php:27
 msgid "Share:"
 msgstr ""
 
-#: hooks/misc.inc.php:23
+#: hooks/misc.inc.php:28
 msgid "Tw"
 msgstr ""
 
-#: hooks/misc.inc.php:24
+#: hooks/misc.inc.php:29
 msgid "Fb"
 msgstr ""
 
-#: hooks/misc.inc.php:25
+#: hooks/misc.inc.php:30
 msgid "Lin"
 msgstr ""
 
-#: hooks/misc.inc.php:42
+#: hooks/misc.inc.php:48
 msgid "Open Notification"
 msgstr ""
 
@@ -904,6 +908,7 @@ msgid "This panels configures job archive and single job listing page settings."
 msgstr ""
 
 #: customizer/jobs.inc.php:20
+#: customizer/companies.inc.php:20
 #: customizer/resumes.inc.php:20
 msgid "Master Page"
 msgstr ""
@@ -923,6 +928,7 @@ msgstr ""
 
 #: customizer/jobs.inc.php:40
 #: customizer/jobs.inc.php:142
+#: customizer/companies.inc.php:101
 #: customizer/resumes.inc.php:40
 #: customizer/resumes.inc.php:120
 msgid "Sidebar Order"
@@ -978,6 +984,7 @@ msgid "How many filters to show before \"More Filters\" button."
 msgstr ""
 
 #: customizer/jobs.inc.php:108
+#: customizer/companies.inc.php:67
 #: customizer/resumes.inc.php:86
 msgid "Detail Page"
 msgstr ""
@@ -987,6 +994,7 @@ msgid "This section configures job detail page."
 msgstr ""
 
 #: customizer/jobs.inc.php:118
+#: customizer/companies.inc.php:77
 #: customizer/resumes.inc.php:96
 msgid "Content Order"
 msgstr ""
@@ -1016,10 +1024,12 @@ msgid "Change the order and visibility (at global level) of job listing sidebar.
 msgstr ""
 
 #: customizer/jobs.inc.php:151
+#: customizer/companies.inc.php:109
 msgid "Company Profile"
 msgstr ""
 
 #: customizer/jobs.inc.php:152
+#: customizer/companies.inc.php:110
 #: customizer/resumes.inc.php:130
 msgid "Listing URL"
 msgstr ""
@@ -1103,142 +1113,226 @@ msgstr ""
 msgid "If setup, it will appear in the employer and candidate dashboard."
 msgstr ""
 
-#: customizer/dashboard.inc.php:23
+#: customizer/site-identity.inc.php:25
+msgid "Preloader Icon"
+msgstr ""
+
+#: customizer/site-identity.inc.php:26
+msgid "Preloader icon dimension should not increase by 200x200 (in pixels)."
+msgstr ""
+
+#: customizer/companies.inc.php:14
+msgid "Companies Settings"
+msgstr ""
+
+#: customizer/companies.inc.php:15
+msgid "This panels configures companies master and detail listing page settings."
+msgstr ""
+
+#: customizer/companies.inc.php:21
+msgid "This section configures companies master listing page."
+msgstr ""
+
+#: customizer/companies.inc.php:30
+msgid "Comapny Listings Page"
+msgstr ""
+
+#: customizer/companies.inc.php:31
+msgid "This is the page where you are using `[company_manager_companies]` shortcode."
+msgstr ""
+
+#: customizer/companies.inc.php:39
+msgid "\"Open Positions\" Excerpt"
+msgstr ""
+
+#: customizer/companies.inc.php:40
+msgid "Display a list of company-specific recent companys?"
+msgstr ""
+
+#: customizer/companies.inc.php:44
+msgid "Enable Excerpt"
+msgstr ""
+
+#: customizer/companies.inc.php:45
+msgid "Disable Excerpt"
+msgstr ""
+
+#: customizer/companies.inc.php:53
+msgid "Limit \"Open Positions\""
+msgstr ""
+
+#: customizer/companies.inc.php:54
+msgid "How many \"Open Positions\" to display, if enabled?"
+msgstr ""
+
+#: customizer/companies.inc.php:68
+msgid "This section configures company detail page."
+msgstr ""
+
+#: customizer/companies.inc.php:78
+msgid "Change the order and visibility (at global level) of company listing content."
+msgstr ""
+
+#: customizer/companies.inc.php:88
+msgid "Company Header"
+msgstr ""
+
+#: customizer/companies.inc.php:89
+msgid "Company Meta"
+msgstr ""
+
+#: customizer/companies.inc.php:90
+msgid "Companies Description"
+msgstr ""
+
+#: customizer/companies.inc.php:91
+msgid "Company Positions"
+msgstr ""
+
+#: customizer/companies.inc.php:92
+msgid "Company Actions"
+msgstr ""
+
+#: customizer/companies.inc.php:102
+msgid "Change the order and visibility (at global level) of company listing sidebar."
+msgstr ""
+
+#: customizer/dashboard.inc.php:27
 msgid "Dashboard Settings"
 msgstr ""
 
-#: customizer/dashboard.inc.php:24
+#: customizer/dashboard.inc.php:28
 msgid "This panels define and configures dashboard template settings."
 msgstr ""
 
-#: customizer/dashboard.inc.php:29
+#: customizer/dashboard.inc.php:33
 msgid "Dashboard Pages"
 msgstr ""
 
-#: customizer/dashboard.inc.php:30
+#: customizer/dashboard.inc.php:34
 msgid "This section configures different dashboard pages."
 msgstr ""
 
-#: customizer/dashboard.inc.php:38
+#: customizer/dashboard.inc.php:42
 msgid "Dashboard Main Page"
 msgstr ""
 
-#: customizer/dashboard.inc.php:39
+#: customizer/dashboard.inc.php:43
 msgid "This is the page where you are using `[dashboard_welcome_msg]` shortcode."
 msgstr ""
 
-#: customizer/dashboard.inc.php:47
+#: customizer/dashboard.inc.php:51
 msgid "Manage Jobs Page"
 msgstr ""
 
-#: customizer/dashboard.inc.php:48
+#: customizer/dashboard.inc.php:52
 msgid "This is the page where you are using `[job_dashboard]` shortcode."
 msgstr ""
 
-#: customizer/dashboard.inc.php:56
+#: customizer/dashboard.inc.php:60
 msgid "Submit Job Page"
 msgstr ""
 
-#: customizer/dashboard.inc.php:57
+#: customizer/dashboard.inc.php:61
 msgid "This is the page where you are using `[submit_job_form]` shortcode."
 msgstr ""
 
-#: customizer/dashboard.inc.php:65
+#: customizer/dashboard.inc.php:69
 msgid "Manage Resumes Page"
 msgstr ""
 
-#: customizer/dashboard.inc.php:66
+#: customizer/dashboard.inc.php:70
 msgid "This is the page where you are using `[candidate_dashboard]` shortcode."
 msgstr ""
 
-#: customizer/dashboard.inc.php:74
+#: customizer/dashboard.inc.php:78
 msgid "Submit Resume Page"
 msgstr ""
 
-#: customizer/dashboard.inc.php:75
+#: customizer/dashboard.inc.php:79
 msgid "This is the page where you are using `[submit_resume_form]` shortcode."
 msgstr ""
 
-#: customizer/dashboard.inc.php:83
+#: customizer/dashboard.inc.php:87
 msgid "Manage Applications Page"
 msgstr ""
 
-#: customizer/dashboard.inc.php:84
+#: customizer/dashboard.inc.php:88
 msgid "This is the page where you are using `[past_applications]` shortcode."
 msgstr ""
 
-#: customizer/dashboard.inc.php:92
+#: customizer/dashboard.inc.php:96
 msgid "Manage Bookmarks Page"
 msgstr ""
 
-#: customizer/dashboard.inc.php:93
+#: customizer/dashboard.inc.php:97
 msgid "This is the page where you are using `[my_bookmarks]` shortcode."
 msgstr ""
 
-#: customizer/dashboard.inc.php:101
+#: customizer/dashboard.inc.php:105
 msgid "Manage Alerts Page"
 msgstr ""
 
-#: customizer/dashboard.inc.php:102
+#: customizer/dashboard.inc.php:106
 msgid "This is the page where you are using `[job_alerts]` shortcode."
 msgstr ""
 
-#: customizer/dashboard.inc.php:110
+#: customizer/dashboard.inc.php:114
 msgid "Manage Orders Page"
 msgstr ""
 
-#: customizer/dashboard.inc.php:111
+#: customizer/dashboard.inc.php:115
 msgid "This is the page where you are using `[woocommerce_my_account]` shortcode."
 msgstr ""
 
-#: customizer/dashboard.inc.php:117
+#: customizer/dashboard.inc.php:121
 msgid "Welcome Messages"
 msgstr ""
 
-#: customizer/dashboard.inc.php:118
+#: customizer/dashboard.inc.php:122
 msgid "This section defines welcome messages for the dashboard."
 msgstr ""
 
-#: customizer/dashboard.inc.php:127
+#: customizer/dashboard.inc.php:131
 msgid "Role Specific Messages"
 msgstr ""
 
-#: customizer/dashboard.inc.php:131
+#: customizer/dashboard.inc.php:135
 msgid "Message Group"
 msgstr ""
 
-#: customizer/dashboard.inc.php:134
+#: customizer/dashboard.inc.php:138
 msgid "Add New Message"
 msgstr ""
 
-#: customizer/dashboard.inc.php:138
+#: customizer/dashboard.inc.php:142
 #: shortcodes/dashboard.inc.php:13
 msgid "You are admin, you can do whatever you want."
 msgstr ""
 
-#: customizer/dashboard.inc.php:142
+#: customizer/dashboard.inc.php:146
 #: shortcodes/dashboard.inc.php:17
 msgid "From your account dashboard you can post new jobs and manage exisiting ones. Further, you can also manage your bookmark, job alerts and profile settings."
 msgstr ""
 
-#: customizer/dashboard.inc.php:146
+#: customizer/dashboard.inc.php:150
 #: shortcodes/dashboard.inc.php:21
 msgid "From your account dashboard you can post new resumes and manage exisiting ones. Further, you can also manage your past applications, bookmark, job alerts and profile settings."
 msgstr ""
 
-#: customizer/dashboard.inc.php:152
+#: customizer/dashboard.inc.php:156
 msgid "User Role"
 msgstr ""
 
-#: customizer/dashboard.inc.php:153
+#: customizer/dashboard.inc.php:157
 msgid "Choose a role for which you want to define a welcome message."
 msgstr ""
 
-#: customizer/dashboard.inc.php:158
+#: customizer/dashboard.inc.php:162
 msgid "Welcome Message"
 msgstr ""
 
-#: customizer/dashboard.inc.php:159
+#: customizer/dashboard.inc.php:163
 msgid "Define welcome message for above selected role."
 msgstr ""
 
@@ -1345,6 +1439,7 @@ msgid "This section configure sharing links settings."
 msgstr ""
 
 #: customizer/social-networks.inc.php:28
+#: customizer/social-networks.inc.php:37
 msgid "Enable Social Sharing"
 msgstr ""
 
@@ -1352,63 +1447,75 @@ msgstr ""
 msgid "Do you want to enable social sharing links at the left hand side of the site?"
 msgstr ""
 
-#: customizer/social-networks.inc.php:35
-msgid "Social Profiles"
+#: customizer/social-networks.inc.php:38
+msgid "Please define if you want to enable social sharing links globally (i.e. through out site) or only to singular pages (i.e. single blog posts, single job listing etc)."
 msgstr ""
 
-#: customizer/social-networks.inc.php:36
-msgid "This section configures links to your social profiles."
+#: customizer/social-networks.inc.php:43
+msgid "Enable Globally"
 msgstr ""
 
 #: customizer/social-networks.inc.php:44
+msgid "Enable on Singular Pages"
+msgstr ""
+
+#: customizer/social-networks.inc.php:50
+msgid "Social Profiles"
+msgstr ""
+
+#: customizer/social-networks.inc.php:51
+msgid "This section configures links to your social profiles."
+msgstr ""
+
+#: customizer/social-networks.inc.php:59
 msgid "FaceBook"
 msgstr ""
 
-#: customizer/social-networks.inc.php:52
+#: customizer/social-networks.inc.php:67
 msgid "Twitter"
 msgstr ""
 
-#: customizer/social-networks.inc.php:60
+#: customizer/social-networks.inc.php:75
 msgid "Dribbble"
 msgstr ""
 
-#: customizer/social-networks.inc.php:68
+#: customizer/social-networks.inc.php:83
 msgid "LinkedIn"
 msgstr ""
 
-#: customizer/social-networks.inc.php:76
+#: customizer/social-networks.inc.php:91
 msgid "Instagram"
 msgstr ""
 
-#: customizer/social-networks.inc.php:84
+#: customizer/social-networks.inc.php:99
 msgid "Pinterest"
 msgstr ""
 
-#: customizer/social-networks.inc.php:92
+#: customizer/social-networks.inc.php:107
 msgid "Bloglovin"
 msgstr ""
 
-#: customizer/social-networks.inc.php:100
+#: customizer/social-networks.inc.php:115
 msgid "Google Plus"
 msgstr ""
 
-#: customizer/social-networks.inc.php:108
+#: customizer/social-networks.inc.php:123
 msgid "Tumblr"
 msgstr ""
 
-#: customizer/social-networks.inc.php:116
+#: customizer/social-networks.inc.php:131
 msgid "YouTube"
 msgstr ""
 
-#: customizer/social-networks.inc.php:124
+#: customizer/social-networks.inc.php:139
 msgid "Vimeo"
 msgstr ""
 
-#: customizer/social-networks.inc.php:132
+#: customizer/social-networks.inc.php:147
 msgid "Sound Cloud"
 msgstr ""
 
-#: customizer/social-networks.inc.php:140
+#: customizer/social-networks.inc.php:155
 msgid "RSS URL"
 msgstr ""
 

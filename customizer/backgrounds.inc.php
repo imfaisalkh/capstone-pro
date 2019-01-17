@@ -68,16 +68,6 @@
             'panel'          => 'capstone_background_settings',
         ) );
 
-		// OPTION: Image Field
-        Kirki::add_field( 'capstone_off_canvas_sidebar_bg', array(
-            'type'        => 'image',
-            'settings'    => 'capstone_off_canvas_sidebar_bg',
-            'label'       => esc_html__( 'Off-Canvas Sidebar Background', 'capstone-pro' ),
-            'description' => esc_html__('It will appear as background image of off-canvas sidebar.', 'capstone-pro'),
-            'section'     => 'capstone_background_settings_others',
-            'default' 	 => get_template_directory_uri() .'/images/site-top-left-bg.png',
-        ) );
-
         // OPTION: Image Field
         Kirki::add_field( 'capstone_compact_sidebar_bg', array(
             'type'        => 'image',

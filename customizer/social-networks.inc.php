@@ -51,110 +51,49 @@
             'description'    => esc_html__( 'This section configures links to your social profiles.', 'capstone-pro' ),
             'panel'          => 'capstone_social_networks',
         ) );
-        
-		// OPTION: Link
-        Kirki::add_field( 'capstone_facebook_profile', array(
-            'type'     => 'link',
-            'settings' => 'capstone_facebook_profile',
-            'label'    => __( 'FaceBook', 'capstone-pro' ),
-            'section'  => 'capstone_social_profiles',
-        ) );
 
-		// OPTION: Link
-        Kirki::add_field( 'capstone_twitter_profile', array(
-            'type'     => 'link',
-            'settings' => 'capstone_twitter_profile',
-            'label'    => __( 'Twitter', 'capstone-pro' ),
-            'section'  => 'capstone_social_profiles',
-        ) );
-
-		// OPTION: Link
-        Kirki::add_field( 'capstone_dribbble_profile', array(
-            'type'     => 'link',
-            'settings' => 'capstone_dribbble_profile',
-            'label'    => __( 'Dribbble', 'capstone-pro' ),
-            'section'  => 'capstone_social_profiles',
-        ) );
-
-		// OPTION: Link
-        Kirki::add_field( 'capstone_linkedin_profile', array(
-            'type'     => 'link',
-            'settings' => 'capstone_linkedin_profile',
-            'label'    => __( 'LinkedIn', 'capstone-pro' ),
-            'section'  => 'capstone_social_profiles',
-        ) );        
-
-		// OPTION: Link
-        Kirki::add_field( 'capstone_instagram_profile', array(
-            'type'     => 'link',
-            'settings' => 'capstone_instagram_profile',
-            'label'    => __( 'Instagram', 'capstone-pro' ),
-            'section'  => 'capstone_social_profiles',
-        ) );
-
-		// OPTION: Link
-        Kirki::add_field( 'capstone_pinterest_profile', array(
-            'type'     => 'link',
-            'settings' => 'capstone_pinterest_profile',
-            'label'    => __( 'Pinterest', 'capstone-pro' ),
-            'section'  => 'capstone_social_profiles',
-        ) );        
-
-		// OPTION: Link
-        Kirki::add_field( 'capstone_bloglovin_profile', array(
-            'type'     => 'link',
-            'settings' => 'capstone_bloglovin_profile',
-            'label'    => __( 'Bloglovin', 'capstone-pro' ),
-            'section'  => 'capstone_social_profiles',
-        ) );
-
-		// OPTION: Link
-        Kirki::add_field( 'capstone_google_plus_profile', array(
-            'type'     => 'link',
-            'settings' => 'capstone_google_plus_profile',
-            'label'    => __( 'Google Plus', 'capstone-pro' ),
-            'section'  => 'capstone_social_profiles',
-        ) );     
-
-		// OPTION: Link
-        Kirki::add_field( 'capstone_tumblr_profile', array(
-            'type'     => 'link',
-            'settings' => 'capstone_tumblr_profile',
-            'label'    => __( 'Tumblr', 'capstone-pro' ),
-            'section'  => 'capstone_social_profiles',
-        ) );  
-
-		// OPTION: Link
-        Kirki::add_field( 'capstone_youtube_profile', array(
-            'type'     => 'link',
-            'settings' => 'capstone_youtube_profile',
-            'label'    => __( 'YouTube', 'capstone-pro' ),
-            'section'  => 'capstone_social_profiles',
-        ) );     
-
-		// OPTION: Link
-        Kirki::add_field( 'capstone_vimeo_profile', array(
-            'type'     => 'link',
-            'settings' => 'capstone_vimeo_profile',
-            'label'    => __( 'Vimeo', 'capstone-pro' ),
-            'section'  => 'capstone_social_profiles',
-        ) );  
-
-		// OPTION: Link
-        Kirki::add_field( 'capstone_sound_cloud_profile', array(
-            'type'     => 'link',
-            'settings' => 'capstone_sound_cloud_profile',
-            'label'    => __( 'Sound Cloud', 'capstone-pro' ),
-            'section'  => 'capstone_social_profiles',
-        ) );     
-
-		// OPTION: Link
-        Kirki::add_field( 'capstone_rss_url', array(
-            'type'     => 'link',
-            'settings' => 'capstone_rss_url',
-            'label'    => __( 'RSS URL', 'capstone-pro' ),
-            'section'  => 'capstone_social_profiles',
-            'default'  => get_bloginfo('rss_url'),
+        // OPTION: Repeater Field
+        Kirki::add_field( 'capstone_social_profiles_group', array(
+            'type'        => 'repeater',
+            'settings'    => 'capstone_social_profiles_group',
+            'label'       => esc_html__( 'Profile Links', 'capstone-pro' ),
+            'section'     => 'capstone_social_profiles',
+            'row_label' => array(
+                'type'  => 'field',
+                'value' => esc_html__('Social Profile', 'capstone-pro' ),
+                'field' => 'plateform',
+            ),
+            'button_label' => esc_html__('Add New Profile', 'capstone-pro' ),
+            'default'      => array(),
+            'fields' => array(
+                'plateform' => array(
+                    'type'        => 'select',
+                    'label'       => esc_html__( 'Plateform', 'capstone-pro' ),
+                    'description' => esc_html__( 'Choose a social media plateform for which you want to define your profile URL.', 'capstone-pro' ),
+                    'choices'     => array(
+                        '' => esc_html__( 'Choose Plateform', 'capstone-pro' ),
+                        'fab fa-twitter' => esc_html__( 'Twitter', 'capstone-pro' ),
+                        'fab fa-facebook-f' => esc_html__( 'Facebook', 'capstone-pro' ),
+                        'fab fa-dribbble' => esc_html__( 'Dribbble', 'capstone-pro' ),
+                        'fab fa-linkedin-in' => esc_html__( 'LinkedIn', 'capstone-pro' ),
+                        'fab fa-instagram' => esc_html__( 'Instagram', 'capstone-pro' ),
+                        'fab fa-pinterest' => esc_html__( 'Pinterest', 'capstone-pro' ),
+                        'fab fa-yelp' => esc_html__( 'Yelp', 'capstone-pro' ),
+                        'fab fa-google-plus-g' => esc_html__( 'Google Plus', 'capstone-pro' ),
+                        'fab fa-tumblr' => esc_html__( 'Tumblr', 'capstone-pro' ),
+                        'fab fa-youtube' => esc_html__( 'Youtube', 'capstone-pro' ),
+                        'fab fa-vimeo' => esc_html__( 'Vimeo', 'capstone-pro' ),
+                        'fab fa-soundcloud' => esc_html__( 'Soundcloud', 'capstone-pro' ),
+                        'fas fa-rss' => esc_html__( 'RSS', 'capstone-pro' ),
+                    ),
+                ),
+                'url' => array(
+                    'type'        => 'text',
+                    'label'       => esc_html__( 'Profile URL', 'capstone-pro' ),
+                    'description' => esc_html__( 'Define URL for your above selected social media plateform.', 'capstone-pro' ),
+                    'default'     => '',
+                ),
+            )
         ) );
 
 	}
