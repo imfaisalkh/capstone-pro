@@ -33,9 +33,9 @@
         ) );
 
         // OPTION: Select Field
-        Kirki::add_field( 'capstone_companies_companys_excerpt', array(
+        Kirki::add_field( 'capstone_companies_jobs_excerpt', array(
             'type'        => 'select',
-            'settings'    => 'capstone_companies_companys_excerpt',
+            'settings'    => 'capstone_companies_jobs_excerpt',
             'label'       => __( '"Open Positions" Excerpt', 'capstone-pro' ),
             'description' => esc_html__( 'Display a list of company-specific recent companys?', 'capstone-pro' ),
             'section'     => 'capstone_companies_master_page',
@@ -47,9 +47,9 @@
         ) );
 
         // OPTION: Companies Master --> Filter Breakpoint
-		Kirki::add_field( 'capstone_companies_companys_excerpt_limit', array(
+		Kirki::add_field( 'capstone_companies_jobs_excerpt_limit', array(
 			'type'        => 'number',
-			'settings'    => 'capstone_companies_companys_excerpt_limit',
+			'settings'    => 'capstone_companies_jobs_excerpt_limit',
 			'label'       => esc_html__( 'Limit "Open Positions"', 'capstone-pro' ),
 			'description'    => esc_html__( 'How many "Open Positions" to display, if enabled?', 'capstone-pro' ),
 			'section'     => 'capstone_companies_master_page',

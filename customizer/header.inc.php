@@ -84,7 +84,7 @@
 			'default'     => '8',
 		) );
 
-		// OPTION: Companies Detail --> Content Order
+		// OPTION: Order Field
 		Kirki::add_field( 'capstone_header_explore_menu_order', array(
 			'type'        => 'sortable',
 			'settings'    => 'capstone_header_explore_menu_order',
@@ -102,6 +102,8 @@
 				'companies_list' => esc_html__( 'Companies List', 'capstone-pro' ),
 				'job_tags' => esc_html__( 'Job Tags', 'capstone-pro' ),
 				'job_types' => esc_html__( 'Job Types', 'capstone-pro' ),
+				'resume_categories' => esc_html__( 'Resume Categories', 'capstone-pro' ),
+				'resume_skills' => esc_html__( 'Resume Skills', 'capstone-pro' ),
 			),
 		) );
 
