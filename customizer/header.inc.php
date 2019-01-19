@@ -68,11 +68,10 @@
 
 		// SECTION: Header
 		Kirki::add_section( 'capstone_header_explore_menu', array(
-			'title'          => esc_html__( 'Explore Menu Settings', 'capstone-pro' ),
+			'title'          => esc_html__( 'Explore Menu', 'capstone-pro' ),
 			'description'    => esc_html__( 'This section configure settings for the site header.', 'capstone-pro' ),
 			'panel'          => 'capstone_header_settings',
 		) );
-		
 
     	// OPTION: Number Field
 		Kirki::add_field( 'capstone_header_explore_menu_limit', array(
@@ -107,4 +106,45 @@
 			),
 		) );
 
+		// SECTION: Search Module
+		Kirki::add_section( 'capstone_header_search_module', array(
+			'title'          => esc_html__( 'Search Module', 'capstone-pro' ),
+			'description'    => esc_html__( 'This section configure settings for header search module.', 'capstone-pro' ),
+			'panel'          => 'capstone_header_settings',
+		) );
+
+		// OPTION: Select Field
+		Kirki::add_field( 'capstone_header_search_type', array(
+			'type'        => 'select',
+			'settings'    => 'capstone_header_search_type',
+			'label'       => __( 'Search Type', 'capstone-pro' ),
+			'description'    => esc_html__( 'Define which search form to use in site header.', 'capstone-pro' ),
+			'section'     => 'capstone_header_search_module',
+			'default'     => 'blog',
+			'choices'     => array(
+				'jobs' => esc_html__( 'Jobs', 'capstone-pro' ),
+				'resumes' => esc_html__( 'Resumes', 'capstone-pro' ),
+				'companies' => esc_html__( 'Companies', 'capstone-pro' ),
+				'blog' => esc_html__( 'Blog', 'capstone-pro' ),
+			),
+		) );
+
+		// OPTION: Text Field
+		Kirki::add_field( 'capstone_header_search_title', array(
+			'type'     => 'text',
+			'settings' => 'capstone_header_search_title',
+			'label'    => __( 'Search Title', 'capstone-pro' ),
+			'section'  => 'capstone_header_search_module',
+			'description' => esc_html__('Enter a title for your search module.', 'capstone-pro'),
+		) );
+
+		// OPTION: Text Area Field
+		Kirki::add_field( 'capstone_header_search_desc', array(
+			'type'     => 'textarea',
+			'settings' => 'capstone_header_search_desc',
+			'label'    => __( 'Search Description', 'capstone-pro' ),
+			'section'  => 'capstone_header_search_module',
+			'description' => esc_html__('Enter a short description for your search module.', 'capstone-pro'),
+		) );
+		
 	}
