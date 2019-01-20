@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the Capstone Pro plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Capstone Pro 1.2\n"
+"Project-Id-Version: Capstone Pro 1.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/capstone-pro\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2019-01-17T03:36:30+00:00\n"
+"POT-Creation-Date: 2019-01-20T18:44:30+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.1.0\n"
 "X-Domain: capstone-pro\n"
@@ -180,6 +180,7 @@ msgid "No more pages to load"
 msgstr ""
 
 #: page-builder/modules/blog-posts/blog-posts.php:8
+#: customizer/header.inc.php:128
 msgid "Blog"
 msgstr ""
 
@@ -404,6 +405,7 @@ msgid "Categories"
 msgstr ""
 
 #: page-builder/modules/jobs-listing/jobs-listing.php:64
+#: customizer/header.inc.php:103
 #: customizer/jobs.inc.php:85
 msgid "Job Types"
 msgstr ""
@@ -659,18 +661,10 @@ msgid "This section configure background for misc. site elements."
 msgstr ""
 
 #: customizer/backgrounds.inc.php:75
-msgid "Off-Canvas Sidebar Background"
-msgstr ""
-
-#: customizer/backgrounds.inc.php:76
-msgid "It will appear as background image of off-canvas sidebar."
-msgstr ""
-
-#: customizer/backgrounds.inc.php:85
 msgid "Compact Page Sidebar Background"
 msgstr ""
 
-#: customizer/backgrounds.inc.php:86
+#: customizer/backgrounds.inc.php:76
 msgid "Here you can define background image for compact template sidebar."
 msgstr ""
 
@@ -764,44 +758,147 @@ msgstr ""
 msgid "Made with <i class=\"material-icons\">favorite_border</i> by wpscouts - &copy;  All rights reserved"
 msgstr ""
 
-#: customizer/header.inc.php:13
+#: customizer/header.inc.php:14
 msgid "Header Settings"
 msgstr ""
 
-#: customizer/header.inc.php:14
+#: customizer/header.inc.php:15
+#: customizer/header.inc.php:21
+#: customizer/header.inc.php:72
 msgid "This section configure settings for the site header."
 msgstr ""
 
-#: customizer/header.inc.php:22
+#: customizer/header.inc.php:20
+msgid "General Settings"
+msgstr ""
+
+#: customizer/header.inc.php:29
 msgid "Primary Logo Width"
 msgstr ""
 
-#: customizer/header.inc.php:23
+#: customizer/header.inc.php:30
 msgid "This option only applies to primary image logo."
 msgstr ""
 
-#: customizer/header.inc.php:32
+#: customizer/header.inc.php:39
 msgid "Dashboard Logo Width"
 msgstr ""
 
-#: customizer/header.inc.php:33
+#: customizer/header.inc.php:40
 msgid "This option only applies to dashboard image logo."
 msgstr ""
 
-#: customizer/header.inc.php:42
+#: customizer/header.inc.php:49
 msgid "Header Vertical Padding"
 msgstr ""
 
-#: customizer/header.inc.php:43
+#: customizer/header.inc.php:50
 msgid "Adjust the number to increase/decrease header height."
 msgstr ""
 
-#: customizer/header.inc.php:52
-msgid "Explore Menu Limit"
+#: customizer/header.inc.php:59
+msgid "Header Stickiness"
 msgstr ""
 
-#: customizer/header.inc.php:53
+#: customizer/header.inc.php:63
+msgid "Stick on Demand"
+msgstr ""
+
+#: customizer/header.inc.php:64
+msgid "Always Sticky"
+msgstr ""
+
+#: customizer/header.inc.php:65
+msgid "Disable Stickiness"
+msgstr ""
+
+#: customizer/header.inc.php:71
+msgid "Explore Menu"
+msgstr ""
+
+#: customizer/header.inc.php:80
+msgid "Menu Limit"
+msgstr ""
+
+#: customizer/header.inc.php:81
 msgid "Explore menu can only show handful of terms before going off the screen. Define how many terms (for each taxonomy) it should show at max."
+msgstr ""
+
+#: customizer/header.inc.php:90
+msgid "Menu Order"
+msgstr ""
+
+#: customizer/header.inc.php:91
+msgid "Change the order and visibility of explore menu items."
+msgstr ""
+
+#: customizer/header.inc.php:100
+msgid "Job Categories"
+msgstr ""
+
+#: customizer/header.inc.php:101
+msgid "Companies List"
+msgstr ""
+
+#: customizer/header.inc.php:102
+#: customizer/jobs.inc.php:86
+#: customizer/jobs.inc.php:132
+#: customizer/jobs.inc.php:171
+msgid "Job Tags"
+msgstr ""
+
+#: customizer/header.inc.php:104
+msgid "Resume Categories"
+msgstr ""
+
+#: customizer/header.inc.php:105
+msgid "Resume Skills"
+msgstr ""
+
+#: customizer/header.inc.php:111
+#: customizer/jobs.inc.php:49
+#: customizer/resumes.inc.php:48
+msgid "Search Module"
+msgstr ""
+
+#: customizer/header.inc.php:112
+msgid "This section configure settings for header search module."
+msgstr ""
+
+#: customizer/header.inc.php:120
+msgid "Search Type"
+msgstr ""
+
+#: customizer/header.inc.php:121
+msgid "Define which search form to use in site header."
+msgstr ""
+
+#: customizer/header.inc.php:125
+msgid "Jobs"
+msgstr ""
+
+#: customizer/header.inc.php:126
+msgid "Resumes"
+msgstr ""
+
+#: customizer/header.inc.php:127
+msgid "Companies"
+msgstr ""
+
+#: customizer/header.inc.php:136
+msgid "Search Title"
+msgstr ""
+
+#: customizer/header.inc.php:138
+msgid "Enter a title for your search module."
+msgstr ""
+
+#: customizer/header.inc.php:145
+msgid "Search Description"
+msgstr ""
+
+#: customizer/header.inc.php:147
+msgid "Enter a short description for your search module."
 msgstr ""
 
 #: customizer/geolocation.inc.php:13
@@ -930,17 +1027,12 @@ msgstr ""
 #: customizer/jobs.inc.php:142
 #: customizer/companies.inc.php:101
 #: customizer/resumes.inc.php:40
-#: customizer/resumes.inc.php:120
+#: customizer/resumes.inc.php:117
 msgid "Sidebar Order"
 msgstr ""
 
 #: customizer/jobs.inc.php:41
 msgid "Change the order and visibility (at global level) of job archive sidebar."
-msgstr ""
-
-#: customizer/jobs.inc.php:49
-#: customizer/resumes.inc.php:48
-msgid "Search Module"
 msgstr ""
 
 #: customizer/jobs.inc.php:50
@@ -965,12 +1057,6 @@ msgstr ""
 #: customizer/jobs.inc.php:77
 #: customizer/resumes.inc.php:59
 msgid "Change the order and visibility (at global level) of different filters within \"Filters Module\"."
-msgstr ""
-
-#: customizer/jobs.inc.php:86
-#: customizer/jobs.inc.php:132
-#: customizer/jobs.inc.php:171
-msgid "Job Tags"
 msgstr ""
 
 #: customizer/jobs.inc.php:95
@@ -1030,7 +1116,7 @@ msgstr ""
 
 #: customizer/jobs.inc.php:152
 #: customizer/companies.inc.php:110
-#: customizer/resumes.inc.php:130
+#: customizer/resumes.inc.php:127
 msgid "Listing URL"
 msgstr ""
 
@@ -1051,12 +1137,10 @@ msgid "This section is only applicable if you have activated \"WP Job Manager - 
 msgstr ""
 
 #: customizer/jobs.inc.php:181
-#: customizer/resumes.inc.php:159
 msgid "Tags Title"
 msgstr ""
 
 #: customizer/jobs.inc.php:183
-#: customizer/resumes.inc.php:161
 msgid "Perks & Privilges"
 msgstr ""
 
@@ -1065,7 +1149,6 @@ msgid "Job Tags would be represented with this title on the fron-end."
 msgstr ""
 
 #: customizer/jobs.inc.php:191
-#: customizer/resumes.inc.php:169
 msgid "Tags Descripion"
 msgstr ""
 
@@ -1357,8 +1440,6 @@ msgid "Change the order and visibility (at global level) of resume archive sideb
 msgstr ""
 
 #: customizer/resumes.inc.php:65
-#: customizer/resumes.inc.php:110
-#: customizer/resumes.inc.php:149
 msgid "Resume Tags"
 msgstr ""
 
@@ -1370,56 +1451,40 @@ msgstr ""
 msgid "Change the order and visibility (at global level) of resume listing content."
 msgstr ""
 
-#: customizer/resumes.inc.php:107
+#: customizer/resumes.inc.php:105
 msgid "Resume Header"
 msgstr ""
 
-#: customizer/resumes.inc.php:108
+#: customizer/resumes.inc.php:106
 msgid "Resume Meta"
 msgstr ""
 
-#: customizer/resumes.inc.php:109
+#: customizer/resumes.inc.php:107
 msgid "Resumes Description"
 msgstr ""
 
-#: customizer/resumes.inc.php:111
+#: customizer/resumes.inc.php:108
 msgid "Resume Actions"
 msgstr ""
 
-#: customizer/resumes.inc.php:121
+#: customizer/resumes.inc.php:118
 msgid "Change the order and visibility (at global level) of resume listing sidebar."
 msgstr ""
 
-#: customizer/resumes.inc.php:129
+#: customizer/resumes.inc.php:126
 msgid "Candidate Profile"
 msgstr ""
 
-#: customizer/resumes.inc.php:131
+#: customizer/resumes.inc.php:128
 msgid "Similiar Resumes"
 msgstr ""
 
-#: customizer/resumes.inc.php:140
+#: customizer/resumes.inc.php:137
 msgid "Similiar Resumes Count"
 msgstr ""
 
-#: customizer/resumes.inc.php:141
+#: customizer/resumes.inc.php:138
 msgid "How many (at max) similiar resumes to display in sidebar."
-msgstr ""
-
-#: customizer/resumes.inc.php:150
-msgid "This section is only applicable if you have activated \"WP Resume Manager - Tags\" add-on."
-msgstr ""
-
-#: customizer/resumes.inc.php:162
-msgid "Resume Tags would be represented with this title on the fron-end."
-msgstr ""
-
-#: customizer/resumes.inc.php:171
-msgid "This resume listing offers following perks and privileges."
-msgstr ""
-
-#: customizer/resumes.inc.php:172
-msgid "This text would be displayed in detail resume listing page as a small description."
 msgstr ""
 
 #: customizer/social-networks.inc.php:14
@@ -1468,55 +1533,87 @@ msgid "This section configures links to your social profiles."
 msgstr ""
 
 #: customizer/social-networks.inc.php:59
-msgid "FaceBook"
+msgid "Profile Links"
 msgstr ""
 
-#: customizer/social-networks.inc.php:67
-msgid "Twitter"
+#: customizer/social-networks.inc.php:63
+msgid "Social Profile"
+msgstr ""
+
+#: customizer/social-networks.inc.php:66
+msgid "Add New Profile"
+msgstr ""
+
+#: customizer/social-networks.inc.php:71
+msgid "Plateform"
+msgstr ""
+
+#: customizer/social-networks.inc.php:72
+msgid "Choose a social media plateform for which you want to define your profile URL."
+msgstr ""
+
+#: customizer/social-networks.inc.php:74
+msgid "Choose Plateform"
 msgstr ""
 
 #: customizer/social-networks.inc.php:75
+msgid "Twitter"
+msgstr ""
+
+#: customizer/social-networks.inc.php:76
+msgid "Facebook"
+msgstr ""
+
+#: customizer/social-networks.inc.php:77
 msgid "Dribbble"
 msgstr ""
 
-#: customizer/social-networks.inc.php:83
+#: customizer/social-networks.inc.php:78
 msgid "LinkedIn"
 msgstr ""
 
-#: customizer/social-networks.inc.php:91
+#: customizer/social-networks.inc.php:79
 msgid "Instagram"
 msgstr ""
 
-#: customizer/social-networks.inc.php:99
+#: customizer/social-networks.inc.php:80
 msgid "Pinterest"
 msgstr ""
 
-#: customizer/social-networks.inc.php:107
-msgid "Bloglovin"
+#: customizer/social-networks.inc.php:81
+msgid "Yelp"
 msgstr ""
 
-#: customizer/social-networks.inc.php:115
+#: customizer/social-networks.inc.php:82
 msgid "Google Plus"
 msgstr ""
 
-#: customizer/social-networks.inc.php:123
+#: customizer/social-networks.inc.php:83
 msgid "Tumblr"
 msgstr ""
 
-#: customizer/social-networks.inc.php:131
-msgid "YouTube"
+#: customizer/social-networks.inc.php:84
+msgid "Youtube"
 msgstr ""
 
-#: customizer/social-networks.inc.php:139
+#: customizer/social-networks.inc.php:85
 msgid "Vimeo"
 msgstr ""
 
-#: customizer/social-networks.inc.php:147
-msgid "Sound Cloud"
+#: customizer/social-networks.inc.php:86
+msgid "Soundcloud"
 msgstr ""
 
-#: customizer/social-networks.inc.php:155
-msgid "RSS URL"
+#: customizer/social-networks.inc.php:87
+msgid "RSS"
+msgstr ""
+
+#: customizer/social-networks.inc.php:92
+msgid "Profile URL"
+msgstr ""
+
+#: customizer/social-networks.inc.php:93
+msgid "Define URL for your above selected social media plateform."
 msgstr ""
 
 #: shortcodes/dashboard.inc.php:31

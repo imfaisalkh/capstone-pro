@@ -98,16 +98,13 @@
 			'section'     => 'capstone_resumes_detail_page',
 			'default'     => array(
 				'resume_header',
-				'resume_meta',
 				'resume_desc',
-				'resume_tags',
 				'resume_actions',
 			),
 			'choices'     => array(
 				'resume_header' => esc_html__( 'Resume Header', 'capstone-pro' ),
 				'resume_meta' => esc_html__( 'Resume Meta', 'capstone-pro' ),
 				'resume_desc' => esc_html__( 'Resumes Description', 'capstone-pro' ),
-				'resume_tags' => esc_html__( 'Resume Tags', 'capstone-pro' ),
 				'resume_actions' => esc_html__( 'Resume Actions', 'capstone-pro' ),
 			),
 			'priority'    => 1,
@@ -142,34 +139,6 @@
 			'section'     => 'capstone_resumes_detail_page',
 			'default'     => '3',
 			'priority'    => 3,
-		) );
-
-		// SECTION: Resume Tags
-		Kirki::add_section( 'capstone_resume_tags', array(
-			'title'          => esc_html__( 'Resume Tags', 'capstone-pro' ),
-			'description'    => esc_html__( 'This section is only applicable if you have activated "WP Resume Manager - Tags" add-on.', 'capstone-pro' ),
-			'panel'          => 'capstone_resumes_settings',
-			'priority'       => 30,
-		) );
-
-		// OPTION: Text Field
-        Kirki::add_field( 'capstone_resumes_tags_title', array(
-            'type'     => 'text',
-            'settings' => 'capstone_resumes_tags_title',
-            'label'    => __( 'Tags Title', 'capstone-pro' ),
-			'section'  => 'capstone_resume_tags',
-			'default'   => esc_html__('Perks & Privilges', 'capstone-pro'),
-            'description' => esc_html__('Resume Tags would be represented with this title on the fron-end.', 'capstone-pro'),
-		) );
-
-		// OPTION: Textarea Field
-        Kirki::add_field( 'capstone_resumes_tags_desc', array(
-            'type'          => 'textarea',
-            'settings'      => 'capstone_resumes_tags_desc',
-            'label'         => __( 'Tags Descripion', 'capstone-pro' ),
-			'section'       => 'capstone_resume_tags',
-			'default'   	=> esc_html__('This resume listing offers following perks and privileges.', 'capstone-pro'),
-            'description'   => esc_html__('This text would be displayed in detail resume listing page as a small description.', 'capstone-pro'),
 		) );
 
 	}
