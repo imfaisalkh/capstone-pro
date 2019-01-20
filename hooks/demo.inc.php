@@ -10,37 +10,41 @@
         <div id="demo-notices">
 
             <!-- Registration Notification -->
-            <div id="registration-notice" class="demo-notice">
-                <a href="#" class="close"><img src="<?php echo esc_url( get_template_directory_uri() .'/images/close.svg' ); ?>" alt="<?php esc_attr_e('Close Notification' ,'capstone'); ?>"></a>
-                <div class="container">
-                    <div class="text">
-                        <h5 class="title"><?php echo esc_html__('Note:', 'capstone'); ?></h5>
-                        <p class="desc"><?php echo esc_html__('You are are not allowed to create a new account in demo, you can login to a demo account instead.', 'capstone'); ?></p>
-                    </div>
+            <div id="registration-notice" class="mfp-hide white-popup-block">
+                <header class="popup-header">
+                    <h2 class="title">Not Allowed</h2>
+                    <p class="subtitle">The action being performed is not allowed.</p>
+                </header>
+
+                <main class="popup-body">
+                    <p class="desc">The demo site does not allow user regstraion. However, to check the dashboard you can <u>login to a demo account</u> instead.</p>
                     <div class="buttons">
-                        <p>Login as: <a href="#" class="button employer" data-username="elon@wpscouts.net" data-password="elon123">Employer</a> or <a href="#" class="button candidate" data-username="robert@wpscouts.net" data-password="robert123">Candidate</a></p>
+                        <p><a href="#" class="button employer" data-username="elon@wpscouts.net" data-password="elon123">Login as Employer</a> or <a href="#" class="button candidate" data-username="robert@wpscouts.net" data-password="robert123">Login as Candidate</a></p>
                     </div>
-                </div>
+                </main>
             </div>
 
             <!-- Login Notification -->
-            <div id="login-notice" class="demo-notice">
-                <a href="#" class="close"><img src="<?php echo esc_url( get_template_directory_uri() .'/images/close.svg' ); ?>" alt="<?php esc_attr_e('Close Notification' ,'capstone'); ?>"></a>
-                <div class="container">
-                    <div class="text">
-                        <h5 class="title"><?php echo esc_html__('Note:', 'capstone'); ?></h5>
-                        <p class="desc"><?php echo esc_html__('You are trying to access a protected page, you can login to a demo account to access it.', 'capstone'); ?></p>
-                    </div>
+            <div id="login-notice" class="mfp-hide white-popup-block">
+                <header class="popup-header">
+                    <h2 class="title">Protected Page</h2>
+                    <p class="subtitle">Page requires authetication before moving forward.</p>
+                </header>
+
+                <main class="popup-body">
+                    <p class="desc">The page you are trying to access is protected and requires authentication, do you want to <u>login to a demo account</u> to access this page?</p>
                     <div class="buttons">
-                        <p>Login as: <a href="#" class="button employer" data-username="elon@wpscouts.net" data-password="elon123">Employer</a> or <a href="#" class="button candidate" data-username="robert@wpscouts.net" data-password="robert123">Candidate</a></p>
+                        <p><a href="#" class="button employer" data-username="elon@wpscouts.net" data-password="elon123">Login as Employer</a> or <a href="#" class="button candidate" data-username="robert@wpscouts.net" data-password="robert123">Login as Candidate</a></p>
                     </div>
-                    <div class="clipboard">
-                        <?php if ( shortcode_exists( 'wppb-login' ) ) { ?> 
-                            <?php echo do_shortcode('[wppb-login]'); ?>
-                        <?php } ?>
-                    </div>
+                </main>
+
+                <div class="popup-clipboard">
+                    <?php if ( shortcode_exists( 'wppb-login' ) ) { ?> 
+                        <?php echo do_shortcode('[wppb-login]'); ?>
+                    <?php } ?>
                 </div>
             </div>
+
 
             <!-- Not Allowed Notification -->
             <div id="not-allowed-notice" class="demo-notice">
