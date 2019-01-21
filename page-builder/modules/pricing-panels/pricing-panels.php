@@ -9,8 +9,8 @@ class PricingTableClass extends FLBuilderModule {
             'description'     => __('Display pricing plans in a multi-column grid.', 'capstone-pro'),
             'group'           => __( 'Capstone Modules', 'capstone-pro' ),
             'category'        => __( 'Job Board', 'capstone-pro' ),
-            'dir'             => CAPSTONE_PAGE_BUILDER_MODULES_DIR . 'pricing/',
-            'url'             => CAPSTONE_PAGE_BUILDER_MODULES_URL . 'pricing/',
+            'dir'             => CAPSTONE_PAGE_BUILDER_MODULES_DIR . 'pricing-panels/',
+            'url'             => CAPSTONE_PAGE_BUILDER_MODULES_URL . 'pricing-panels/',
             'icon'            => 'editor-table.svg',
             'editor_export'   => true, // Defaults to true and can be omitted.
             'enabled'         => true, // Defaults to true and can be omitted.
