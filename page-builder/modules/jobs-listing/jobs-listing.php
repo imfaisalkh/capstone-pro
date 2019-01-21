@@ -29,7 +29,7 @@ FLBuilder::register_module( 'JobListingClass', array(
                         'type'          => 'unit',
                         'label'         => __( 'Count', 'capstone-pro' ),
                         'description'   => 'How many jobs to list.',
-                        'default'       => '-1',
+                        'default'       => '6',
                     ),
                     'order_by' => array(
                         'type'          => 'select',
