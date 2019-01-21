@@ -4,7 +4,7 @@
  * Plugin Name: Capstone Pro
  * Plugin URI: https://wpscouts.net
  * Description: This plugins extends functionality of core `capstone` theme.
- * Version: 1.1
+ * Version: 1.2.0
  * Author: Faisal Khurshid
  * Author URI: https://wpscouts.net
  */
@@ -14,6 +14,12 @@
 if ( ! defined ( 'ABSPATH' ) ) {
   exit;
 }
+
+// Load plugin textdomain.
+function capstone_pro_load_textdomain() {
+  load_plugin_textdomain( 'capstone-pro', false, basename( dirname( __FILE__ ) ) . '/languages' ); 
+}
+add_action( 'init', 'capstone_pro_load_textdomain' );
 
 // Define Constants
 define( 'CAPSTONE_META_BOXES_DIR', plugin_dir_path( __FILE__ ) . 'metaboxes/' );

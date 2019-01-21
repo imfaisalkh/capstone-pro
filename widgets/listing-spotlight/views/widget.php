@@ -25,7 +25,7 @@
 
 <?php if ($listing_query) { ?>
   <section class="module-wrapper listing-spotlight">
-    <h3 class="module-title"><?php echo esc_html__('Listing Spotlight', 'capstone'); ?></h3>
+    <h3 class="module-title"><?php echo esc_html__('Listing Spotlight', 'capstone-pro'); ?></h3>
     <div class="main-carousel">
       <?php if ($listing_query->have_posts()) { ?>
         <?php while( $listing_query->have_posts() ) : $listing_query->the_post(); ?>
@@ -37,12 +37,12 @@
           <article class="listing-entry carousel-cell">
             <div class="image">
               <a href="<?php the_permalink(); ?>">
-                <img src="<?php echo $spotlight_image; ?>" alt="<?php printf(esc_html__('Open Position at %s', 'capstone'), get_the_company_name()); ?>">
+                <img src="<?php echo $spotlight_image; ?>" alt="<?php printf(esc_html__('Open Position at %s', 'capstone-pro'), get_the_company_name()); ?>">
               </a>
             </div>
             <div class="desc">
               <?php if (has_term('', 'job_listing_category')) { ?>
-                <span class="category"><?php echo $job_categories[0]->name; ?></span>
+                <span class="category"><?php echo esc_html($job_categories[0]->name); ?></span>
               <?php } ?>
               <a href="<?php the_permalink(); ?>">
                 <h4 class="title"><?php the_title(); ?></h4>
@@ -50,13 +50,13 @@
               <span class="location"><?php the_job_location(); ?></span>
             </div>
             <div class="action">
-              <a href="#add-bookmark-<?php the_ID(); ?>" class="add-bookmark">Save for later &xrarr;</a>
+              <a href="#add-bookmark-<?php the_ID(); ?>" class="add-bookmark"><?php echo esc_html__('Save for later', 'capstone-pro'); ?> &xrarr;</a>
             </div>
             <?php get_template_part('includes/popup-add-bookmark.inc' ); ?>
           </article>
         <?php endwhile; ?>
         <?php } else { ?>
-          <p>There is no job found with mentioned criteria.</p>
+          <p><?php echo esc_html__('There is no job found with mentioned criteria.', 'capstone-pro'); ?></p>
         <?php } ?>
       <?php wp_reset_postdata(); ?>
     </div>
