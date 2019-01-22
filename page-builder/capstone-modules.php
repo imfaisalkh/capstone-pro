@@ -13,7 +13,7 @@ function capstone_load_module_examples() {
       require_once CAPSTONE_PAGE_BUILDER_MODULES_DIR .'faqs/faqs.php';
       require_once CAPSTONE_PAGE_BUILDER_MODULES_DIR .'testimonials-slider/testimonials-slider.php';
       require_once CAPSTONE_PAGE_BUILDER_MODULES_DIR .'cta-banner/cta-banner.php';
-      require_once CAPSTONE_PAGE_BUILDER_MODULES_DIR .'taxonomies-grid/taxonomies-grid.php';
+      // require_once CAPSTONE_PAGE_BUILDER_MODULES_DIR .'taxonomies-grid/taxonomies-grid.php';
       if ( class_exists( 'WP_Job_Manager' ) ) {
         require_once CAPSTONE_PAGE_BUILDER_MODULES_DIR .'jobs-listing/jobs-listing.php';
         require_once CAPSTONE_PAGE_BUILDER_MODULES_DIR .'listing-spotlight/listing-spotlight.php';
