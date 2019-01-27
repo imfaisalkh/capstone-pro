@@ -7,7 +7,7 @@
 	// Insert following line in your 'wp-config.php' to display admin UI
 	// define('WP_ENV', 'development');
 
-	if ( !defined('WP_ENV') ) {
+	if ( !defined('WP_ENV') && !get_theme_mod('capstone_enable_dev_mode', false) ) {
 
 		define( 'ACF_LITE', true );
 
