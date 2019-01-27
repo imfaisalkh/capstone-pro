@@ -18,6 +18,17 @@
             'priority'    => 8,
         ) );
 
+
+		// OPTION: Checkbox
+		Kirki::add_field( 'capstone_disable_preloader', array(
+			'type'        => 'checkbox',
+			'settings'    => 'capstone_disable_preloader',
+			'label'       => esc_html__( 'Disable Preloader', 'capstone-pro' ),
+			'description' => esc_html__( 'Check this to disable site preloader.', 'capstone-pro' ),
+			'section'     => 'title_tagline',
+			'default'     => false,
+		) );
+
         // OPTION: Image Field
         Kirki::add_field( 'capstone_preloader_icon', array(
             'type'        => 'image',
