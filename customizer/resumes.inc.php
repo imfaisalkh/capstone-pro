@@ -41,13 +41,14 @@
 			'description'    => esc_html__( 'Change the order and visibility (at global level) of resume archive sidebar.', 'capstone-pro' ),
 			'section'     => 'capstone_resumes_master_page',
 			'default'     => array(
+				'native_widgets',
 				'search_module',
 				'filters_module',
 			),
 			'choices'     => array(
+				'native_widgets' => esc_html__( 'Native Widgets', 'capstone-pro' ),
 				'search_module' => esc_html__( 'Search Module', 'capstone-pro' ),
 				'filters_module' => esc_html__( 'Filters Module', 'capstone-pro' ),
-				'native_widgets' => esc_html__( 'Native Widgets', 'capstone-pro' ),
 			),
 		) );
 
@@ -118,11 +119,13 @@
 			'description'    => esc_html__( 'Change the order and visibility (at global level) of resume listing sidebar.', 'capstone-pro' ),
 			'section'     => 'capstone_resumes_detail_page',
 			'default'     => array(
+				'native_widgets',
 				'candidate_profile',
 				'listing_url',
 				'similiar_resumes',
 			),
 			'choices'     => array(
+				'native_widgets' => esc_html__( 'Native Widgets', 'capstone-pro' ),
 				'candidate_profile' => esc_html__( 'Candidate Profile', 'capstone-pro' ),
 				'listing_url' => esc_html__( 'Listing URL', 'capstone-pro' ),
 				'similiar_resumes' => esc_html__( 'Similiar Resumes', 'capstone-pro' ),

@@ -41,6 +41,7 @@
 			'description'    => esc_html__( 'Change the order and visibility (at global level) of job archive sidebar.', 'capstone-pro' ),
 			'section'     => 'capstone_jobs_master_page',
 			'default'     => array(
+				'native_widgets',
 				'search_module',
 				'filters_module',
 				'alert_module',
@@ -143,16 +144,29 @@
 			'description'    => esc_html__( 'Change the order and visibility (at global level) of job listing sidebar.', 'capstone-pro' ),
 			'section'     => 'capstone_jobs_detail_page',
 			'default'     => array(
+				'native_widgets',
 				'company_profile',
 				'listing_url',
 				'similiar_jobs',
 			),
 			'choices'     => array(
+				'native_widgets' => esc_html__( 'Native Widgets', 'capstone-pro' ),
 				'company_profile' => esc_html__( 'Company Profile', 'capstone-pro' ),
 				'listing_url' => esc_html__( 'Listing URL', 'capstone-pro' ),
 				'similiar_jobs' => esc_html__( 'Similiar Jobs', 'capstone-pro' ),
 			),
 			'priority'    => 2,
+		) );
+
+		// OPTION: Number
+		Kirki::add_field( 'capstone_jobs_single_meta_limit', array(
+			'type'        => 'number',
+			'settings'    => 'capstone_jobs_single_meta_limit',
+			'label'       => __( 'Job Meta Limit', 'capstone-pro' ),
+			'description'    => esc_html__( 'How many meta values to show before "see all" link?', 'capstone-pro' ),
+			'section'     => 'capstone_jobs_detail_page',
+			'default'     => '4',
+			'priority'    => 4,
 		) );
 
 		// OPTION: Jobs Detail --> Sidebar Order
