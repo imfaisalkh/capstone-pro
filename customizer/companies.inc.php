@@ -102,10 +102,12 @@
 			'description'    => esc_html__( 'Change the order and visibility (at global level) of company listing sidebar.', 'capstone-pro' ),
 			'section'     => 'capstone_companies_detail_page',
 			'default'     => array(
+				'native_widgets',
 				'company_profile',
 				'listing_url',
 			),
 			'choices'     => array(
+				'native_widgets' => esc_html__( 'Native Widgets', 'capstone-pro' ),
 				'company_profile' => esc_html__( 'Company Profile', 'capstone-pro' ),
 				'listing_url' => esc_html__( 'Listing URL', 'capstone-pro' ),
 			),

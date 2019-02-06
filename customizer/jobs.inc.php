@@ -41,8 +41,8 @@
 			'description'    => esc_html__( 'Change the order and visibility (at global level) of job archive sidebar.', 'capstone-pro' ),
 			'section'     => 'capstone_jobs_master_page',
 			'default'     => array(
-				'native_widgets',
 				'search_module',
+				'native_widgets',
 				'filters_module',
 				'alert_module',
 			),

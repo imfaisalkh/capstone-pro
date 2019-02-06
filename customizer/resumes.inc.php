@@ -33,7 +33,7 @@
 			'default'     => false,
 		) );
 
-		// OPTION: Resumes Detail --> Sidebar Order
+		// OPTION: Sortable
 		Kirki::add_field( 'capstone_resumes_sidebar_order', array(
 			'type'        => 'sortable',
 			'settings'    => 'capstone_resumes_sidebar_order',
@@ -41,8 +41,8 @@
 			'description'    => esc_html__( 'Change the order and visibility (at global level) of resume archive sidebar.', 'capstone-pro' ),
 			'section'     => 'capstone_resumes_master_page',
 			'default'     => array(
-				'native_widgets',
 				'search_module',
+				'native_widgets',
 				'filters_module',
 			),
 			'choices'     => array(
@@ -111,7 +111,7 @@
 			'priority'    => 1,
 		) );
 		
-		// OPTION: Resumes Detail --> Sidebar Order
+		// OPTION: Sortable
 		Kirki::add_field( 'capstone_resumes_single_sidebar_order', array(
 			'type'        => 'sortable',
 			'settings'    => 'capstone_resumes_single_sidebar_order',
