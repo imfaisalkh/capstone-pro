@@ -114,4 +114,15 @@
 			'priority'    => 2,
 		) );
 
+		// OPTION: Number
+		Kirki::add_field( 'capstone_companies_single_meta_limit', array(
+			'type'        => 'number',
+			'settings'    => 'capstone_companies_single_meta_limit',
+			'label'       => __( 'Company Meta Limit', 'capstone-pro' ),
+			'description'    => esc_html__( 'How many meta values to show before "see all" link?', 'capstone-pro' ),
+			'section'     => 'capstone_companies_detail_page',
+			'default'     => '4',
+			'priority'    => 4,
+		) );
+
 	}

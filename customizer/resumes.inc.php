@@ -144,4 +144,15 @@
 			'priority'    => 3,
 		) );
 
+		// OPTION: Number
+		Kirki::add_field( 'capstone_resumes_single_meta_limit', array(
+			'type'        => 'number',
+			'settings'    => 'capstone_resumes_single_meta_limit',
+			'label'       => __( 'Resume Meta Limit', 'capstone-pro' ),
+			'description'    => esc_html__( 'How many meta values to show before "see all" link?', 'capstone-pro' ),
+			'section'     => 'capstone_resumes_detail_page',
+			'default'     => '4',
+			'priority'    => 4,
+		) );
+
 	}
