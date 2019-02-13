@@ -92,7 +92,7 @@
 			'section'     => 'capstone_header_explore_menu',
 			'default'     => array(
 				'job_categories',
-				'companies_list',
+				// 'companies_list',
 				'job_tags',
 				'job_types',
 			),
@@ -138,13 +138,50 @@
 			'description' => esc_html__('Enter a title for your search module.', 'capstone-pro'),
 		) );
 
-		// OPTION: Text Area Field
+		// OPTION: Text-Area Field
 		Kirki::add_field( 'capstone_header_search_desc', array(
 			'type'     => 'textarea',
 			'settings' => 'capstone_header_search_desc',
 			'label'    => __( 'Search Description', 'capstone-pro' ),
 			'section'  => 'capstone_header_search_module',
 			'description' => esc_html__('Enter a short description for your search module.', 'capstone-pro'),
+		) );
+
+		// SECTION: Search Module
+		Kirki::add_section( 'capstone_header_cta_module', array(
+			'title'          => esc_html__( 'Call to Action', 'capstone-pro' ),
+			'description'    => esc_html__( 'This section configure settings for call to action button.', 'capstone-pro' ),
+			'panel'          => 'capstone_header_settings',
+		) );
+
+		// OPTION: Checkbox Field
+		Kirki::add_field( 'capstone_header_cta_disable', array(
+			'type'        => 'checkbox',
+			'settings'    => 'capstone_header_cta_disable',
+			'label'       => esc_html__( 'Disable CTA Button', 'capstone-pro' ),
+			'description' => esc_html__( 'Check this option to disable CTA button.', 'capstone-pro' ),
+			'section'     => 'capstone_header_cta_module',
+			'default'     => false,
+		) );
+
+		// OPTION: Text Field
+		Kirki::add_field( 'capstone_header_cta_text', array(
+			'type'     => 'text',
+			'settings' => 'capstone_header_cta_text',
+			'label'    => esc_html__( 'Button Text', 'capstone-pro' ),
+			'default' 	  => esc_html__( 'Add Listing', 'capstone-pro' ),
+			'section'  => 'capstone_header_cta_module',
+			'description' => esc_html__('Enter some text for your CTA button.', 'capstone-pro'),
+		) );
+
+		// OPTION: Image Field
+		Kirki::add_field( 'capstone_header_cta_icon', array(
+			'type'        => 'image',
+			'settings'    => 'capstone_header_cta_icon',
+			'label'       => esc_html__( 'Button Icon', 'capstone-pro' ),
+			'description' => esc_html__('Upload custom icon for CTA button.', 'capstone-pro'),
+			'section'     => 'capstone_header_cta_module',
+			'default' 	  => get_template_directory_uri() .'/images/dashboard.svg',
 		) );
 		
 	}
