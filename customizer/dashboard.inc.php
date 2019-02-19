@@ -107,15 +107,6 @@ function wp_roles_array() {
             'section'     => 'capstone_dashboard_pages',
         ) );
 
-        // OPTION: Select Field
-        Kirki::add_field( 'capstone_dashboard_manage_orders_page', array(
-            'type'        => 'dropdown-pages',
-            'settings'    => 'capstone_dashboard_manage_orders_page',
-            'label'       => esc_html__( 'Manage Orders Page', 'capstone-pro' ),
-            'description' => esc_html__( 'This is the page where you are using `[woocommerce_my_account]` shortcode.', 'capstone-pro' ),
-            'section'     => 'capstone_dashboard_pages',
-        ) );
-        
         // SECTION: Welcome Messages
 		Kirki::add_section( 'capstone_dashboard_welcome_msgs', array(
             'title'          => esc_html__( 'Welcome Messages', 'capstone-pro' ),

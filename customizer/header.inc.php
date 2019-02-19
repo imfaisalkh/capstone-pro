@@ -174,6 +174,15 @@
 			'description' => esc_html__('Enter some text for your CTA button.', 'capstone-pro'),
 		) );
 
+		// OPTION: Text Field
+		Kirki::add_field( 'capstone_header_cta_url', array(
+			'type'     => 'text',
+			'settings' => 'capstone_header_cta_url',
+			'label'    => esc_html__( 'Button URL', 'capstone-pro' ),
+			'section'  => 'capstone_header_cta_module',
+			'description' => esc_html__('Provide custom URL for CTA button.', 'capstone-pro'),
+		) );
+		
 		// OPTION: Image Field
 		Kirki::add_field( 'capstone_header_cta_icon', array(
 			'type'        => 'image',
