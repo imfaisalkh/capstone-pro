@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the Capstone Pro plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Capstone Pro 1.2.0\n"
+"Project-Id-Version: Capstone Pro 1.2.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/capstone-pro\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2019-01-21T00:59:26+00:00\n"
+"POT-Creation-Date: 2019-02-20T01:11:49+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.1.0\n"
 "X-Domain: capstone-pro\n"
@@ -406,7 +406,7 @@ msgstr ""
 
 #: page-builder/modules/jobs-listing/jobs-listing.php:64
 #: customizer/header.inc.php:103
-#: customizer/jobs.inc.php:85
+#: customizer/jobs.inc.php:86
 msgid "Job Types"
 msgstr ""
 
@@ -580,31 +580,31 @@ msgstr ""
 msgid "Listing IDs:"
 msgstr ""
 
-#: hooks/misc.inc.php:27
+#: hooks/misc.inc.php:28
 msgid "Share:"
 msgstr ""
 
-#: hooks/misc.inc.php:28
+#: hooks/misc.inc.php:29
 msgid "Tw"
 msgstr ""
 
-#: hooks/misc.inc.php:29
+#: hooks/misc.inc.php:30
 msgid "Fb"
 msgstr ""
 
-#: hooks/misc.inc.php:30
+#: hooks/misc.inc.php:31
 msgid "Lin"
 msgstr ""
 
-#: hooks/misc.inc.php:48
+#: hooks/misc.inc.php:49
 msgid "Open Notification"
 msgstr ""
 
-#: hooks/woocommerce.inc.php:37
+#: hooks/woocommerce.inc.php:10
 msgid "Personal Information"
 msgstr ""
 
-#: hooks/woocommerce.inc.php:52
+#: hooks/woocommerce.inc.php:25
 msgid "Payment Methods"
 msgstr ""
 
@@ -841,9 +841,9 @@ msgid "Companies List"
 msgstr ""
 
 #: customizer/header.inc.php:102
-#: customizer/jobs.inc.php:86
-#: customizer/jobs.inc.php:132
-#: customizer/jobs.inc.php:171
+#: customizer/jobs.inc.php:87
+#: customizer/jobs.inc.php:133
+#: customizer/jobs.inc.php:185
 msgid "Job Tags"
 msgstr ""
 
@@ -856,8 +856,8 @@ msgid "Resume Skills"
 msgstr ""
 
 #: customizer/header.inc.php:111
-#: customizer/jobs.inc.php:49
-#: customizer/resumes.inc.php:48
+#: customizer/jobs.inc.php:50
+#: customizer/resumes.inc.php:50
 msgid "Search Module"
 msgstr ""
 
@@ -899,6 +899,50 @@ msgstr ""
 
 #: customizer/header.inc.php:147
 msgid "Enter a short description for your search module."
+msgstr ""
+
+#: customizer/header.inc.php:152
+msgid "Call to Action"
+msgstr ""
+
+#: customizer/header.inc.php:153
+msgid "This section configure settings for call to action button."
+msgstr ""
+
+#: customizer/header.inc.php:161
+msgid "Disable CTA Button"
+msgstr ""
+
+#: customizer/header.inc.php:162
+msgid "Check this option to disable CTA button."
+msgstr ""
+
+#: customizer/header.inc.php:171
+msgid "Button Text"
+msgstr ""
+
+#: customizer/header.inc.php:172
+msgid "Add Listing"
+msgstr ""
+
+#: customizer/header.inc.php:174
+msgid "Enter some text for your CTA button."
+msgstr ""
+
+#: customizer/header.inc.php:181
+msgid "Button URL"
+msgstr ""
+
+#: customizer/header.inc.php:183
+msgid "Provide custom URL for CTA button."
+msgstr ""
+
+#: customizer/header.inc.php:190
+msgid "Button Icon"
+msgstr ""
+
+#: customizer/header.inc.php:191
+msgid "Upload custom icon for CTA button."
 msgstr ""
 
 #: customizer/geolocation.inc.php:13
@@ -1024,10 +1068,10 @@ msgid "Check this to enable maps on jobs archive page. Also make sure that map i
 msgstr ""
 
 #: customizer/jobs.inc.php:40
-#: customizer/jobs.inc.php:142
+#: customizer/jobs.inc.php:143
 #: customizer/companies.inc.php:101
 #: customizer/resumes.inc.php:40
-#: customizer/resumes.inc.php:117
+#: customizer/resumes.inc.php:118
 msgid "Sidebar Order"
 msgstr ""
 
@@ -1035,128 +1079,141 @@ msgstr ""
 msgid "Change the order and visibility (at global level) of job archive sidebar."
 msgstr ""
 
-#: customizer/jobs.inc.php:50
-#: customizer/resumes.inc.php:49
+#: customizer/jobs.inc.php:51
+#: customizer/resumes.inc.php:51
 msgid "Filters Module"
 msgstr ""
 
-#: customizer/jobs.inc.php:52
+#: customizer/jobs.inc.php:53
 msgid "Alert Module"
 msgstr ""
 
-#: customizer/jobs.inc.php:53
-#: customizer/resumes.inc.php:50
+#: customizer/jobs.inc.php:54
+#: customizer/jobs.inc.php:153
+#: customizer/companies.inc.php:110
+#: customizer/resumes.inc.php:49
+#: customizer/resumes.inc.php:128
 msgid "Native Widgets"
-msgstr ""
-
-#: customizer/jobs.inc.php:76
-#: customizer/resumes.inc.php:58
-msgid "Filters Order"
 msgstr ""
 
 #: customizer/jobs.inc.php:77
 #: customizer/resumes.inc.php:59
-msgid "Change the order and visibility (at global level) of different filters within \"Filters Module\"."
+msgid "Filters Order"
 msgstr ""
 
-#: customizer/jobs.inc.php:95
-#: customizer/resumes.inc.php:73
-msgid "Filters Breakpoint"
+#: customizer/jobs.inc.php:78
+#: customizer/resumes.inc.php:60
+msgid "Change the order and visibility (at global level) of different filters within \"Filters Module\"."
 msgstr ""
 
 #: customizer/jobs.inc.php:96
 #: customizer/resumes.inc.php:74
+msgid "Filters Breakpoint"
+msgstr ""
+
+#: customizer/jobs.inc.php:97
+#: customizer/resumes.inc.php:75
 msgid "How many filters to show before \"More Filters\" button."
 msgstr ""
 
-#: customizer/jobs.inc.php:108
+#: customizer/jobs.inc.php:109
 #: customizer/companies.inc.php:67
-#: customizer/resumes.inc.php:86
+#: customizer/resumes.inc.php:87
 msgid "Detail Page"
 msgstr ""
 
-#: customizer/jobs.inc.php:109
+#: customizer/jobs.inc.php:110
 msgid "This section configures job detail page."
 msgstr ""
 
-#: customizer/jobs.inc.php:118
+#: customizer/jobs.inc.php:119
 #: customizer/companies.inc.php:77
-#: customizer/resumes.inc.php:96
+#: customizer/resumes.inc.php:97
 msgid "Content Order"
 msgstr ""
 
-#: customizer/jobs.inc.php:119
+#: customizer/jobs.inc.php:120
 msgid "Change the order and visibility (at global level) of job listing content."
 msgstr ""
 
-#: customizer/jobs.inc.php:129
+#: customizer/jobs.inc.php:130
 msgid "Job Header"
 msgstr ""
 
-#: customizer/jobs.inc.php:130
+#: customizer/jobs.inc.php:131
 msgid "Job Meta"
 msgstr ""
 
-#: customizer/jobs.inc.php:131
+#: customizer/jobs.inc.php:132
 msgid "Jobs Description"
 msgstr ""
 
-#: customizer/jobs.inc.php:133
+#: customizer/jobs.inc.php:134
 msgid "Job Actions"
 msgstr ""
 
-#: customizer/jobs.inc.php:143
+#: customizer/jobs.inc.php:144
 msgid "Change the order and visibility (at global level) of job listing sidebar."
 msgstr ""
 
-#: customizer/jobs.inc.php:151
-#: customizer/companies.inc.php:109
+#: customizer/jobs.inc.php:154
+#: customizer/companies.inc.php:111
 msgid "Company Profile"
 msgstr ""
 
-#: customizer/jobs.inc.php:152
-#: customizer/companies.inc.php:110
-#: customizer/resumes.inc.php:127
+#: customizer/jobs.inc.php:155
+#: customizer/companies.inc.php:112
+#: customizer/resumes.inc.php:130
 msgid "Listing URL"
 msgstr ""
 
-#: customizer/jobs.inc.php:153
+#: customizer/jobs.inc.php:156
 msgid "Similiar Jobs"
 msgstr ""
 
-#: customizer/jobs.inc.php:162
+#: customizer/jobs.inc.php:165
+msgid "Job Meta Limit"
+msgstr ""
+
+#: customizer/jobs.inc.php:166
+#: customizer/companies.inc.php:122
+#: customizer/resumes.inc.php:152
+msgid "How many meta values to show before \"see all\" link?"
+msgstr ""
+
+#: customizer/jobs.inc.php:176
 msgid "Similiar Jobs Count"
 msgstr ""
 
-#: customizer/jobs.inc.php:163
+#: customizer/jobs.inc.php:177
 msgid "How many (at max) similiar jobs to display in sidebar."
 msgstr ""
 
-#: customizer/jobs.inc.php:172
+#: customizer/jobs.inc.php:186
 msgid "This section is only applicable if you have activated \"WP Job Manager - Tags\" add-on."
 msgstr ""
 
-#: customizer/jobs.inc.php:181
+#: customizer/jobs.inc.php:195
 msgid "Tags Title"
 msgstr ""
 
-#: customizer/jobs.inc.php:183
+#: customizer/jobs.inc.php:197
 msgid "Perks & Privilges"
 msgstr ""
 
-#: customizer/jobs.inc.php:184
+#: customizer/jobs.inc.php:198
 msgid "Job Tags would be represented with this title on the fron-end."
 msgstr ""
 
-#: customizer/jobs.inc.php:191
+#: customizer/jobs.inc.php:205
 msgid "Tags Descripion"
 msgstr ""
 
-#: customizer/jobs.inc.php:193
+#: customizer/jobs.inc.php:207
 msgid "This job listing offers following perks and privileges."
 msgstr ""
 
-#: customizer/jobs.inc.php:194
+#: customizer/jobs.inc.php:208
 msgid "This text would be displayed in detail job listing page as a small description."
 msgstr ""
 
@@ -1197,11 +1254,27 @@ msgid "If setup, it will appear in the employer and candidate dashboard."
 msgstr ""
 
 #: customizer/site-identity.inc.php:25
-msgid "Preloader Icon"
+msgid "Disable Preloader"
 msgstr ""
 
 #: customizer/site-identity.inc.php:26
+msgid "Check this to disable site preloader."
+msgstr ""
+
+#: customizer/site-identity.inc.php:36
+msgid "Preloader Icon"
+msgstr ""
+
+#: customizer/site-identity.inc.php:37
 msgid "Preloader icon dimension should not increase by 200x200 (in pixels)."
+msgstr ""
+
+#: customizer/site-identity.inc.php:46
+msgid "Enable Development Mode"
+msgstr ""
+
+#: customizer/site-identity.inc.php:47
+msgid "This enables some hidden options (for debug purpose) in the admin panel. Do NOT enable it unless you know what you are doing."
 msgstr ""
 
 #: customizer/companies.inc.php:14
@@ -1278,6 +1351,42 @@ msgstr ""
 
 #: customizer/companies.inc.php:102
 msgid "Change the order and visibility (at global level) of company listing sidebar."
+msgstr ""
+
+#: customizer/companies.inc.php:121
+msgid "Company Meta Limit"
+msgstr ""
+
+#: customizer/woocommerce.inc.php:13
+msgid "Theme Settings"
+msgstr ""
+
+#: customizer/woocommerce.inc.php:14
+msgid "This section configures woocommerce options relevant to capstone theme."
+msgstr ""
+
+#: customizer/woocommerce.inc.php:22
+msgid "Restore Vanilla \"Products Grid\""
+msgstr ""
+
+#: customizer/woocommerce.inc.php:23
+msgid "Check this to restore to default products grid."
+msgstr ""
+
+#: customizer/woocommerce.inc.php:33
+msgid "Restore Vanilla \"My Account\""
+msgstr ""
+
+#: customizer/woocommerce.inc.php:34
+msgid "Check this to disable [woocommerce_my_account] shortcode override."
+msgstr ""
+
+#: customizer/woocommerce.inc.php:44
+msgid "Restore Vanilla \"Checkout Fields\""
+msgstr ""
+
+#: customizer/woocommerce.inc.php:45
+msgid "Check this to restore to default checkout fields."
 msgstr ""
 
 #: customizer/dashboard.inc.php:27
@@ -1360,62 +1469,54 @@ msgstr ""
 msgid "This is the page where you are using `[job_alerts]` shortcode."
 msgstr ""
 
-#: customizer/dashboard.inc.php:114
-msgid "Manage Orders Page"
-msgstr ""
-
-#: customizer/dashboard.inc.php:115
-msgid "This is the page where you are using `[woocommerce_my_account]` shortcode."
-msgstr ""
-
-#: customizer/dashboard.inc.php:121
+#: customizer/dashboard.inc.php:112
 msgid "Welcome Messages"
 msgstr ""
 
-#: customizer/dashboard.inc.php:122
+#: customizer/dashboard.inc.php:113
 msgid "This section defines welcome messages for the dashboard."
 msgstr ""
 
-#: customizer/dashboard.inc.php:131
+#: customizer/dashboard.inc.php:122
 msgid "Role Specific Messages"
 msgstr ""
 
-#: customizer/dashboard.inc.php:135
+#: customizer/dashboard.inc.php:126
 msgid "Message Group"
 msgstr ""
 
-#: customizer/dashboard.inc.php:138
+#: customizer/dashboard.inc.php:129
 msgid "Add New Message"
 msgstr ""
 
-#: customizer/dashboard.inc.php:142
+#: customizer/dashboard.inc.php:133
 #: shortcodes/dashboard.inc.php:13
 msgid "You are admin, you can do whatever you want."
 msgstr ""
 
-#: customizer/dashboard.inc.php:146
+#: customizer/dashboard.inc.php:137
 #: shortcodes/dashboard.inc.php:17
 msgid "From your account dashboard you can post new jobs and manage exisiting ones. Further, you can also manage your bookmark, job alerts and profile settings."
 msgstr ""
 
-#: customizer/dashboard.inc.php:150
+#: customizer/dashboard.inc.php:141
 #: shortcodes/dashboard.inc.php:21
 msgid "From your account dashboard you can post new resumes and manage exisiting ones. Further, you can also manage your past applications, bookmark, job alerts and profile settings."
 msgstr ""
 
-#: customizer/dashboard.inc.php:156
+#: customizer/dashboard.inc.php:147
 msgid "User Role"
 msgstr ""
 
-#: customizer/dashboard.inc.php:157
+#: customizer/dashboard.inc.php:148
 msgid "Choose a role for which you want to define a welcome message."
 msgstr ""
 
-#: customizer/dashboard.inc.php:162
+#: customizer/dashboard.inc.php:153
 msgid "Welcome Message"
 msgstr ""
 
-#: customizer/dashboard.inc.php:163
+#: customizer/dashboard.inc.php:154
 msgid "Define welcome message for above selected role."
 msgstr ""
 
@@ -1439,52 +1540,56 @@ msgstr ""
 msgid "Change the order and visibility (at global level) of resume archive sidebar."
 msgstr ""
 
-#: customizer/resumes.inc.php:65
+#: customizer/resumes.inc.php:66
 msgid "Resume Tags"
 msgstr ""
 
-#: customizer/resumes.inc.php:87
+#: customizer/resumes.inc.php:88
 msgid "This section configures resume detail page."
 msgstr ""
 
-#: customizer/resumes.inc.php:97
+#: customizer/resumes.inc.php:98
 msgid "Change the order and visibility (at global level) of resume listing content."
 msgstr ""
 
-#: customizer/resumes.inc.php:105
+#: customizer/resumes.inc.php:106
 msgid "Resume Header"
 msgstr ""
 
-#: customizer/resumes.inc.php:106
+#: customizer/resumes.inc.php:107
 msgid "Resume Meta"
 msgstr ""
 
-#: customizer/resumes.inc.php:107
+#: customizer/resumes.inc.php:108
 msgid "Resumes Description"
 msgstr ""
 
-#: customizer/resumes.inc.php:108
+#: customizer/resumes.inc.php:109
 msgid "Resume Actions"
 msgstr ""
 
-#: customizer/resumes.inc.php:118
+#: customizer/resumes.inc.php:119
 msgid "Change the order and visibility (at global level) of resume listing sidebar."
 msgstr ""
 
-#: customizer/resumes.inc.php:126
+#: customizer/resumes.inc.php:129
 msgid "Candidate Profile"
 msgstr ""
 
-#: customizer/resumes.inc.php:128
+#: customizer/resumes.inc.php:131
 msgid "Similiar Resumes"
 msgstr ""
 
-#: customizer/resumes.inc.php:137
+#: customizer/resumes.inc.php:140
 msgid "Similiar Resumes Count"
 msgstr ""
 
-#: customizer/resumes.inc.php:138
+#: customizer/resumes.inc.php:141
 msgid "How many (at max) similiar resumes to display in sidebar."
+msgstr ""
+
+#: customizer/resumes.inc.php:151
+msgid "Resume Meta Limit"
 msgstr ""
 
 #: customizer/social-networks.inc.php:14
