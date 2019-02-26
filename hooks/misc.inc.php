@@ -22,7 +22,6 @@
                 // Helper Variable(s)
                 $is_visible = get_theme_mod('capstone_enable_social_sharing', 'disable') == 'global' ? true : is_singular( array( 'post', 'job_listing', 'resume' ) );
             ?>
-            <?php var_dump($is_visible); ?>
             <?php if ($is_visible) { ?>
                 <div id="social-share">
                     <span class="label"><?php esc_html_e( 'Share:', 'capstone-pro' ); ?></span>
