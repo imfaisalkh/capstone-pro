@@ -48,7 +48,11 @@
               <span class="location"><?php the_job_location(); ?></span>
             </div>
             <div class="action">
-              <a href="#add-bookmark-<?php the_ID(); ?>" class="add-bookmark"><?php echo esc_html__('Save for later', 'capstone-pro'); ?> &xrarr;</a>
+              <?php if ( class_exists( 'WP_Job_Manager_Bookmarks' ) ) { ?>
+                <a href="#add-bookmark-<?php the_ID(); ?>" class="add-bookmark"><?php echo esc_html__('Save for later', 'capstone-pro'); ?> &xrarr;</a>
+              <?php else { ?>
+                <a href="<?php the_permalink(); ?>" class="check-listing"><?php echo esc_html__('Check this out', 'capstone-pro'); ?> &xrarr;</a>
+              <?php } ?>
             </div>
             <?php get_template_part('includes/popup-add-bookmark.inc' ); ?>
           </article>

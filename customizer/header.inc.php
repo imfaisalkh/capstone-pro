@@ -92,7 +92,6 @@
 			'section'     => 'capstone_header_explore_menu',
 			'default'     => array(
 				'job_categories',
-				// 'companies_list',
 				'job_tags',
 				'job_types',
 			),
