@@ -32,7 +32,7 @@
           <h3 class="title"><?php echo $title; ?></h3>
         <?php } ?>
         <div class="pricing">
-          <?php if ($price_tag) { ?>
+          <?php if ($price_tag || $price_tag == 0) { ?>
             <div class="price" data-symbol-align="<?php echo esc_attr($currency_symbol_align); ?>"><span class="symbol"><?php echo esc_html($currency_symbol); ?></span><?php echo wp_kses_post($price_tag); ?></div>
           <?php } ?>
           <?php if ($tagline) { ?>

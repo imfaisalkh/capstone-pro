@@ -20,7 +20,7 @@
         <?php if ( get_theme_mod('capstone_enable_social_sharing', 'disable') != 'disable' ) { ?>
             <?php
                 // Helper Variable(s)
-                $is_visible = get_theme_mod('capstone_enable_social_sharing') == 'global' ? true : is_singular( array( 'post', 'job_listing', 'resume' ) );
+                $is_visible = get_theme_mod('capstone_enable_social_sharing', 'disable') == 'global' ? true : is_singular( array( 'post', 'job_listing', 'resume' ) );
             ?>
             <?php if ($is_visible) { ?>
                 <div id="social-share">
