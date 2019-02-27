@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2019-02-21T04:20:35+00:00\n"
+"POT-Creation-Date: 2019-02-27T00:38:23+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.1.0\n"
 "X-Domain: capstone-pro\n"
@@ -180,7 +180,7 @@ msgid "No more pages to load"
 msgstr ""
 
 #: page-builder/modules/blog-posts/blog-posts.php:8
-#: customizer/header.inc.php:128
+#: customizer/header.inc.php:127
 msgid "Blog"
 msgstr ""
 
@@ -405,7 +405,7 @@ msgid "Categories"
 msgstr ""
 
 #: page-builder/modules/jobs-listing/jobs-listing.php:64
-#: customizer/header.inc.php:103
+#: customizer/header.inc.php:102
 msgid "Job Types"
 msgstr ""
 
@@ -484,12 +484,16 @@ msgstr ""
 msgid "Open Position at %s"
 msgstr ""
 
-#: page-builder/modules/listing-spotlight/includes/frontend.php:51
+#: page-builder/modules/listing-spotlight/includes/frontend.php:52
 #: widgets/listing-spotlight/views/widget.php:53
 msgid "Save for later"
 msgstr ""
 
-#: page-builder/modules/listing-spotlight/includes/frontend.php:57
+#: page-builder/modules/listing-spotlight/includes/frontend.php:54
+msgid "Check this out"
+msgstr ""
+
+#: page-builder/modules/listing-spotlight/includes/frontend.php:61
 #: widgets/listing-spotlight/views/widget.php:59
 msgid "There is no job found with mentioned criteria."
 msgstr ""
@@ -579,32 +583,24 @@ msgstr ""
 msgid "Listing IDs:"
 msgstr ""
 
-#: hooks/misc.inc.php:28
+#: hooks/misc.inc.php:27
 msgid "Share:"
 msgstr ""
 
-#: hooks/misc.inc.php:29
+#: hooks/misc.inc.php:28
 msgid "Tw"
 msgstr ""
 
-#: hooks/misc.inc.php:30
+#: hooks/misc.inc.php:29
 msgid "Fb"
 msgstr ""
 
-#: hooks/misc.inc.php:31
+#: hooks/misc.inc.php:30
 msgid "Lin"
 msgstr ""
 
-#: hooks/misc.inc.php:49
+#: hooks/misc.inc.php:48
 msgid "Open Notification"
-msgstr ""
-
-#: hooks/woocommerce.inc.php:10
-msgid "Personal Information"
-msgstr ""
-
-#: hooks/woocommerce.inc.php:25
-msgid "Payment Methods"
 msgstr ""
 
 #: customizer/backgrounds.inc.php:13
@@ -831,111 +827,111 @@ msgstr ""
 msgid "Change the order and visibility of explore menu items."
 msgstr ""
 
-#: customizer/header.inc.php:100
+#: customizer/header.inc.php:99
 msgid "Job Categories"
 msgstr ""
 
-#: customizer/header.inc.php:101
+#: customizer/header.inc.php:100
 msgid "Companies List"
 msgstr ""
 
-#: customizer/header.inc.php:102
+#: customizer/header.inc.php:101
 msgid "Job Tags"
 msgstr ""
 
-#: customizer/header.inc.php:104
+#: customizer/header.inc.php:103
 msgid "Resume Categories"
 msgstr ""
 
-#: customizer/header.inc.php:105
+#: customizer/header.inc.php:104
 msgid "Resume Skills"
 msgstr ""
 
-#: customizer/header.inc.php:111
+#: customizer/header.inc.php:110
 msgid "Search Module"
 msgstr ""
 
-#: customizer/header.inc.php:112
+#: customizer/header.inc.php:111
 msgid "This section configure settings for header search module."
 msgstr ""
 
-#: customizer/header.inc.php:120
+#: customizer/header.inc.php:119
 msgid "Search Type"
 msgstr ""
 
-#: customizer/header.inc.php:121
+#: customizer/header.inc.php:120
 msgid "Define which search form to use in site header."
 msgstr ""
 
-#: customizer/header.inc.php:125
+#: customizer/header.inc.php:124
 msgid "Jobs"
 msgstr ""
 
-#: customizer/header.inc.php:126
+#: customizer/header.inc.php:125
 msgid "Resumes"
 msgstr ""
 
-#: customizer/header.inc.php:127
+#: customizer/header.inc.php:126
 msgid "Companies"
 msgstr ""
 
-#: customizer/header.inc.php:136
+#: customizer/header.inc.php:135
 msgid "Search Title"
 msgstr ""
 
-#: customizer/header.inc.php:138
+#: customizer/header.inc.php:137
 msgid "Enter a title for your search module."
 msgstr ""
 
-#: customizer/header.inc.php:145
+#: customizer/header.inc.php:144
 msgid "Search Description"
 msgstr ""
 
-#: customizer/header.inc.php:147
+#: customizer/header.inc.php:146
 msgid "Enter a short description for your search module."
 msgstr ""
 
-#: customizer/header.inc.php:152
+#: customizer/header.inc.php:151
 msgid "Call to Action"
 msgstr ""
 
-#: customizer/header.inc.php:153
+#: customizer/header.inc.php:152
 msgid "This section configure settings for call to action button."
 msgstr ""
 
-#: customizer/header.inc.php:161
+#: customizer/header.inc.php:160
 msgid "Disable CTA Button"
 msgstr ""
 
-#: customizer/header.inc.php:162
+#: customizer/header.inc.php:161
 msgid "Check this option to disable CTA button."
 msgstr ""
 
-#: customizer/header.inc.php:171
+#: customizer/header.inc.php:170
 msgid "Button Text"
 msgstr ""
 
-#: customizer/header.inc.php:172
+#: customizer/header.inc.php:171
 msgid "Add Listing"
 msgstr ""
 
-#: customizer/header.inc.php:174
+#: customizer/header.inc.php:173
 msgid "Enter some text for your CTA button."
 msgstr ""
 
-#: customizer/header.inc.php:181
+#: customizer/header.inc.php:180
 msgid "Button URL"
 msgstr ""
 
-#: customizer/header.inc.php:183
+#: customizer/header.inc.php:182
 msgid "Provide custom URL for CTA button."
 msgstr ""
 
-#: customizer/header.inc.php:190
+#: customizer/header.inc.php:189
 msgid "Button Icon"
 msgstr ""
 
-#: customizer/header.inc.php:191
+#: customizer/header.inc.php:190
 msgid "Upload custom icon for CTA button."
 msgstr ""
 
