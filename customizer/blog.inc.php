@@ -12,7 +12,7 @@
 		Kirki::add_section( 'capstone_blog_settings', array(
             'title'          => esc_html__( 'Blog Settings', 'capstone-pro' ),
             'description'    => esc_html__( 'This section configure settings for the site blog.', 'capstone-pro' ),
-            'priority'       => 30,
+            'priority'       => 35,
         ) );
 
 		// OPTION: Blog --> Blog Layout

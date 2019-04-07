@@ -10,7 +10,7 @@
 
 		// PANEL: Dashboard Settings
 		Kirki::add_panel( 'capstone_header_settings', array(
-			'priority'    => 20,
+			'priority'    => 30,
             'title'          => esc_html__( 'Header Settings', 'capstone-pro' ),
             'description'    => esc_html__( 'This section configure settings for the site header.', 'capstone-pro' ),
 		) );
