@@ -16,17 +16,27 @@
         ) );
 
         // OPTION: Dropdown Field
-        Kirki::add_field( 'capstone_geolocation_location_field_type', array(
+        Kirki::add_field( 'capstone_geolocation_method', array(
             'type'        => 'select',
-            'settings'    => 'capstone_geolocation_location_field_type',
-            'label'       => __( 'Location Calculation', 'capstone-pro' ),
+            'settings'    => 'capstone_geolocation_method',
+            'label'       => __( 'Geolocation Method', 'capstone-pro' ),
             'section'     => 'capstone_geolocation_settings',
-            'default'     => 'ip',
+            'default'     => 'html',
             'choices'     => array(
                 'ip' => esc_html__( 'IP to Geolocation', 'capstone-pro' ),
                 'html' => esc_html__( 'HTML 5 Geolocation API', 'capstone-pro' ),
             ),
             'description' => esc_html__('Choose how to calculate geolocation for the "location" field.', 'capstone-pro'),
+        ) );
+
+        // OPTION: Dropdown Field
+        Kirki::add_field( 'capstone_geolocation_location_mask', array(
+            'type'     => 'text',
+            'settings'    => 'capstone_geolocation_location_mask',
+            'label'       => __( 'Location Field Mask', 'capstone-pro' ),
+            'section'     => 'capstone_geolocation_settings',
+            'default'     => '${city}, ${country}',
+            'description' => esc_html__('You can use ${city}, ${region} and ${country} as mask variables.', 'capstone-pro'),
         ) );
 
 		// OPTION: IPDATA API Key
