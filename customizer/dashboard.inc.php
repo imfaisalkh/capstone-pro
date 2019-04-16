@@ -157,5 +157,56 @@ function wp_roles_array() {
             )
         ) );
         
+
+        // SECTION: Quick Links
+		Kirki::add_section( 'capstone_dashboard_quick_links', array(
+            'title'          => esc_html__( 'Quick Links', 'capstone-pro' ),
+			'description' => esc_html__( 'These are the featured links which you can display at main dashboard screen.', 'capstone-pro' ),
+            'panel'          => 'capstone_dashboard_settings',
+        ) );
+
+        // OPTION: Repeater Field
+        Kirki::add_field( 'capstone_dashboard_quick_links_group', array(
+            'type'        => 'repeater',
+            'settings'    => 'capstone_dashboard_quick_links_group',
+            'label'       => esc_html__( 'Quick Links', 'capstone-pro' ),
+            'section'     => 'capstone_dashboard_quick_links',
+            'row_label' => array(
+                'type'  => 'field',
+                'value' => esc_html__('Link', 'capstone-pro' ),
+                'field' => 'label',
+            ),
+            'button_label' => esc_html__('Add New Link', 'capstone-pro' ),
+            'fields' => array(
+                'user_role' => array(
+                    'type'        => 'select',
+                    'label'       => esc_html__( 'User Role', 'capstone-pro' ),
+                    'description' => esc_html__( 'Choose a role for which you want to display this link.', 'capstone-pro' ),
+                    'choices'     => wp_roles_array(),
+                ),
+                'label' => array(
+                    'type'        => 'text',
+                    'label'       => esc_html__( 'Label', 'capstone-pro' ),
+                    'description' => esc_html__( 'Provide text for the link display.', 'capstone-pro' ),
+                ),
+                'url' => array(
+                    'type'        => 'dropdown-pages',
+                    'label'       => esc_html__( 'Page Link', 'capstone-pro' ),
+                    'description' => esc_html__( 'Choose the page to which you want to link to.', 'capstone-pro' ),
+                ),
+                'icon' => array(
+                    'type'        => 'image',
+                    'label'       => esc_html__( 'Icon', 'capstone-pro' ),
+                    'description' => esc_html__( 'Upload icon for you link.', 'capstone-pro' ),
+                ),
+                'caption' => array(
+                    'type'        => 'textarea',
+                    'label'       => esc_html__( 'Caption', 'capstone-pro' ),
+                    'description' => esc_html__( 'Enter some caption for the link. It accepts HTML tags.', 'capstone-pro' ),
+                ),
+            )
+        ) );
+        
+
         
 	}
