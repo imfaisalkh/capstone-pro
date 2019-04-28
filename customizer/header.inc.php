@@ -92,16 +92,18 @@
 			'section'     => 'capstone_header_explore_menu',
 			'default'     => array(
 				'job_categories',
-				'job_tags',
-				'job_types',
+				'job_regions',
+				'job_companies',
 			),
 			'choices'     => array(
 				'job_categories' => esc_html__( 'Job Categories', 'capstone-pro' ),
-				'companies_list' => esc_html__( 'Companies List', 'capstone-pro' ),
+				'job_companies' => esc_html__( 'Companies List', 'capstone-pro' ),
 				'job_tags' => esc_html__( 'Job Tags', 'capstone-pro' ),
 				'job_types' => esc_html__( 'Job Types', 'capstone-pro' ),
+				'job_regions' => esc_html__( 'Job Regions', 'capstone-pro' ),
 				'resume_categories' => esc_html__( 'Resume Categories', 'capstone-pro' ),
 				'resume_skills' => esc_html__( 'Resume Skills', 'capstone-pro' ),
+				'resume_regions' => esc_html__( 'Resume Regions', 'capstone-pro' ),
 			),
 		) );
 
@@ -110,22 +112,6 @@
 			'title'          => esc_html__( 'Search Module', 'capstone-pro' ),
 			'description'    => esc_html__( 'This section configure settings for header search module.', 'capstone-pro' ),
 			'panel'          => 'capstone_header_settings',
-		) );
-
-		// OPTION: Select Field
-		Kirki::add_field( 'capstone_header_search_type', array(
-			'type'        => 'select',
-			'settings'    => 'capstone_header_search_type',
-			'label'       => __( 'Search Type', 'capstone-pro' ),
-			'description'    => esc_html__( 'Define which search form to use in site header.', 'capstone-pro' ),
-			'section'     => 'capstone_header_search_module',
-			'default'     => 'blog',
-			'choices'     => array(
-				'jobs' => esc_html__( 'Jobs', 'capstone-pro' ),
-				'resumes' => esc_html__( 'Resumes', 'capstone-pro' ),
-				'companies' => esc_html__( 'Companies', 'capstone-pro' ),
-				'blog' => esc_html__( 'Blog', 'capstone-pro' ),
-			),
 		) );
 
 		// OPTION: Text Field
@@ -146,7 +132,24 @@
 			'description' => esc_html__('Enter a short description for your search module.', 'capstone-pro'),
 		) );
 
-		// SECTION: Search Module
+		// OPTION: Select Field
+		Kirki::add_field( 'capstone_header_search_type', array(
+			'type'        => 'select',
+			'settings'    => 'capstone_header_search_type',
+			'label'       => __( 'Search Type', 'capstone-pro' ),
+			'description'    => esc_html__( 'Define which search form to use in site header.', 'capstone-pro' ),
+			'section'     => 'capstone_header_search_module',
+			'default'     => 'blog',
+			'choices'     => array(
+				'job' => esc_html__( 'Jobs', 'capstone-pro' ),
+				'resume' => esc_html__( 'Resumes', 'capstone-pro' ),
+				'company' => esc_html__( 'Companies', 'capstone-pro' ),
+				'blog' => esc_html__( 'Blog', 'capstone-pro' ),
+			),
+		) );
+
+
+		// SECTION: CTA Module
 		Kirki::add_section( 'capstone_header_cta_module', array(
 			'title'          => esc_html__( 'Call to Action', 'capstone-pro' ),
 			'description'    => esc_html__( 'This section configure settings for call to action button.', 'capstone-pro' ),

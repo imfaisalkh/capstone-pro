@@ -54,6 +54,26 @@
                 "param": "taxonomy",
                 "operator": "==",
                 "value": "all"
+            },
+            {
+                "param": "taxonomy",
+                "operator": "!=",
+                "value": "job_listing_region"
+            },
+            {
+                "param": "taxonomy",
+                "operator": "!=",
+                "value": "resume_region"
+            },
+            {
+                "param": "taxonomy",
+                "operator": "!=",
+                "value": "job_listing_company"
+            },
+            {
+                "param": "taxonomy",
+                "operator": "!=",
+                "value": "job_listing_company"
             }
         ]
     ],
@@ -65,5 +85,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1545858035
+    "modified": 1556487453
 }

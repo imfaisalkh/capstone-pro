@@ -1,0 +1,82 @@
+{
+    "key": "group_5cc02be26ceec",
+    "title": "Company Configuration",
+    "fields": [
+        {
+            "key": "field_5cc02bed0de65",
+            "label": "Meta Source",
+            "name": "company_meta_source",
+            "type": "select",
+            "instructions": "Please define from where to populate company meta information (for company profile page).",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "first": "Populate from first Job Listing posted under this company",
+                "last": "Populate from last Job Listing posted under this company",
+                "custom": "Populate from a custom define (below) Job Listing posted under this company"
+            },
+            "default_value": [
+                "first"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5cc02caa0de66",
+            "label": "Populate from following",
+            "name": "company_meta_source_custom",
+            "type": "post_object",
+            "instructions": "Select custom job listing from which company meta info would be taken.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5cc02bed0de65",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "job_listing"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "job_listing_company"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1556487501
+}
