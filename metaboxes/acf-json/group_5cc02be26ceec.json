@@ -16,12 +16,11 @@
                 "id": ""
             },
             "choices": {
-                "first": "Populate from first Job Listing posted under this company",
-                "last": "Populate from last Job Listing posted under this company",
-                "custom": "Populate from a custom define (below) Job Listing posted under this company"
+                "latest": "Populate from \"latest\" job listing under this company",
+                "oldest": "Populate from \"oldest\" job listing under this company"
             },
             "default_value": [
-                "first"
+                "latest"
             ],
             "allow_null": 0,
             "multiple": 0,
@@ -31,34 +30,22 @@
             "placeholder": ""
         },
         {
-            "key": "field_5cc02caa0de66",
-            "label": "Populate from following",
-            "name": "company_meta_source_custom",
-            "type": "post_object",
-            "instructions": "Select custom job listing from which company meta info would be taken.",
-            "required": 1,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_5cc02bed0de65",
-                        "operator": "==",
-                        "value": "custom"
-                    }
-                ]
-            ],
+            "key": "field_5ccafe08deecf",
+            "label": "Assign User",
+            "name": "company_assigned_users",
+            "type": "user",
+            "instructions": "Please assign this company to one or more users who would be allowed to post under this company. (make sure \"Job Listings -> Settings -> Job Submission -> User Specific Companies\" is enabled to make this option effective)",
+            "required": 0,
+            "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
-            "post_type": [
-                "job_listing"
-            ],
-            "taxonomy": "",
+            "role": "",
             "allow_null": 0,
-            "multiple": 0,
-            "return_format": "id",
-            "ui": 1
+            "multiple": 1,
+            "return_format": "id"
         }
     ],
     "location": [
@@ -78,5 +65,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1556487501
+    "modified": 1556827192
 }
