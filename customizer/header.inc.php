@@ -101,6 +101,7 @@
 				'job_tags' => esc_html__( 'Job Tags', 'capstone-pro' ),
 				'job_types' => esc_html__( 'Job Types', 'capstone-pro' ),
 				'job_regions' => esc_html__( 'Job Regions', 'capstone-pro' ),
+				'job_industries' => esc_html__( 'Industries', 'capstone-pro' ),
 				'resume_categories' => esc_html__( 'Resume Categories', 'capstone-pro' ),
 				'resume_skills' => esc_html__( 'Resume Skills', 'capstone-pro' ),
 				'resume_regions' => esc_html__( 'Resume Regions', 'capstone-pro' ),

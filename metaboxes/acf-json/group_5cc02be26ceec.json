@@ -31,10 +31,10 @@
         },
         {
             "key": "field_5ccafe08deecf",
-            "label": "Assign User",
+            "label": "Assign User(s)",
             "name": "company_assigned_users",
             "type": "user",
-            "instructions": "Please assign this company to one or more users who would be allowed to post under this company. (make sure \"Job Listings -> Settings -> Job Submission -> User Specific Companies\" is enabled to make this option effective)",
+            "instructions": "Please assign this company to one or more users who would be allowed to post under this company. (make sure <strong>\"Job Listings -> Settings -> Job Submission -> User Specific Companies\"<\/strong> is enabled to make this option effective)",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -65,5 +65,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1556827192
+    "modified": 1556887558
 }

@@ -8,6 +8,11 @@
 
         <!-- BEGIN: DEMO NOTICES -->
         <div id="demo-notices">
+            <?php
+            // Helper Variable(s)
+            $demo_employer_account = apply_filters( 'capstone_demo_employer_account', array('elon@wpscouts.net', 'elon123') );
+            $demo_candidate_account = apply_filters( 'capstone_demo_candidate_account', array('robert@wpscouts.net', 'robert123') );
+            ?>
 
             <!-- Registration Notification -->
             <div id="registration-notice" class="mfp-hide white-popup-block">
@@ -19,7 +24,7 @@
                 <main class="popup-body">
                     <p class="desc">The demo site does not allow user regstraion. However, to check the dashboard you can <u>login to a demo account</u> instead.</p>
                     <div class="buttons">
-                        <p><a href="#" class="button employer" data-username="elon@wpscouts.net" data-password="elon123">Login as Employer</a> or <a href="#" class="button candidate" data-username="robert@wpscouts.net" data-password="robert123">Login as Candidate</a></p>
+                        <p><a href="#" class="button employer" data-username="<?php echo $demo_employer_account[0]; ?>" data-password="<?php echo $demo_employer_account[1]; ?>">Login as Employer</a> or <a href="#" class="button candidate" data-username="<?php echo $demo_candidate_account[1]; ?>" data-password="<?php echo $demo_candidate_account[1]; ?>">Login as Candidate</a></p>
                     </div>
                 </main>
             </div>
@@ -34,7 +39,7 @@
                 <main class="popup-body">
                     <p class="desc">The page you are trying to access is protected and requires authentication, do you want to <u>login to a demo account</u> to access this page?</p>
                     <div class="buttons">
-                        <p><a href="#" class="button employer" data-username="elon@wpscouts.net" data-password="elon123">Login as Employer</a> or <a href="#" class="button candidate" data-username="robert@wpscouts.net" data-password="robert123">Login as Candidate</a></p>
+                        <p><a href="#" class="button employer" data-username="<?php echo $demo_employer_account[0]; ?>" data-password="<?php echo $demo_employer_account[1]; ?>">Login as Employer</a> or <a href="#" class="button candidate" data-username="<?php echo $demo_candidate_account[1]; ?>" data-password="<?php echo $demo_candidate_account[1]; ?>">Login as Candidate</a></p>
                     </div>
                 </main>
 
