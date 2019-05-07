@@ -24,7 +24,7 @@
                 <main class="popup-body">
                     <p class="desc">The demo site does not allow user regstraion. However, to check the dashboard you can <u>login to a demo account</u> instead.</p>
                     <div class="buttons">
-                        <p><a href="#" class="button employer" data-username="<?php echo $demo_employer_account[0]; ?>" data-password="<?php echo $demo_employer_account[1]; ?>">Login as Employer</a> or <a href="#" class="button candidate" data-username="<?php echo $demo_candidate_account[1]; ?>" data-password="<?php echo $demo_candidate_account[1]; ?>">Login as Candidate</a></p>
+                        <p><a href="#" class="button employer" data-username="<?php echo $demo_employer_account[0]; ?>" data-password="<?php echo $demo_employer_account[1]; ?>">Login as Employer</a> or <a href="#" class="button candidate" data-username="<?php echo $demo_candidate_account[0]; ?>" data-password="<?php echo $demo_candidate_account[1]; ?>">Login as Candidate</a></p>
                     </div>
                 </main>
             </div>
@@ -39,7 +39,7 @@
                 <main class="popup-body">
                     <p class="desc">The page you are trying to access is protected and requires authentication, do you want to <u>login to a demo account</u> to access this page?</p>
                     <div class="buttons">
-                        <p><a href="#" class="button employer" data-username="<?php echo $demo_employer_account[0]; ?>" data-password="<?php echo $demo_employer_account[1]; ?>">Login as Employer</a> or <a href="#" class="button candidate" data-username="<?php echo $demo_candidate_account[1]; ?>" data-password="<?php echo $demo_candidate_account[1]; ?>">Login as Candidate</a></p>
+                        <p><a href="#" class="button employer" data-username="<?php echo $demo_employer_account[0]; ?>" data-password="<?php echo $demo_employer_account[1]; ?>">Login as Employer</a> or <a href="#" class="button candidate" data-username="<?php echo $demo_candidate_account[0]; ?>" data-password="<?php echo $demo_candidate_account[1]; ?>">Login as Candidate</a></p>
                     </div>
                 </main>
 
