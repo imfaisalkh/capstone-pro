@@ -27,19 +27,34 @@ FLBuilder::register_module( 'ListingSpotlightClass', array(
             'query'  => array(
                 'title'         => __( 'Query', 'capstone-pro' ),
                 'fields'        => array(
-                    // 'query_type' => array(
-                    //     'type'          => 'select',
-                    //     'label'         => __( 'Type', 'capstone-pro' ),
-                    //     'default'       => 'job_listing',
-                    //     'options'       => array(
-                    //         'job_listing'      => __( 'Jobs', 'capstone-pro' ),
-                    //         'resume'      => __( 'Resumes', 'capstone-pro' )
-                    //     )
-                    // ),
+                    'query_type' => array(
+                        'type'          => 'select',
+                        'label'         => __( 'Type', 'capstone-pro' ),
+                        'default'       => 'job_listing',
+                        'options'       => array(
+                            'job_listing'      => __( 'Jobs', 'capstone-pro' ),
+                            'resume'      => __( 'Resumes', 'capstone-pro' )
+                        )
+                    ),
+                    'source' => array(
+                        'type'          => 'select',
+                        'label'         => __( 'Source', 'capstone-pro' ),
+                        'default'       => 'featured',
+                        'options'       => array(
+                            'featured'  => __( 'Featured Listings', 'capstone-pro' ),
+                            'ids'       => __( 'Custom Defined', 'capstone-pro' )
+                        )
+                    ),
+                    'count'     => array(
+                        'type'          => 'unit',
+                        'label'         => __( 'Count', 'capstone-pro' ),
+                        'description'   => 'Define number of listings to show at max.',
+                        'default'       => '3',
+                    ),
                     'ids'     => array(
                         'type'          => 'text',
                         'label'         => __( 'IDs', 'capstone-pro' ),
-                        'description'   => 'A comma seperated IDs of listing.',
+                        'description'   => 'A comma seperated IDs of listing. (applicable if "Custom Defined")',
                     ),
                 )
             )

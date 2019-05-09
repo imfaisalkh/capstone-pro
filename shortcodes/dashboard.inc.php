@@ -48,7 +48,6 @@
         // Theme_mod settings to check.
         $links_group = get_theme_mod( 'capstone_dashboard_quick_links_group' );
         $current_role = $user->roles[0]; // get current maximum role
-        // var_dump($links_group);
     ?>
         <?php if ($links_group) { ?> 
             <div class="quick-links">
