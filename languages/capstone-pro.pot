@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2019-05-07T17:45:54+00:00\n"
+"POT-Creation-Date: 2019-05-09T19:36:11+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.1.0\n"
 "X-Domain: capstone-pro\n"
@@ -198,6 +198,7 @@ msgstr ""
 
 #: page-builder/modules/blog-posts/blog-posts.php:46
 #: page-builder/modules/jobs-listing/jobs-listing.php:30
+#: page-builder/modules/listing-spotlight/listing-spotlight.php:50
 msgid "Count"
 msgstr ""
 
@@ -474,36 +475,41 @@ msgstr ""
 msgid "Terms"
 msgstr ""
 
-#: page-builder/modules/listing-spotlight/includes/frontend.php:26
 #: page-builder/modules/listing-spotlight/listing-spotlight.php:8
-#: widgets/listing-spotlight/views/widget.php:28
 msgid "Listing Spotlight"
-msgstr ""
-
-#: page-builder/modules/listing-spotlight/includes/frontend.php:38
-#: widgets/listing-spotlight/views/widget.php:40
-msgid "Open Position at %s"
-msgstr ""
-
-#: page-builder/modules/listing-spotlight/includes/frontend.php:52
-#: widgets/listing-spotlight/views/widget.php:53
-msgid "Save for later"
-msgstr ""
-
-#: page-builder/modules/listing-spotlight/includes/frontend.php:54
-msgid "Check this out"
-msgstr ""
-
-#: page-builder/modules/listing-spotlight/includes/frontend.php:61
-#: widgets/listing-spotlight/views/widget.php:59
-msgid "There is no job found with mentioned criteria."
 msgstr ""
 
 #: page-builder/modules/listing-spotlight/listing-spotlight.php:9
 msgid "It displays a hand selected listings in slider format."
 msgstr ""
 
+#: page-builder/modules/listing-spotlight/listing-spotlight.php:32
+msgid "Type"
+msgstr ""
+
+#: page-builder/modules/listing-spotlight/listing-spotlight.php:35
+#: customizer/header.inc.php:145
+msgid "Jobs"
+msgstr ""
+
+#: page-builder/modules/listing-spotlight/listing-spotlight.php:36
+#: customizer/header.inc.php:146
+msgid "Resumes"
+msgstr ""
+
 #: page-builder/modules/listing-spotlight/listing-spotlight.php:41
+msgid "Source"
+msgstr ""
+
+#: page-builder/modules/listing-spotlight/listing-spotlight.php:44
+msgid "Featured Listings"
+msgstr ""
+
+#: page-builder/modules/listing-spotlight/listing-spotlight.php:45
+msgid "Custom Defined"
+msgstr ""
+
+#: page-builder/modules/listing-spotlight/listing-spotlight.php:56
 msgid "IDs"
 msgstr ""
 
@@ -574,14 +580,6 @@ msgstr ""
 
 #: page-builder/modules/faqs/faqs.php:76
 msgid "Enter the answer for the question above."
-msgstr ""
-
-#: widgets/listing-spotlight/views/admin.php:3
-msgid "New ids"
-msgstr ""
-
-#: widgets/listing-spotlight/views/admin.php:6
-msgid "Listing IDs:"
 msgstr ""
 
 #: hooks/misc.inc.php:27
@@ -890,14 +888,6 @@ msgstr ""
 
 #: customizer/header.inc.php:141
 msgid "Define which search form to use in site header."
-msgstr ""
-
-#: customizer/header.inc.php:145
-msgid "Jobs"
-msgstr ""
-
-#: customizer/header.inc.php:146
-msgid "Resumes"
 msgstr ""
 
 #: customizer/header.inc.php:147
@@ -1261,7 +1251,7 @@ msgstr ""
 
 #: customizer/dashboard.inc.php:163
 #: customizer/dashboard.inc.php:172
-#: shortcodes/dashboard.inc.php:55
+#: shortcodes/dashboard.inc.php:54
 msgid "Quick Links"
 msgstr ""
 
