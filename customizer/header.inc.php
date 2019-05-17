@@ -149,12 +149,18 @@
 			),
 		) );
 
-
-		// SECTION: CTA Module
-		Kirki::add_section( 'capstone_header_cta_module', array(
+        // PANEL: CTA Module
+		Kirki::add_panel( 'capstone_header_cta_module', array(
 			'title'          => esc_html__( 'Call to Action', 'capstone-pro' ),
 			'description'    => esc_html__( 'This section configure settings for call to action button.', 'capstone-pro' ),
 			'panel'          => 'capstone_header_settings',
+		) );
+
+		// SECTION: CTA Module
+		Kirki::add_section( 'capstone_header_cta_module_employer', array(
+			'title'          => esc_html__( 'Submit Job - CTA', 'capstone-pro' ),
+			'description'    => esc_html__( 'This CTA button appears in the header for non logged-in users as well as logged-in "employer" and "admin".', 'capstone-pro' ),
+			'panel'          => 'capstone_header_cta_module',
 		) );
 
 		// OPTION: Checkbox Field
@@ -163,7 +169,7 @@
 			'settings'    => 'capstone_header_cta_disable',
 			'label'       => esc_html__( 'Disable CTA Button', 'capstone-pro' ),
 			'description' => esc_html__( 'Check this option to disable CTA button.', 'capstone-pro' ),
-			'section'     => 'capstone_header_cta_module',
+			'section'     => 'capstone_header_cta_module_employer',
 			'default'     => false,
 		) );
 
@@ -172,8 +178,8 @@
 			'type'     => 'text',
 			'settings' => 'capstone_header_cta_text',
 			'label'    => esc_html__( 'Button Text', 'capstone-pro' ),
-			'default' 	  => esc_html__( 'Add Listing', 'capstone-pro' ),
-			'section'  => 'capstone_header_cta_module',
+			'default' 	  => esc_html__( 'Post a Job', 'capstone-pro' ),
+			'section'  => 'capstone_header_cta_module_employer',
 			'description' => esc_html__('Enter some text for your CTA button.', 'capstone-pro'),
 		) );
 
@@ -182,7 +188,7 @@
 			'type'     => 'text',
 			'settings' => 'capstone_header_cta_url',
 			'label'    => esc_html__( 'Button URL', 'capstone-pro' ),
-			'section'  => 'capstone_header_cta_module',
+			'section'  => 'capstone_header_cta_module_employer',
 			'description' => esc_html__('Provide custom URL for CTA button.', 'capstone-pro'),
 		) );
 		
@@ -192,8 +198,56 @@
 			'settings'    => 'capstone_header_cta_icon',
 			'label'       => esc_html__( 'Button Icon', 'capstone-pro' ),
 			'description' => esc_html__('Upload custom icon for CTA button.', 'capstone-pro'),
-			'section'     => 'capstone_header_cta_module',
+			'section'     => 'capstone_header_cta_module_employer',
 			'default' 	  => get_template_directory_uri() .'/images/dashboard.svg',
 		) );
 		
+
+		// SECTION: CTA Module
+		Kirki::add_section( 'capstone_header_cta_module_candidate', array(
+			'title'          => esc_html__( 'Submit Resume - CTA', 'capstone-pro' ),
+			'description'    => esc_html__( 'This CTA button appears in the header for logged-in "candidate".', 'capstone-pro' ),
+			'panel'          => 'capstone_header_cta_module',
+		) );
+
+		// OPTION: Checkbox Field
+		Kirki::add_field( 'capstone_header_cta_disable_candidate', array(
+			'type'        => 'checkbox',
+			'settings'    => 'capstone_header_cta_disable_candidate',
+			'label'       => esc_html__( 'Disable CTA Button', 'capstone-pro' ),
+			'description' => esc_html__( 'Check this option to disable CTA button.', 'capstone-pro' ),
+			'section'     => 'capstone_header_cta_module_candidate',
+			'default'     => false,
+		) );
+
+		// OPTION: Text Field
+		Kirki::add_field( 'capstone_header_cta_text_candidate', array(
+			'type'     => 'text',
+			'settings' => 'capstone_header_cta_text_candidate',
+			'label'    => esc_html__( 'Button Text', 'capstone-pro' ),
+			'default' 	  => esc_html__( 'Post a Resume', 'capstone-pro' ),
+			'section'  => 'capstone_header_cta_module_candidate',
+			'description' => esc_html__('Enter some text for your CTA button.', 'capstone-pro'),
+		) );
+
+		// OPTION: Text Field
+		Kirki::add_field( 'capstone_header_cta_url_candidate', array(
+			'type'     => 'text',
+			'settings' => 'capstone_header_cta_url_candidate',
+			'label'    => esc_html__( 'Button URL', 'capstone-pro' ),
+			'section'  => 'capstone_header_cta_module_candidate',
+			'description' => esc_html__('Provide custom URL for CTA button.', 'capstone-pro'),
+		) );
+		
+		// OPTION: Image Field
+		Kirki::add_field( 'capstone_header_cta_icon_candidate', array(
+			'type'        => 'image',
+			'settings'    => 'capstone_header_cta_icon_candidate',
+			'label'       => esc_html__( 'Button Icon', 'capstone-pro' ),
+			'description' => esc_html__('Upload custom icon for CTA button.', 'capstone-pro'),
+			'section'     => 'capstone_header_cta_module_candidate',
+			'default' 	  => get_template_directory_uri() .'/images/dashboard.svg',
+		) );
+
+
 	}
