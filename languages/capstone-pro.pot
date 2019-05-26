@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2019-05-09T19:36:11+00:00\n"
+"POT-Creation-Date: 2019-05-20T12:51:29+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.1.0\n"
 "X-Domain: capstone-pro\n"
@@ -894,48 +894,76 @@ msgstr ""
 msgid "Companies"
 msgstr ""
 
-#: customizer/header.inc.php:155
+#: customizer/header.inc.php:154
 msgid "Call to Action"
 msgstr ""
 
-#: customizer/header.inc.php:156
+#: customizer/header.inc.php:155
 msgid "This section configure settings for call to action button."
 msgstr ""
 
-#: customizer/header.inc.php:164
+#: customizer/header.inc.php:161
+msgid "Submit Job - CTA"
+msgstr ""
+
+#: customizer/header.inc.php:162
+msgid "This CTA button appears in the header for non logged-in users as well as logged-in \"employer\" and \"admin\"."
+msgstr ""
+
+#: customizer/header.inc.php:170
+#: customizer/header.inc.php:217
 msgid "Disable CTA Button"
 msgstr ""
 
-#: customizer/header.inc.php:165
+#: customizer/header.inc.php:171
+#: customizer/header.inc.php:218
 msgid "Check this option to disable CTA button."
 msgstr ""
 
-#: customizer/header.inc.php:174
+#: customizer/header.inc.php:180
+#: customizer/header.inc.php:227
 msgid "Button Text"
 msgstr ""
 
-#: customizer/header.inc.php:175
-msgid "Add Listing"
+#: customizer/header.inc.php:181
+msgid "Post a Job"
 msgstr ""
 
-#: customizer/header.inc.php:177
+#: customizer/header.inc.php:183
+#: customizer/header.inc.php:230
 msgid "Enter some text for your CTA button."
 msgstr ""
 
-#: customizer/header.inc.php:184
+#: customizer/header.inc.php:190
+#: customizer/header.inc.php:237
 msgid "Button URL"
 msgstr ""
 
-#: customizer/header.inc.php:186
+#: customizer/header.inc.php:192
+#: customizer/header.inc.php:239
 msgid "Provide custom URL for CTA button."
 msgstr ""
 
-#: customizer/header.inc.php:193
+#: customizer/header.inc.php:199
+#: customizer/header.inc.php:246
 msgid "Button Icon"
 msgstr ""
 
-#: customizer/header.inc.php:194
+#: customizer/header.inc.php:200
+#: customizer/header.inc.php:247
 msgid "Upload custom icon for CTA button."
+msgstr ""
+
+#: customizer/header.inc.php:208
+msgid "Submit Resume - CTA"
+msgstr ""
+
+#: customizer/header.inc.php:209
+msgid "This CTA button appears in the header for logged-in \"candidate\"."
+msgstr ""
+
+#: customizer/header.inc.php:228
+msgid "Post a Resume"
 msgstr ""
 
 #: customizer/geolocation.inc.php:13
