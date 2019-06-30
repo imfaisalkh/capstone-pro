@@ -8,7 +8,7 @@
   <?php if ($settings->url) { ?>
     <a class="link" href="<?php echo $settings->url; ?>">
       <?php echo $settings->text; ?>
-      <img class="icon svg-icon" src="<?php echo plugins_url( '/', __FILE__ ) . '../img/arrow-right.svg'; ?>" alt="<?php esc_html_e('More Link', 'capstone'); ?>">
+      <img class="icon svg-icon" src="<?php echo plugins_url( '/', __FILE__ ) . '../img/arrow-right.svg'; ?>" alt="<?php esc_html_e('More Link', 'capstone-pro'); ?>">
     </a>
   <?php } ?>
 </header>

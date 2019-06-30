@@ -126,6 +126,18 @@
                 "operator": "==",
                 "value": "default"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            },
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template-compact.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -136,5 +148,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1545857273
+    "modified": 1556487485
 }

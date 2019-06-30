@@ -10,15 +10,15 @@
 
 		// PANEL: Colors
 		Kirki::add_panel( 'capstone_accent_colors', array(
-			'title'       => esc_html__( 'Colors', 'capstone' ),
-			'description' => esc_html__( 'This panels defines different accent colors for the theme.', 'capstone' ),
+			'title'       => esc_html__( 'Colors', 'capstone-pro' ),
+			'description' => esc_html__( 'This panels defines different accent colors for the theme.', 'capstone-pro' ),
             'priority'    => 90,
         ) );
 
 		// SECTION: Main Site
 		Kirki::add_section( 'capstone_accent_colors_main_site', array(
-            'title'          => esc_html__( 'Main Site', 'capstone' ),
-            'description'    => esc_html__( 'Define colors for the main site.', 'capstone' ),
+            'title'          => esc_html__( 'Main Site', 'capstone-pro' ),
+            'description'    => esc_html__( 'Define colors for the main site.', 'capstone-pro' ),
             'panel'          => 'capstone_accent_colors',
         ) );
         
@@ -26,7 +26,7 @@
         Kirki::add_field( 'capstone_primary_accent_color', array(
             'type'        => 'color',
             'settings'    => 'capstone_primary_accent_color',
-            'label'       => __( 'Primary Accent Color', 'capstone' ),
+            'label'       => __( 'Primary Accent Color', 'capstone-pro' ),
             'section'     => 'capstone_accent_colors_main_site',
             'default'     => '#FA6800',
         ) );
@@ -35,7 +35,7 @@
         Kirki::add_field( 'capstone_secondary_accent_color', array(
             'type'        => 'color',
             'settings'    => 'capstone_secondary_accent_color',
-            'label'       => __( 'Secondary Accent Color', 'capstone' ),
+            'label'       => __( 'Secondary Accent Color', 'capstone-pro' ),
             'section'     => 'capstone_accent_colors_main_site',
             'default'     => '#5786EC',
         ) );
@@ -44,15 +44,15 @@
         Kirki::add_field( 'capstone_tertiary_accent_color', array(
             'type'        => 'color',
             'settings'    => 'capstone_tertiary_accent_color',
-            'label'       => __( 'Tertiary Accent Color', 'capstone' ),
+            'label'       => __( 'Tertiary Accent Color', 'capstone-pro' ),
             'section'     => 'capstone_accent_colors_main_site',
             'default'     => '#7BC44F',
         ) );
 
 		// SECTION: Dashboard Site
 		Kirki::add_section( 'capstone_accent_colors_dashboard_site', array(
-            'title'          => esc_html__( 'Dashboard Site', 'capstone' ),
-            'description'    => esc_html__( 'Define colors for the dashboard site.', 'capstone' ),
+            'title'          => esc_html__( 'Dashboard Site', 'capstone-pro' ),
+            'description'    => esc_html__( 'Define colors for the dashboard site.', 'capstone-pro' ),
             'panel'          => 'capstone_accent_colors',
         ) );
         
@@ -60,7 +60,7 @@
         Kirki::add_field( 'capstone_dashboard_primary_accent_color', array(
             'type'        => 'color',
             'settings'    => 'capstone_dashboard_primary_accent_color',
-            'label'       => __( 'Primary Accent Color', 'capstone' ),
+            'label'       => __( 'Primary Accent Color', 'capstone-pro' ),
             'section'     => 'capstone_accent_colors_dashboard_site',
             'default'     => '#FA6800',
         ) );
@@ -69,7 +69,7 @@
         Kirki::add_field( 'capstone_dashboard_secondary_accent_color', array(
             'type'        => 'color',
             'settings'    => 'capstone_dashboard_secondary_accent_color',
-            'label'       => __( 'Secondary Accent Color', 'capstone' ),
+            'label'       => __( 'Secondary Accent Color', 'capstone-pro' ),
             'section'     => 'capstone_accent_colors_dashboard_site',
             'default'     => '#5786EC',
         ) );
@@ -78,7 +78,7 @@
         Kirki::add_field( 'capstone_dashboard_tertiary_accent_color', array(
             'type'        => 'color',
             'settings'    => 'capstone_dashboard_tertiary_accent_color',
-            'label'       => __( 'Tertiary Accent Color', 'capstone' ),
+            'label'       => __( 'Tertiary Accent Color', 'capstone-pro' ),
             'section'     => 'capstone_accent_colors_dashboard_site',
             'default'     => '#7BC44F',
         ) );

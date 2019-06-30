@@ -7,7 +7,7 @@
             "label": "Icon",
             "name": "term_icon",
             "type": "image",
-            "instructions": "This icon may be used by the theme for some section.",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -16,7 +16,7 @@
                 "id": ""
             },
             "return_format": "url",
-            "preview_size": "medium",
+            "preview_size": "thumbnail",
             "library": "all",
             "min_width": "",
             "min_height": "",
@@ -31,11 +31,11 @@
             "label": "Icon Size",
             "name": "term_icon_size",
             "type": "number",
-            "instructions": "By default, this icon size will displayed at original scale of 1x.",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "5",
                 "class": "",
                 "id": ""
             },
@@ -44,7 +44,7 @@
             "prepend": "",
             "append": "x",
             "min": "0.1",
-            "max": 5,
+            "max": 10,
             "step": "0.1"
         }
     ],
@@ -59,11 +59,11 @@
     ],
     "menu_order": 0,
     "position": "normal",
-    "style": "seamless",
+    "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1545858035
+    "modified": 1561629752
 }

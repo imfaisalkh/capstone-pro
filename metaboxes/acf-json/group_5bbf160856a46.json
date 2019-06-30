@@ -335,6 +335,39 @@
             "layout": "vertical",
             "toggle": 0,
             "return_format": "value"
+        },
+        {
+            "key": "field_5caa08e42eab1",
+            "label": "Search Module",
+            "name": "hero_search_module",
+            "type": "radio",
+            "instructions": "Select the type of search module to append.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5bbf18aae1549",
+                        "operator": "==",
+                        "value": "append_search"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "job": "Job Search",
+                "resume": "Resume Search",
+                "company": "Company Search"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "job",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
         }
     ],
     "location": [
@@ -359,5 +392,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1545857762
+    "modified": 1556487242
 }

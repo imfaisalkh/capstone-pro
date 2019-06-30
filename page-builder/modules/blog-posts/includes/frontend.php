@@ -41,10 +41,10 @@
 </section>
 
 <?php if ( !(get_query_var('page') >= $blog_query->max_num_pages) && $settings->load_more ) { ?> 
-  <div class="load-more"><?php echo get_next_posts_link( esc_html__('Load More', 'capstone'), $blog_query->max_num_pages ); ?></div>
+  <div class="load-more"><?php echo get_next_posts_link( esc_html__('Load More', 'capstone-pro'), $blog_query->max_num_pages ); ?></div>
   <div class="page-load-status">
-    <p class="infinite-scroll-last"><?php esc_html_e('End of content', 'capstone'); ?></p>
-    <p class="infinite-scroll-error"><?php esc_html_e('No more pages to load', 'capstone'); ?></p>
+    <p class="infinite-scroll-last"><?php esc_html_e('End of content', 'capstone-pro'); ?></p>
+    <p class="infinite-scroll-error"><?php esc_html_e('No more pages to load', 'capstone-pro'); ?></p>
   </div>
 <?php } ?>
 
