@@ -40,7 +40,7 @@
   }
 ?>
 <?php $i = 0; ?>
-<?php if ($taxonomy_name) { ?>
+<?php if (taxonomy_exists($taxonomy_name)) { ?>
   <?php if ($terms_ids) { ?>
     <section class="module-wrapper taxonomies-grid <?php echo esc_attr($has_more_class); ?>">
       <div class="inner">
