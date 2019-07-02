@@ -70,4 +70,6 @@
   <?php } else { ?>
     <p><?php echo esc_html__('No term defined or assigned a listing.', 'capstone-pro'); ?></p>
   <?php } ?>
+<?php } else { ?>
+  <p><?php echo esc_html__('Taxonomy does not exist.', 'capstone-pro'); ?></p>
 <?php } ?>

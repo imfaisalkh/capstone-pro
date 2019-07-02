@@ -1,1 +1,1 @@
-<?php echo do_shortcode('[listing_spotlight type="'. $settings->query_type .'" source="'. $settings->source .'" count="'. $settings->count .'" ids="'. $settings->ids .'"]'); ?>
+<?php echo do_shortcode('[listing_spotlight type="'. $settings->query_type .'" source="'. $settings->source .'" sort="'. $settings->sort .'"  order="'. $settings->order .'"  count="'. $settings->count .'" ids="'. $settings->ids .'"]'); ?>

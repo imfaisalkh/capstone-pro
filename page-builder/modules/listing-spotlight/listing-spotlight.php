@@ -42,7 +42,28 @@ FLBuilder::register_module( 'ListingSpotlightClass', array(
                         'default'       => 'featured',
                         'options'       => array(
                             'featured'  => __( 'Featured Listings', 'capstone-pro' ),
+                            'latest'  => __( 'Latest Listings', 'capstone-pro' ),
                             'ids'       => __( 'Custom Defined', 'capstone-pro' )
+                        )
+                    ),
+                    'sort' => array(
+                        'type'          => 'select',
+                        'label'         => __( 'Sort By', 'capstone-pro' ),
+                        'default'       => 'date',
+                        'options'       => array(
+                            'date'  => __( 'Date', 'capstone-pro' ),
+                            'title'       => __( 'Title', 'capstone-pro' ),
+                            'author'       => __( 'Author', 'capstone-pro' ),
+                            'rand'       => __( 'Random', 'capstone-pro' ),
+                        )
+                    ),
+                    'order' => array(
+                        'type'          => 'select',
+                        'label'         => __( 'Order', 'capstone-pro' ),
+                        'default'       => 'DESC',
+                        'options'       => array(
+                            'ASC'  => __( 'Ascending', 'capstone-pro' ),
+                            'DESC' => __( 'Descending', 'capstone-pro' ),
                         )
                     ),
                     'count'     => array(
