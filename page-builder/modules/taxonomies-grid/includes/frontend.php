@@ -16,18 +16,18 @@
     case 'job_listing_company':
     case 'job_listing_industry':
     case 'job_listing_region':
-      $singular_name = esc_html('job', 'capstone-pro');
-      $plural_name = esc_html('jobs', 'capstone-pro');
+      $singular_name = esc_html__('job', 'capstone-pro');
+      $plural_name = esc_html__('jobs', 'capstone-pro');
       break;
     case 'resume_category':
     case 'resume_skill':
     case 'resume_region':
-      $singular_name = esc_html('resume', 'capstone-pro');
-      $plural_name = esc_html('resumes', 'capstone-pro');
+      $singular_name = esc_html__('resume', 'capstone-pro');
+      $plural_name = esc_html__('resumes', 'capstone-pro');
       break;
     default:
-      $singular_name = esc_html('entry', 'capstone-pro');
-      $plural_name = esc_html('entries', 'capstone-pro');
+      $singular_name = esc_html__('entry', 'capstone-pro');
+      $plural_name = esc_html__('entries', 'capstone-pro');
 }
 
   $count = count($terms_ids);
