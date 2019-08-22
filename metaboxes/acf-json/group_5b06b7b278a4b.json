@@ -89,29 +89,22 @@
             "type": "checkbox",
             "instructions": "",
             "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_5b06bca5578f2",
-                        "operator": "==",
-                        "value": "is_sidebar"
-                    }
-                ]
-            ],
+            "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
             "choices": {
-                "remove_border": "Remove border between Sidebar and Main Content"
+                "remove_border": "Remove border between Sidebar and Main Content (only for \"Page with Sidebar\" layout)",
+                "disable_title": "Disable Page title (and subtitle)"
             },
             "allow_custom": 0,
-            "save_custom": 0,
             "default_value": [],
             "layout": "vertical",
             "toggle": 0,
-            "return_format": "value"
+            "return_format": "value",
+            "save_custom": 0
         }
     ],
     "location": [
@@ -148,5 +141,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1556487485
+    "modified": 1566509034
 }

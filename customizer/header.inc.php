@@ -1,24 +1,5 @@
 <?php
 
-/*
- * Retrieve all defined facets in the the settings
- */
-function capstone_get_compact_facets() {
-	$facets_compact = array();
-
-	if ( class_exists('FacetWP') ) {
-		$facets = FWP()->helper->get_facets();
-		foreach ( $facets as $facet ) {
-			if ($facet['type'] == 'search' || $facet['type'] == 'proximity' || $facet['type'] == 'dropdown') {
-				$facets_compact[$facet['name']] = $facet['label'];
-			}
-		}
-	}
-
-	return $facets_compact;
-}
-
-
 #-------------------------------------------------------------------------------#
 #  Theme Customizer - Header Settings
 #-------------------------------------------------------------------------------#
@@ -127,14 +108,16 @@ function capstone_get_compact_facets() {
 			),
 		) );
 
+
+		// SECTION: Search Module
+		Kirki::add_section( 'capstone_header_search_module', array(
+			'title'          => esc_html__( 'Search Module', 'capstone-pro' ),
+			'description'    => esc_html__( 'This section configure settings for header search module.', 'capstone-pro' ),
+			'panel'          => 'capstone_header_settings',
+		) );
+
 		if ( !class_exists('FacetWP') ) {
 
-			// SECTION: Search Module
-			Kirki::add_section( 'capstone_header_search_module', array(
-				'title'          => esc_html__( 'Search Module', 'capstone-pro' ),
-				'description'    => esc_html__( 'This section configure settings for header search module.', 'capstone-pro' ),
-				'panel'          => 'capstone_header_settings',
-			) );
 
 			// OPTION: Text Field
 			Kirki::add_field( 'capstone_header_search_title', array(
@@ -154,23 +137,23 @@ function capstone_get_compact_facets() {
 				'description' => esc_html__('Enter a short description for your search module.', 'capstone-pro'),
 			) );
 
-			// OPTION: Select Field
-			Kirki::add_field( 'capstone_header_search_type', array(
-				'type'        => 'select',
-				'settings'    => 'capstone_header_search_type',
-				'label'       => __( 'Search Type', 'capstone-pro' ),
-				'description'    => esc_html__( 'Define which search form to use in site header.', 'capstone-pro' ),
-				'section'     => 'capstone_header_search_module',
-				'default'     => 'blog',
-				'choices'     => array(
-					'job' => esc_html__( 'Jobs', 'capstone-pro' ),
-					'resume' => esc_html__( 'Resumes', 'capstone-pro' ),
-					'company' => esc_html__( 'Companies', 'capstone-pro' ),
-					'blog' => esc_html__( 'Blog', 'capstone-pro' ),
-				),
-			) );
-
 		}
+
+		// OPTION: Select Field
+		Kirki::add_field( 'capstone_header_search_type', array(
+			'type'        => 'select',
+			'settings'    => 'capstone_header_search_type',
+			'label'       => __( 'Search Type', 'capstone-pro' ),
+			'description'    => esc_html__( 'Define which search form to use in site header.', 'capstone-pro' ),
+			'section'     => 'capstone_header_search_module',
+			'default'     => 'blog',
+			'choices'     => array(
+				'job' => esc_html__( 'Jobs', 'capstone-pro' ),
+				'resume' => esc_html__( 'Resumes', 'capstone-pro' ),
+				'company' => esc_html__( 'Companies', 'capstone-pro' ),
+				'blog' => esc_html__( 'Blog', 'capstone-pro' ),
+			),
+		) );
 
         // PANEL: CTA Module
 		Kirki::add_panel( 'capstone_header_cta_module', array(
