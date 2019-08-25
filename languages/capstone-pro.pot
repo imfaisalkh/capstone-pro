@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the Capstone Pro plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Capstone Pro 1.2.5\n"
+"Project-Id-Version: Capstone Pro 1.2.6\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/capstone-pro\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2019-07-27T19:58:02+00:00\n"
+"POT-Creation-Date: 2019-08-25T19:38:07+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.2.0\n"
 "X-Domain: capstone-pro\n"
@@ -517,257 +517,238 @@ msgstr ""
 msgid "This defines the map zoom level."
 msgstr ""
 
-#: customizer/header.inc.php:31
+#: customizer/header.inc.php:14
 msgid "Header Settings"
 msgstr ""
 
-#: customizer/header.inc.php:32
-#: customizer/header.inc.php:38
-#: customizer/header.inc.php:89
+#: customizer/header.inc.php:15
+#: customizer/header.inc.php:21
+#: customizer/header.inc.php:72
 msgid "This section configure settings for the site header."
 msgstr ""
 
-#: customizer/header.inc.php:37
+#: customizer/header.inc.php:20
 msgid "General Settings"
 msgstr ""
 
-#: customizer/header.inc.php:46
+#: customizer/header.inc.php:29
 msgid "Primary Logo Width"
 msgstr ""
 
-#: customizer/header.inc.php:47
+#: customizer/header.inc.php:30
 msgid "This option only applies to primary image logo."
 msgstr ""
 
-#: customizer/header.inc.php:56
+#: customizer/header.inc.php:39
 msgid "Dashboard Logo Width"
 msgstr ""
 
-#: customizer/header.inc.php:57
+#: customizer/header.inc.php:40
 msgid "This option only applies to dashboard image logo."
 msgstr ""
 
-#: customizer/header.inc.php:66
+#: customizer/header.inc.php:49
 msgid "Header Vertical Padding"
 msgstr ""
 
-#: customizer/header.inc.php:67
+#: customizer/header.inc.php:50
 msgid "Adjust the number to increase/decrease header height."
 msgstr ""
 
-#: customizer/header.inc.php:76
+#: customizer/header.inc.php:59
 msgid "Header Stickiness"
 msgstr ""
 
-#: customizer/header.inc.php:80
+#: customizer/header.inc.php:63
 msgid "Stick on Demand"
 msgstr ""
 
-#: customizer/header.inc.php:81
+#: customizer/header.inc.php:64
 msgid "Always Sticky"
 msgstr ""
 
-#: customizer/header.inc.php:82
+#: customizer/header.inc.php:65
 msgid "Disable Stickiness"
 msgstr ""
 
-#: customizer/header.inc.php:88
+#: customizer/header.inc.php:71
 msgid "Explore Menu"
 msgstr ""
 
-#: customizer/header.inc.php:97
+#: customizer/header.inc.php:80
 msgid "Menu Limit"
 msgstr ""
 
-#: customizer/header.inc.php:98
+#: customizer/header.inc.php:81
 msgid "Explore menu can only show handful of terms before going off the screen. Define how many terms (for each taxonomy) it should show at max."
 msgstr ""
 
-#: customizer/header.inc.php:107
+#: customizer/header.inc.php:90
 msgid "Menu Order"
 msgstr ""
 
-#: customizer/header.inc.php:108
+#: customizer/header.inc.php:91
 msgid "Change the order and visibility of explore menu items."
 msgstr ""
 
-#: customizer/header.inc.php:116
+#: customizer/header.inc.php:99
 msgid "Job Categories"
 msgstr ""
 
-#: customizer/header.inc.php:117
+#: customizer/header.inc.php:100
 msgid "Companies List"
 msgstr ""
 
-#: customizer/header.inc.php:118
+#: customizer/header.inc.php:101
 msgid "Job Tags"
 msgstr ""
 
-#: customizer/header.inc.php:119
+#: customizer/header.inc.php:102
 #: page-builder/modules/jobs-listing/jobs-listing.php:64
 msgid "Job Types"
 msgstr ""
 
-#: customizer/header.inc.php:120
+#: customizer/header.inc.php:103
 msgid "Job Regions"
 msgstr ""
 
-#: customizer/header.inc.php:121
+#: customizer/header.inc.php:104
 msgid "Industries"
 msgstr ""
 
-#: customizer/header.inc.php:122
+#: customizer/header.inc.php:105
 msgid "Resume Categories"
 msgstr ""
 
-#: customizer/header.inc.php:123
+#: customizer/header.inc.php:106
 msgid "Resume Skills"
 msgstr ""
 
-#: customizer/header.inc.php:124
+#: customizer/header.inc.php:107
 msgid "Resume Regions"
 msgstr ""
 
-#: customizer/header.inc.php:130
+#: customizer/header.inc.php:114
 msgid "Search Module"
 msgstr ""
 
-#: customizer/header.inc.php:131
+#: customizer/header.inc.php:115
 msgid "This section configure settings for header search module."
 msgstr ""
 
-#: customizer/header.inc.php:139
+#: customizer/header.inc.php:126
 msgid "Search Title"
 msgstr ""
 
-#: customizer/header.inc.php:141
+#: customizer/header.inc.php:128
 msgid "Enter a title for your search module."
 msgstr ""
 
-#: customizer/header.inc.php:148
+#: customizer/header.inc.php:135
 msgid "Search Description"
 msgstr ""
 
-#: customizer/header.inc.php:150
+#: customizer/header.inc.php:137
 msgid "Enter a short description for your search module."
 msgstr ""
 
-#: customizer/header.inc.php:157
-#: customizer/hero.inc.php:29
+#: customizer/header.inc.php:146
 msgid "Search Type"
 msgstr ""
 
-#: customizer/header.inc.php:158
-#: customizer/hero.inc.php:30
+#: customizer/header.inc.php:147
 msgid "Define which search form to use in site header."
 msgstr ""
 
-#: customizer/header.inc.php:162
-#: customizer/hero.inc.php:34
+#: customizer/header.inc.php:151
 #: page-builder/modules/listing-spotlight/listing-spotlight.php:35
 msgid "Jobs"
 msgstr ""
 
-#: customizer/header.inc.php:163
-#: customizer/hero.inc.php:35
+#: customizer/header.inc.php:152
 #: page-builder/modules/listing-spotlight/listing-spotlight.php:36
 msgid "Resumes"
 msgstr ""
 
-#: customizer/header.inc.php:164
-#: customizer/hero.inc.php:36
+#: customizer/header.inc.php:153
 msgid "Companies"
 msgstr ""
 
-#: customizer/header.inc.php:165
-#: customizer/hero.inc.php:37
+#: customizer/header.inc.php:154
 #: page-builder/modules/blog-posts/blog-posts.php:8
 msgid "Blog"
 msgstr ""
 
-#: customizer/header.inc.php:182
+#: customizer/header.inc.php:160
 msgid "Call to Action"
 msgstr ""
 
-#: customizer/header.inc.php:183
+#: customizer/header.inc.php:161
 msgid "This section configure settings for call to action button."
 msgstr ""
 
-#: customizer/header.inc.php:189
+#: customizer/header.inc.php:167
 msgid "Submit Job - CTA"
 msgstr ""
 
-#: customizer/header.inc.php:190
-#: customizer/hero.inc.php:21
+#: customizer/header.inc.php:168
 msgid "This CTA button appears in the header for non logged-in users as well as logged-in \"employer\" and \"admin\"."
+msgstr ""
+
+#: customizer/header.inc.php:176
+#: customizer/header.inc.php:223
+msgid "Disable CTA Button"
+msgstr ""
+
+#: customizer/header.inc.php:177
+#: customizer/header.inc.php:224
+msgid "Check this option to disable CTA button."
+msgstr ""
+
+#: customizer/header.inc.php:186
+#: customizer/header.inc.php:233
+msgid "Button Text"
+msgstr ""
+
+#: customizer/header.inc.php:187
+msgid "Post a Job"
+msgstr ""
+
+#: customizer/header.inc.php:189
+#: customizer/header.inc.php:236
+msgid "Enter some text for your CTA button."
+msgstr ""
+
+#: customizer/header.inc.php:196
+#: customizer/header.inc.php:243
+msgid "Button URL"
 msgstr ""
 
 #: customizer/header.inc.php:198
 #: customizer/header.inc.php:245
-msgid "Disable CTA Button"
-msgstr ""
-
-#: customizer/header.inc.php:199
-#: customizer/header.inc.php:246
-msgid "Check this option to disable CTA button."
-msgstr ""
-
-#: customizer/header.inc.php:208
-#: customizer/header.inc.php:255
-msgid "Button Text"
-msgstr ""
-
-#: customizer/header.inc.php:209
-msgid "Post a Job"
-msgstr ""
-
-#: customizer/header.inc.php:211
-#: customizer/header.inc.php:258
-msgid "Enter some text for your CTA button."
-msgstr ""
-
-#: customizer/header.inc.php:218
-#: customizer/header.inc.php:265
-msgid "Button URL"
-msgstr ""
-
-#: customizer/header.inc.php:220
-#: customizer/header.inc.php:267
 msgid "Provide custom URL for CTA button."
 msgstr ""
 
-#: customizer/header.inc.php:227
-#: customizer/header.inc.php:274
+#: customizer/header.inc.php:205
+#: customizer/header.inc.php:252
 msgid "Button Icon"
 msgstr ""
 
-#: customizer/header.inc.php:228
-#: customizer/header.inc.php:275
+#: customizer/header.inc.php:206
+#: customizer/header.inc.php:253
 msgid "Upload custom icon for CTA button."
 msgstr ""
 
-#: customizer/header.inc.php:236
+#: customizer/header.inc.php:214
 msgid "Submit Resume - CTA"
 msgstr ""
 
-#: customizer/header.inc.php:237
+#: customizer/header.inc.php:215
 msgid "This CTA button appears in the header for logged-in \"candidate\"."
 msgstr ""
 
-#: customizer/header.inc.php:256
+#: customizer/header.inc.php:234
 msgid "Post a Resume"
-msgstr ""
-
-#: customizer/hero.inc.php:14
-msgid "Hero Settings"
-msgstr ""
-
-#: customizer/hero.inc.php:15
-msgid "This section configure settings for the site hero."
-msgstr ""
-
-#: customizer/hero.inc.php:20
-msgid "Search Panel"
 msgstr ""
 
 #: customizer/notification.inc.php:13
