@@ -3,70 +3,6 @@
     "title": "Page Hero",
     "fields": [
         {
-            "key": "field_5caa08e42eab1",
-            "label": "Search Module",
-            "name": "hero_search_module",
-            "type": "radio",
-            "instructions": "Select the type of search module to append.",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_5bbf18aae1549",
-                        "operator": "==",
-                        "value": "append_search"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "job": "Job Search",
-                "resume": "Resume Search",
-                "company": "Company Search"
-            },
-            "allow_null": 0,
-            "other_choice": 0,
-            "default_value": "job",
-            "layout": "horizontal",
-            "return_format": "value",
-            "save_other_choice": 0
-        },
-        {
-            "key": "field_5bbf18aae1549",
-            "label": "Hero Enhancements",
-            "name": "hero_enhancements",
-            "type": "checkbox",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_5bc095cd2cee8",
-                        "operator": "==",
-                        "value": "1"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "append_search": "Append search module to hero section"
-            },
-            "allow_custom": 0,
-            "save_custom": 0,
-            "default_value": [],
-            "layout": "vertical",
-            "toggle": 0,
-            "return_format": "value"
-        },
-        {
             "key": "field_5bc095cd2cee8",
             "label": "Enable Hero Module",
             "name": "is_hero",
@@ -370,13 +306,130 @@
             "step": ""
         },
         {
+            "key": "field_5bbf18aae1549",
+            "label": "Hero Enhancements",
+            "name": "hero_enhancements",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5bc095cd2cee8",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "append_search": "Append search module to hero section"
+            },
+            "allow_custom": 0,
+            "save_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5caa08e42eab1",
+            "label": "Search Module",
+            "name": "hero_search_module",
+            "type": "radio",
+            "instructions": "Select the type of search module to append.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5bbf18aae1549",
+                        "operator": "==",
+                        "value": "append_search"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "job": "Job Search",
+                "resume": "Resume Search",
+                "company": "Company Search",
+                "custom": "Custom Form"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "job",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
             "key": "field_5d59b48249850",
             "label": "Hero Facets",
             "name": "hero_facets",
             "type": "text",
             "instructions": "Enter comma separated list of facets. (works only if facetwp plugin is enabled)",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5bc095cd2cee8",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5caa08e42eab1",
+                        "operator": "==",
+                        "value": "job"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5bc095cd2cee8",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5caa08e42eab1",
+                        "operator": "==",
+                        "value": "resume"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d62eca0fb5b2",
+            "label": "Custom Form Shortcode",
+            "name": "hero_custom_form_shortcode",
+            "type": "text",
+            "instructions": "Enter a custom form short-code which will replace the search module.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5caa08e42eab1",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -411,5 +464,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1566160067
+    "modified": 1566764451
 }
